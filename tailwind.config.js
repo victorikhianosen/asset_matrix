@@ -21,6 +21,7 @@ export default {
                 blackText: "#9e9e9e",
                 hoverBlack: "#3d3d3d",
                 lightBlack: "#4d4d4d",
+                lightBg: "#fdfdfd",
             },
             fontFamily: {
                 sans: ["Roboto", "sans-serif"],

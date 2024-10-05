@@ -62,17 +62,16 @@
 
     {{-- HERO --}}
 
-    {{-- mx-6 md:mx-8 lg:mx-24 py-10 md:py-24 --}}
-
     <section class="bg-white">
         <div class="mx-6 md:mx-8 lg:mx-24 pb-10 pt-28 md:pb-24 md:pt-44">
             <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
                 <div class="space-y-6">
                     <h1
                         class="text-black text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tigh">
-                        Empowering Your
+                        <span class="text-primary">Empowering</span> Your
                         Financial
-                        Future</h1>
+                        Future
+                    </h1>
                     <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we provide
                         accessible,
                         secure, and
@@ -490,7 +489,6 @@
                     </p>
 
 
-                    {{-- <div class="flex-cols md:flex items-center justify-center gap-5"> --}}
                     <div class="grid grid-rows-1 md:grid-cols-2 justify-center items-center gap-6">
 
 
@@ -529,17 +527,17 @@
 
 
     {{-- Loan --}}
-    <section class="bg-[#fdfdfd]">
+    <section class="bg-lightBg">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center">
 
                 <div class="space-y-4 md:space-y-8">
-                    <h1 class="text-3xl md:text-5xl leading-loose text-black font-semibold">Our Loan Products
-
+                    <h1 class="text-3xl md:text-5xl leading-loose text-black font-semibold">
+                        <span class="text-primary">Explore Our</span> Flexible Loan Products for Every Need
                     </h1>
                     <p class="text-xs md:text-sm tracking-wider text-blackText">We make access to loans simple and
                         easy. No
-                        guarantors, collaterals or long forms. Apply 24/7 and receive funds in your Carbon account
+                        guarantors, collaterals or long forms. Apply 24/7 and receive funds in your AssetMatrix account
                         instantly. Unlock higher loan amounts and lower interest rates by repaying loans on time.
                     </p>
 
@@ -655,11 +653,14 @@
                 </div>
 
                 <div class="space-y-4 md:space-y-8 order-1 md:order-2">
-                    <h2 class="text-3xl md:text-5xl text-black font-semibold">What Customers say About Us</h2>
+                    <h2 class="text-3xl md:text-5xl text-black font-semibold"> <span class="text-primary">What Our
+                            Valued</span> Customers Are Saying
+
+                    </h2>
                     <p class="text-xs md:text-sm tracking-wider text-blackText">
                         We make access to loans simple and easy. No guarantors, collaterals or long forms. Apply 24/7
                         and receive
-                        funds in your Carbon account instantly. Unlock higher loan amounts and lower interest rates by
+                        funds in your AssetMatrix account instantly. Unlock higher loan amounts and lower interest rates by
                         repaying
                         loans on time.
                     </p>
@@ -693,7 +694,8 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center justify-center">
 
                     <div class="space-y-8">
-                        <h2 class="text-3xl md:text-5xl text-black font-semibold">Safeguarding Your Financial Interests
+                        <h2 class="text-3xl md:text-5xl text-black font-semibold"> <span
+                                class="text-primary">Safeguarding</span> Your Financial Interests
                         </h2>
 
                         <div class="space-y-4">
@@ -756,36 +758,16 @@
     </section>
 
 
+    {{-- Subscribe --}}
 
-    {{-- Subscribee --}}
-    {{-- <section class="bg-white">
-        <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
+
+    <section class="bg-white"
+        style="background-image: url('asset/images/cbn.jpg'); background-size: cover; background-position: center;">
+        <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24 bg-white bg-opacity-75">
             <div class="space-y-12">
-                <h2 class="text-3xl text-center md:text-5xl text-black font-semibold">Get latest Updates
+                <h2 class="text-3xl text-center md:text-5xl text-black font-semibold">
+                    <span class="text-primary">Subscribe </span> to the Latest Updates
                 </h2>
-
-                <div class="flex justify-center items-center gap-3">
-                    <div class="">
-                        <input type="text" placeholder="Enter Your Email"
-                            class="bg-white py-3 px-40 border-8 border-black rounded-tl-full rounded-bl-full placeholder:text-xs">
-                    </div>
-
-                    <button class="bg-black py-5 px-10 text-white rounded-tr-full rounded-br-full">
-                        Subscribe
-                    </button>
-
-
-                </div>
-
-            </div>
-        </div>
-    </section> --}}
-
-
-    <section class="bg-white">
-        <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
-            <div class="space-y-12">
-                <h2 class="text-3xl text-center md:text-5xl text-black font-semibold">Get latest Updates</h2>
 
                 <div class="flex justify-center items-center gap-2">
                     <div class="flex-grow max-w-sm md:max-w-md lg:max-w-lg">
@@ -796,56 +778,88 @@
                         class="bg-primary py-4 px-6 text-white border-8 rounded-tr-full rounded-br-full whitespace-nowrap border-transparent hover:bg-white hover:border-primary hover:text-primary">
                         Subscribe
                     </button>
-
                 </div>
             </div>
         </div>
     </section>
-
-
-
 
 
 
     <section class="bg-[#252525]">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24 text-white">
-            <div class="grid grid-cols-6 gap-14">
-                <div class="col-span-2 space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="space-y-6">
                     <span>
                         <img src="{{ asset('asset/images/logo.png') }}" alt="">
                     </span>
-                    <p class="text-xs md:text-sm tracking-wider text-blackText">
-                        AssetMatrix Microfinance Bank Limited is authorised and regulated by the Central Bank of Nigeria
-                        to offer banking services. Deposits are insured by the Nigerian Deposit Insurance Corporation
-                        (NDIC).
-
-                    </p>
-                </div>
-
-                <div class="space-y-6">
-                    <h4 class="text-lg">For Business</h4>
-                    <div class="space-y-8">
-                        <a href="" class="block text-xs md:text-sm tracking-wider text-blackText mb-2">Business
-                            Account</a>
-                        <a href="" class="block text-xs md:text-sm tracking-wider text-blackText mb-4">Business
-                            Account</a>
-                        <a href="" class="block text-xs md:text-sm tracking-wider text-blackText mb-4">Business
-                            Account</a>
-                        <a href="" class="block text-xs md:text-sm tracking-wider text-blackText mb-4">Business
-                            Account</a>
+                    <div class="flex justify-center items-center gap-2">
+                        <p class="text-xs md:text-sm tracking-wider text-blackText">
+                            AssetMatrix Microfinance Bank Limited is authorised and regulated by the Central Bank of
+                            Nigeria to offer banking services. Deposits are insured by the Nigerian Deposit Insurance
+                            Corporation (NDIC).
+                        </p>
                     </div>
                 </div>
 
+                <div class="md:col-span-1 space-y-2">
+                    <h4 class="text-lg font-semibold">Business</h4>
+                    <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                        <p><a href="#" class="hover:text-white">About</a></p>
+                        <p><a href="#" class="hover:text-white">FAQ</a></p>
+                        <p><a href="#" class="hover:text-white">Open Account</a></p>
+                        <p><a href="#" class="hover:text-white">Loan</a></p>
+                    </div>
+                </div>
 
+                <div class="md:col-span-1 space-y-2">
+                    <h4 class="text-lg font-semibold">Services</h4>
+                    <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                        <p><a href="#" class="hover:text-white">About</a></p>
+                        <p><a href="#" class="hover:text-white">FAQ</a></p>
+                        <p><a href="#" class="hover:text-white">Open Account</a></p>
+                        <p><a href="#" class="hover:text-white">Loan</a></p>
+                    </div>
+                </div>
 
+                <div class="space-y-2">
+                    <h4 class="text-lg font-semibold">Contact</h4>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>
+                            <i class="fa-solid fa-location-dot text-2xl text-primary"></i>
+                        </span>
+                        <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                            68 Herbert Macaulay Street <br>
+                            Ebute Metta, Adekunle <br>
+                            Lagos 101245, Lagos
+                        </p>
+                    </div>
 
-                <div>hello</div>
-                <div>hello</div>
-                <div>hello</div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>
+                            <i class="fa-solid fa-envelope text-xl text-primary"></i>
+                        </span>
+                        <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                            <a href="mailto:info@assetmatrixmfb.com"
+                                class="hover:text-white">info@assetmatrixmfb.com</a>
+                        </p>
+                    </div>
 
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>
+                            <i class="fa-solid fa-phone text-xl text-primary"></i>
+                        </span>
+                        <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                            +234 (0) 80-2304-9873
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
+
+
 
 
 
