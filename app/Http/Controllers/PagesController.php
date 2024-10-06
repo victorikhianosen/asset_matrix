@@ -15,4 +15,22 @@ class PagesController extends Controller
     {
         return view('pages.team');
     }
+
+    public function loan()
+    {
+        return view('pages.loan');
+    }
+
+
+    public function savings()
+    {
+        return view('pages.savings');
+    }
+
+
+     public function deposit()
+    {
+        return view('pages.deposit');
+    }
+    
 }

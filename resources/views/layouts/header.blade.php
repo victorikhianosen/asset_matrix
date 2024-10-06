@@ -72,17 +72,26 @@
                         </button>
                     </div>
                     <div id="businessDropDown"
-                        class="absolute mt-6 right-0 text-left w-32 rounded-lg bg-[#fafafa] shadow-md space-y-2 pl-4 pr-6 py-8 transition-all duration-300 transform opacity-0 translate-y-4">
-                        <button>
-                            <a href=""
-                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">About
-                                Us</a>
-                        </button>
-                        <button>
-                            <a
-                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Our
-                                Team</a>
-                        </button>
+                        class="absolute flex-col mt-5 right-0 text-left w-32 rounded-lg bg-[#fafafa] shadow-md space-y-2 pl-4 pr-6 py-8 transition-all duration-300 transform opacity-0 translate-y-4">
+                        <div>
+                            <a href="{{ route('loan') }}"
+                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">
+                                Loan
+                            </a>
+                        </div>
+
+                        
+                        <div>
+                            <a href="{{ route('savings') }}"
+                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Savings
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="{{ route('deposit') }}"
+                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Deposit
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -138,11 +147,6 @@
             <div class="cursor-pointer block lg:hidden">
                 <i class="fa-solid fa-bars text-3xl"></i>
 
-                {{-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-8 text-primary cursor-pointer">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                </svg> --}}
             </div>
         </div>
     </section>
