@@ -27,7 +27,7 @@
                     <h2 class="text-3xl md:text-5xl text-black font-semibold"><span class="text-primary">Maximize Your
                             Savings
                         </span>
-                        with Our Tailored Deposit Products 
+                        with Our Tailored Deposit Products
                     </h2>
                     <div class="space-y-4">
                         <p class="text-xs md:text-sm tracking-wider text-black">
@@ -66,12 +66,11 @@
                                 <span class="">
                                     <i class="fa-solid fa-piggy-bank text-5xl pb-4"></i>
                                 </span>
-                                <h4 class="font-semibold text-4xl my-4">Esusu Loan</h4>
+                                <h4 class="font-semibold text-4xl my-4">Fixed Deposit</h4>
                                 <div class="space-y-1 text-black mb-8">
                                     <p class="text-base tracking-wide">
-                                        Our Esusu Loan provides quick, easy funding for micro-businesses and entrepreneurs,
-                                        with no hidden fees or charges.
-
+                                        Fixed Deposit offers higher interest rates for secure investments, fostering savings
+                                        and providing a safety net.
                                     </p>
                                 </div>
                             </div>
@@ -84,11 +83,11 @@
                                 <span class="">
                                     <i class="fa-solid fa-business-time text-5xl pb-4"></i>
                                 </span>
-                                <h4 class="font-semibold text-4xl my-4">Business Loan</h4>
+                                <h4 class="font-semibold text-4xl my-4">Investment Deposit</h4>
                                 <div class="space-y-1 text-black mb-8">
                                     <p class="text-white text-base tracking-wide">
-                                        Our Business Loan provides fast, transparent access to funds for entrepreneurs and
-                                        SMEs, helping your business grow efficiently.
+                                        Investment Deposit helps you navigate investment plans, analyzing risks and
+                                        appointing a financial manager for success.
                                     </p>
                                 </div>
                             </div>
@@ -100,11 +99,11 @@
                                 <span class="">
                                     <i class="fa-solid fa-truck-fast text-5xl pb-"></i>
                                 </span>
-                                <h4 class="font-semibold text-4xl my-4">Instant Cash Loan</h4>
+                                <h4 class="font-semibold  text-4xl my-4">Call Deposit</h4>
                                 <div class="space-y-1 text-black mb-8">
                                     <p>
-                                        Get urgent funds in 24 hours with our Instant Cash Loan—apply online and receive
-                                        your money quickly after approval. quickly after approval. quickly after approval.
+                                        Call Deposit offers unlimited access to funds, managed investments, and SMS alerts
+                                        for transparent account handling.
                                     </p>
                                 </div>
                             </div>

@@ -10,3 +10,6 @@ Route::get('team',[PagesController::class, 'team'])->name('team');
 Route::get('loan', [PagesController::class, 'loan'])->name('loan');
 Route::get('savings', [PagesController::class, 'savings'])->name('savings');
 Route::get('deposit', [PagesController::class, 'deposit'])->name('deposit');
+Route::get('policy/data', [PagesController::class, 'dataPolicy'])->name('policy.data');
+Route::get('policy/mobile', [PagesController::class, 'mobilePolicy'])->name('policy.mobile');
+

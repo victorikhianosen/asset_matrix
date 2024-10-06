@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function about(){
+    public function about()
+    {
         return view('pages.about');
     }
 
@@ -28,9 +29,20 @@ class PagesController extends Controller
     }
 
 
-     public function deposit()
+    public function deposit()
     {
         return view('pages.deposit');
     }
-    
+
+
+    public function dataPolicy()
+    {
+        return view('pages.policy_data');
+    }
+
+    public function mobilePolicy()
+    {
+        return view('pages.policy_mobile
+        ');
+    }
 }

@@ -38,7 +38,7 @@
             <img class="w-32 md:w-40" src="{{ asset('asset/images/logo.png') }}" alt="">
             <div class="space-x-6 hidden lg:block">
                 <a class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                    href="">Home</a>
+                    href="{{ route('home') }}">Home</a>
 
                 <!-- Our Bank Dropdown -->
                 <div id="bankButton" class="relative inline-block">
@@ -80,7 +80,7 @@
                             </a>
                         </div>
 
-                        
+
                         <div>
                             <a href="{{ route('savings') }}"
                                 class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Savings
@@ -98,12 +98,12 @@
                 <!-- Online Banking Dropdown -->
                 <div id="onlineBankingButton" class="relative inline-block">
                     <div>
-                        <button
+                        <a href="{{ url('https://cashmatrix.app/') }}"
                             class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150">
                             Online Banking
-                        </button>
+                        </a>
                     </div>
-                    <div id="onlineBankingDropDown"
+                    {{-- <div id="onlineBankingDropDown"
                         class="absolute mt-6 right-0 text-left w-32 rounded-lg bg-[#fafafa] shadow-md space-y-2 pl-4 pr-6 py-8 transition-all duration-300 transform opacity-0 translate-y-4">
                         <button>
                             <a href=""
@@ -113,7 +113,7 @@
                             <a
                                 class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Register</a>
                         </button>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <!-- Policy Dropdown -->
@@ -124,17 +124,24 @@
                             Policy
                         </button>
                     </div>
+
                     <div id="policyDropDown"
-                        class="absolute mt-6 right-0 text-left w-32 rounded-lg bg-[#fafafa] shadow-md space-y-2 pl-4 pr-6 py-8 transition-all duration-300 transform opacity-0 translate-y-4">
+                        class="absolute mt-6 right-0 text-start w-64 rounded-lg bg-[#fafafa] shadow-md space-y-2 pl-4 pr-6 py-8 transition-all duration-300 transform opacity-0 translate-y-4">
                         <button>
-                            <a href=""
-                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Privacy
-                                Policy</a>
+                            <a href="{{ route('policy.data') }}"
+                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Data Consent Policy</a>
                         </button>
                         <button>
+                            <a href="{{ route('policy.mobile') }}"
+                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Mobile App Policy</a>
+                        </button>
+                           <button>
                             <a
-                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Terms
-                                of Service</a>
+                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Anti-Money Laungering</a>
+                        </button>
+                           <button>
+                            <a
+                                class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">End User Agreement</a>
                         </button>
                     </div>
                 </div>
