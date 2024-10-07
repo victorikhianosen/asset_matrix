@@ -45,4 +45,18 @@ class PagesController extends Controller
         return view('pages.policy_mobile
         ');
     }
+
+    public function amt()
+    {
+        return view('pages.policy_amt
+        ');
+    }
+
+
+    public function enduser()
+    {
+        return view('pages.enduser
+        ');
+    }
+
 }

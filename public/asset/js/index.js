@@ -7,8 +7,9 @@ const businessDropDown = document.getElementById("businessDropDown");
 const onlineBankingButton = document.getElementById("onlineBankingButton");
 const onlineBankingDropDown = document.getElementById("onlineBankingDropDown");
 
-const policyButton = document.getElementById("policyButton");
-const policyDropDown = document.getElementById("policyDropDown");
+
+const accordionBtns = document.querySelectorAll(".accordion-btn");
+const allAccordions = document.querySelectorAll(".accordion-content");
 
 // Bank Dropdown
 bankButton.addEventListener("mouseenter", () => {
@@ -72,52 +73,67 @@ const contentSections = [
 ];
 
 
-
 // Policy
+accordionBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+        const targetAccordion = document.querySelector(this.dataset.target);
+        const targetIcon = this.querySelector("span svg");
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Toggle accordion content visibility
-    const buttons = document.querySelectorAll("button");
-
-    buttons.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            const content = document.getElementById(`content-${index + 1}`);
-            const icon = document.getElementById(`icon-${index + 1}`);
-
-            // Toggle content visibility
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                icon.style.transform = "rotate(0deg)";
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                icon.style.transform = "rotate(90deg)";
+        // Close all open accordions
+        allAccordions.forEach((accordion) => {
+            if (accordion !== targetAccordion) {
+                accordion.classList.add("hidden"); 
+                accordion.style.maxHeight = null;
             }
         });
+
+        // Toggle the clicked accordion
+        if (targetAccordion.classList.contains("hidden")) {
+            targetAccordion.classList.remove("hidden");
+            targetAccordion.style.maxHeight =
+                targetAccordion.scrollHeight + "px"; 
+            targetIcon.classList.add("rotate-180");
+        } else {
+            targetAccordion.classList.add("hidden");
+            targetAccordion.style.maxHeight = null; 
+            targetIcon.classList.remove("rotate-180"); 
+        }
     });
 });
 
 
 
-policyButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        const isOpen = contentSections[index].classList.contains("max-h-0");
-        
-        // Close all content sections
-        contentSections.forEach(content => {
-            content.classList.add("max-h-0");
-        });
 
-        // Hide all icons
-        policyButtons.forEach(btn => {
-            const icon = btn.querySelector("span[id^='icon-']");
-            icon.classList.remove("rotate-90");
-        });
 
-        // Toggle the current content section
-        if (isOpen) {
-            contentSections[index].classList.remove("max-h-0");
-            const icon = button.querySelector("span[id^='icon-']");
-            icon.classList.add("rotate-90");
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elementsToAnimate = [
+        document.getElementById("customer1"),
+        document.getElementById("customer2"),
+        document.getElementById("customer3"),
+    ];
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove("opacity-0"); // Make visible
+                    entry.target.classList.add("animate-slideUp"); // Apply animation
+                } else {
+                    entry.target.classList.add("opacity-0"); // Hide again when scrolled out
+                    entry.target.classList.remove("animate-slideUp"); // Reset animation to allow it to retrigger
+                }
+            });
+        },
+        {
+            threshold: 0.5, // Trigger when 50% of the element is in view
         }
+    );
+
+    elementsToAnimate.forEach((element) => {
+        observer.observe(element);
     });
 });

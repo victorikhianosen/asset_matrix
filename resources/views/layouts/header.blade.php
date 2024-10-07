@@ -136,11 +136,11 @@
                                 class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Mobile App Policy</a>
                         </button>
                            <button>
-                            <a
+                            <a href="{{ route('policy.amt') }}"
                                 class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">Anti-Money Laungering</a>
                         </button>
                            <button>
-                            <a
+                            <a href="{{ route('policy.enduser') }}"
                                 class="text-lightBlack font-medium text-sm hover:text-primary transition-all duration-150">End User Agreement</a>
                         </button>
                     </div>

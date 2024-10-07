@@ -6,19 +6,22 @@
         <div class="mx-6 md:mx-8 lg:mx-24 pb-1 pt-28 md:pb-24 md:pt-44">
             <div class="">
                 <h1
-                    class="text-black text-center text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tight">
+                    class="text-black text-star text-5xl md:text-6xl lg:text-4xl font-semibold gap-6 tracking-tighter leading-tight">
                     About Us</h1>
+            
+
             </div>
         </div>
     </section>
 
 
 
-    <section class="bg-white">
+    <section class="bg-[#fdf3e9]">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
                 <div class="space-y-12">
-                    <h2 class="text-3xl md:text-5xl text-black font-semibold"><span class="text-primary">Finacial goal</span>
+                    <h2 class="text-3xl md:text-5xl text-black font-semibold"><span class="text-primary">Finacial
+                            goal</span>
                         are our priority
                     </h2>
                     <div class="space-y-4">
@@ -55,11 +58,12 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                    <div class="shadow-xl p-6 border-2 border-gray-100 bg-white text-center rounded-md">
+                    <div class="group cursor-pointer shadow-xl p-6 border-2 border-gray-100 bg-white text-center rounded-md
+                     hover:border-primary transition-all duration-200">
                         <span class="">
                             <i class="fa-solid fa-wifi text-5xl pb-4"></i>
                         </span>
-                        <h4 class="font-semibold text-4xl my-4">Vision</h4>
+                        <h4 class="font-semibold text-2xl my-4">Vision</h4>
 
                         <div class="space-y-1 text-black mb-8">
                             <p class="text-base tracking-wide">
@@ -69,27 +73,30 @@
                         </div>
                     </div>
 
-                    <div class="shadow-xl p-6 border-2 border-black bg-black text-center rounded-md text-white">
+                    <div class="group cursor-pointer shadow-xl p-6 border-2 border-black
+                      bg-black text-center rounded-md text-white
+                       hover:border-primary">
                         <span class="">
                             <i class="fa-solid fa-circle-right text-5xl pb-4"></i>
 
                         </span>
-                        <h4 class="font-semibold text-4xl my-4">Mission</h4>
+                        <h4 class="font-semibold text-2xl my-4">Mission</h4>
 
                         <div class="space-y-1 text-black mb-8 ">
                             <p class="text-white text-base tracking-wide">
-                              To empower micro-entrepreneurs and low-income earners with financial services through passionate people and advanced technology.
+                                To empower micro-entrepreneurs and low-income earners with financial services through
+                                passionate people and advanced technology.
                             </p>
 
                         </div>
 
                     </div>
 
-                    <div class="shadow-xl p-6 border-2 border-gray-100 bg-white text-center rounded-md">
+                    <div class="shadow-xl p-6 cursor-pointer border-2 border-gray-100 bg-white text-center rounded-md hover:border-primary">
                         <span class="">
                             <i class="fa-solid fa-coins text-5xl pb-4"></i>
                         </span>
-                        <h4 class="font-semibold text-4xl my-4">Core Values</h4>
+                        <h4 class="font-semibold text-2xl my-4">Core Values</h4>
 
                         <div class="space-y-1 text-black mb-8">
                             <p>

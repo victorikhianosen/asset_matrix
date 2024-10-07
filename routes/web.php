@@ -12,4 +12,5 @@ Route::get('savings', [PagesController::class, 'savings'])->name('savings');
 Route::get('deposit', [PagesController::class, 'deposit'])->name('deposit');
 Route::get('policy/data', [PagesController::class, 'dataPolicy'])->name('policy.data');
 Route::get('policy/mobile', [PagesController::class, 'mobilePolicy'])->name('policy.mobile');
-
+Route::get('policy/amt', [PagesController::class, 'amt'])->name('policy.amt');
+Route::get('policy/enduser', [PagesController::class, 'enduser'])->name('policy.enduser');

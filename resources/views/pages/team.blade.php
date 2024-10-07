@@ -3,11 +3,13 @@
 
 @section('main')
     <section class="bg-white">
-        <div class="mx-6 md:mx-8 lg:mx-24 pb-1 pt-28 md:pb-24 md:pt-44">
+        <div class="mx-6 md:mx-8 lg:mx-24 pb-1 pt-28 md:pb-24 md:pt-44 border-b-2 border-primary">
             <div class="">
                 <h1
-                    class="text-black text-center text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tight">
+                    class="text-black text-star text-5xl md:text-6xl lg:text-4xl font-semibold gap-6 tracking-tighter leading-tight">
                     Our Team</h1>
+            
+
             </div>
         </div>
     </section>
@@ -23,7 +25,7 @@
                     <div class="text-center">
                         <img class="w-full h-80 object-cover" src="{{ asset('asset/images/ceo.jpg') }}" alt="CEO Image">
                         <p class="mt-4 text-lg font-semibold">Tope Oduseso</p>
-                        <p class="text-gray-600">Chairman</p>
+                        <p class="text-gray-600 pb-4">Chairman</p>
                     </div>
                 </div>
 
