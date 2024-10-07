@@ -22,6 +22,9 @@ export default {
                 hoverBlack: "#3d3d3d",
                 lightBlack: "#4d4d4d",
                 lightBg: "#fdfdfd",
+                purple: "#7e22ce",
+                yellow: "#facc15",
+                lightYellow: "#fef3c7",
             },
             fontFamily: {
                 sans: ["Roboto", "sans-serif"],
