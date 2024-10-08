@@ -14,11 +14,13 @@
                                     Financial
                                     Future
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we provide
+                                <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we
+                                    provide
                                     accessible,
                                     secure, and
                                     tailored financial
-                                    solutions to help you build a brighter future. Whether you're saving, loan, investing,
+                                    solutions to help you build a brighter future. Whether you're saving, loan,
+                                    investing,
                                     or growing
                                     your
                                     business, we're here to support your journey every step of the way.
@@ -45,11 +47,13 @@
                                     Financial
                                     Future
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we provide
+                                <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we
+                                    provide
                                     accessible,
                                     secure, and
                                     tailored financial
-                                    solutions to help you build a brighter future. Whether you're saving, loan, investing,
+                                    solutions to help you build a brighter future. Whether you're saving, loan,
+                                    investing,
                                     or growing
                                     your
                                     business, we're here to support your journey every step of the way.
