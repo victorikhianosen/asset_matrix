@@ -1,61 +1,39 @@
-const bankButton = document.getElementById("bankButton");
-const bankDropDown = document.getElementById("bankDropDown");
+let dropdownTimeout;
 
-const businessButton = document.getElementById("businessButton");
-const businessDropDown = document.getElementById("businessDropDown");
+function toggleDropdown(dropdownId) {
+    const dropdown = document.getElementById(dropdownId);
+    dropdown.classList.toggle("hidden"); // Toggle visibility
 
-const onlineBankingButton = document.getElementById("onlineBankingButton");
-const onlineBankingDropDown = document.getElementById("onlineBankingDropDown");
+    // Close other dropdowns if any are open
+    document.querySelectorAll(".absolute").forEach(function (drop) {
+        if (drop.id !== dropdownId) {
+            drop.classList.add("hidden");
+        }
+    });
+}
 
+function showDropdown(dropdownId) {
+    clearTimeout(dropdownTimeout); // Clear any timeout to hide the dropdown
+    const dropdown = document.getElementById(dropdownId);
+    dropdown.classList.remove("hidden"); // Show the dropdown
+}
 
-const accordionBtns = document.querySelectorAll(".accordion-btn");
-const allAccordions = document.querySelectorAll(".accordion-content");
+function hideDropdown(dropdownId) {
+    const dropdown = document.getElementById(dropdownId);
+    dropdownTimeout = setTimeout(() => {
+        dropdown.classList.add("hidden"); // Hide the dropdown after delay
+    }, 90); // 100 milliseconds delay
+}
 
-// Bank Dropdown
-bankButton.addEventListener("mouseenter", () => {
-    bankDropDown.classList.remove("opacity-0", "translate-y-4");
-    bankDropDown.classList.add("opacity-100", "translate-y-0");
-});
-
-bankButton.addEventListener("mouseleave", () => {
-    bankDropDown.classList.remove("opacity-100", "translate-y-0");
-    bankDropDown.classList.add("opacity-0", "translate-y-4");
-});
-
-// Business Dropdown
-businessButton.addEventListener("mouseenter", () => {
-    businessDropDown.classList.remove("opacity-0", "translate-y-4");
-    businessDropDown.classList.add("opacity-100", "translate-y-0");
-});
-
-businessButton.addEventListener("mouseleave", () => {
-    businessDropDown.classList.remove("opacity-100", "translate-y-0");
-    businessDropDown.classList.add("opacity-0", "translate-y-4");
-});
-
-// Online Banking Dropdown
-onlineBankingButton.addEventListener("mouseenter", () => {
-    onlineBankingDropDown.classList.remove("opacity-0", "translate-y-4");
-    onlineBankingDropDown.classList.add("opacity-100", "translate-y-0");
-});
-
-onlineBankingButton.addEventListener("mouseleave", () => {
-    onlineBankingDropDown.classList.remove("opacity-100", "translate-y-0");
-    onlineBankingDropDown.classList.add("opacity-0", "translate-y-4");
-});
-
-// Policy Dropdown
-policyButton.addEventListener("mouseenter", () => {
-    policyDropDown.classList.remove("opacity-0", "translate-y-4");
-    policyDropDown.classList.add("opacity-100", "translate-y-0");
-});
-
-policyButton.addEventListener("mouseleave", () => {
-    policyDropDown.classList.remove("opacity-100", "translate-y-0");
-    policyDropDown.classList.add("opacity-0", "translate-y-4");
-});
-
-
+// Close dropdowns when clicking outside
+window.onclick = function (event) {
+    if (!event.target.matches(".relative button")) {
+        const dropdowns = document.querySelectorAll(".absolute");
+        dropdowns.forEach(function (dropdown) {
+            dropdown.classList.add("hidden");
+        });
+    }
+};
 
 
 
@@ -63,15 +41,14 @@ policyButton.addEventListener("mouseleave", () => {
 const policyButtons = [
     document.getElementById("policyMobile3"),
     document.getElementById("policyMobile4"),
-    document.getElementById("policyMobile5")
+    document.getElementById("policyMobile5"),
 ];
 
 const contentSections = [
     document.getElementById("content-345"),
     document.getElementById("content-346"),
-    document.getElementById("content-347")
+    document.getElementById("content-347"),
 ];
-
 
 // Policy
 accordionBtns.forEach((btn) => {
@@ -82,7 +59,7 @@ accordionBtns.forEach((btn) => {
         // Close all open accordions
         allAccordions.forEach((accordion) => {
             if (accordion !== targetAccordion) {
-                accordion.classList.add("hidden"); 
+                accordion.classList.add("hidden");
                 accordion.style.maxHeight = null;
             }
         });
@@ -91,23 +68,15 @@ accordionBtns.forEach((btn) => {
         if (targetAccordion.classList.contains("hidden")) {
             targetAccordion.classList.remove("hidden");
             targetAccordion.style.maxHeight =
-                targetAccordion.scrollHeight + "px"; 
+                targetAccordion.scrollHeight + "px";
             targetIcon.classList.add("rotate-180");
         } else {
             targetAccordion.classList.add("hidden");
-            targetAccordion.style.maxHeight = null; 
-            targetIcon.classList.remove("rotate-180"); 
+            targetAccordion.style.maxHeight = null;
+            targetIcon.classList.remove("rotate-180");
         }
     });
 });
-
-
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const elementsToAnimate = [

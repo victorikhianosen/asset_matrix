@@ -1,10 +1,10 @@
-   <section>
+   <section class="bg-whiteBg">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
             <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
                 <div class="space-y-4 md:space-y-8 order-2 md:order-1">
                     <!-- First animated div (scroll-triggered) -->
                     <div id="customer1"
-                        class="flex justify-center items-center gap-x-2 bg-[#252525] text-white p-4 md:p-6 rounded-full w-full md:w-9/12 ml-0 md:ml-12 opacity-0 transition-opacity duration-500">
+                        class="flex justify-center items-center gap-x-2 bg-purple text-white p-4 md:p-6 rounded-full w-full md:w-9/12 ml-0 md:ml-12 opacity-0 transition-opacity duration-500">
                         <div class="w-8 h-8 md:w-24 md:h-24">
                             <img class="rounded-full" src="{{ asset('asset/images/customer1.jpg') }}" alt="">
                         </div>
@@ -19,7 +19,7 @@
 
                     <!-- Second animated div (scroll-triggered) -->
                     <div id="customer2"
-                        class="flex justify-center items-center gap-x-2 bg-[#3d3d3d] text-white p-4 md:p-6 rounded-full w-full md:w-9/12 opacity-0 transition-opacity duration-500">
+                        class="flex justify-center items-center gap-x-2 bg-yellow text-white p-4 md:p-6 rounded-full w-full md:w-9/12 opacity-0 transition-opacity duration-500">
                         <div class="w-8 h-8 md:w-24 md:h-24">
                             <img class="rounded-full" src="{{ asset('asset/images/customer1.jpg') }}" alt="">
                         </div>
@@ -34,7 +34,7 @@
 
                     <!-- Third animated div (scroll-triggered) -->
                     <div id="customer3"
-                        class="flex justify-center items-center gap-x-2 bg-[#252525] text-white p-4 md:p-6 rounded-full w-full md:w-9/12 ml-0 md:ml-12 opacity-0 transition-opacity duration-500">
+                        class="flex justify-center items-center gap-x-2 bg-purple text-white p-4 md:p-6 rounded-full w-full md:w-9/12 ml-0 md:ml-12 opacity-0 transition-opacity duration-500">
                         <div class="w-8 h-8 md:w-24 md:h-24">
                             <img class="rounded-full" src="{{ asset('asset/images/customer1.jpg') }}" alt="">
                         </div>

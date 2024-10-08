@@ -8,7 +8,7 @@
     {{-- Tailwind --}}
     @vite('resources/css/app.css')
 
-    {{-- Google Fonts --}}
+    {{-- Font Awesom --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,24 +16,21 @@
         rel="stylesheet">
 
     {{-- Font Awesome --}}
+
     <script src="https://kit.fontawesome.com/22ded73695.js" crossorigin="anonymous"></script>
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+
+
     <title>Asset Matrix</title>
-
-    <style>
-        /* Additional custom styles for the mobile menu */
-        #mobileMenu {
-            transform: translateX(100%);
-        }
-
-        #mobileMenu.active {
-            transform: translateX(0%);
-        }
-    </style>
 </head>
 
 <body class="">
+
+
+
     <section>
         <div
             class="z-10 shadow-lg mx-auto md:mx-6 lg:mx-24 mt-6 py-3 px-4 md:py-5 md:px-6 rounded-full flex justify-between items-center fixed top-0 right-0 left-0 bg-white">
@@ -101,7 +98,7 @@
                             <a href="{{ route('policy.amt') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Anti-Money
                                 Laundering</a>
-                            <a href="{{ route('policy.enduser') }}" target="_blank"
+                            <a href="{{ route('policy.enduser') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">End
                                 User Agreement</a>
                         </div>
@@ -113,52 +110,17 @@
                     Loan</a>
             </div>
 
+
             {{-- Open Mobile Menu Button --}}
-            <div id="mobileMenuButton" class="cursor-pointer block lg:hidden" onclick="toggleMobileMenu()">
+            <div class="cursor-pointer block lg:hidden">
                 <i class="fa-solid fa-bars text-3xl"></i>
             </div>
 
+
             {{-- Close Mobile Menu Button --}}
-            <div id="closeMobileMenuButton" class="cursor-pointer block lg:hidden hidden" onclick="toggleMobileMenu()">
+            <div class="cursor-pointer block lg:hidden">
                 <i class="fa-regular fa-circle-xmark text-3xl"></i>
             </div>
-        </div>
 
-        {{-- Mobile Menu --}}
-        <div id="mobileMenu" class="fixed top-0 right-0 w-2/3 h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-20">
-            <div class="flex justify-between p-4">
-                <h2 class="text-xl font-bold">Menu</h2>
-                <div id="closeMobileMenuButtonInMenu" class="cursor-pointer" onclick="toggleMobileMenu()">
-                    <i class="fa-regular fa-circle-xmark text-2xl"></i>
-                </div>
-            </div>
-            <div class="p-4">
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('home') }}">Home</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('about') }}">About Us</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('team') }}">Team</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('loan') }}">Loan</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('savings') }}">Savings</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('deposit') }}">Deposit</a>
-            </div>
         </div>
     </section>
-
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileMenuButton = document.getElementById('mobileMenuButton');
-            const closeMobileMenuButton = document.getElementById('closeMobileMenuButton');
-            const closeMobileMenuButtonInMenu = document.getElementById('closeMobileMenuButtonInMenu');
-
-            // Toggle the mobile menu's active state
-            mobileMenu.classList.toggle('active');
-            const isActive = mobileMenu.classList.contains('active');
-
-            // Show/Hide buttons based on menu state
-            mobileMenuButton.classList.toggle('hidden', isActive);
-            closeMobileMenuButton.classList.toggle('hidden', !isActive);
-        }
-    </script>
-</body>
-
-</html>

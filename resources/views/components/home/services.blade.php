@@ -188,7 +188,7 @@
 
 
 
-   <section class="bg-[#f5f5f5]">
+   <section class="bg-whiteBg">
        <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
            <div class="">
                <h1 class="text-center font-semibold text-2xl mb-8">Our Services</h1>

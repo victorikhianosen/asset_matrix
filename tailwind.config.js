@@ -22,13 +22,16 @@ export default {
                 hoverBlack: "#3d3d3d",
                 lightBlack: "#4d4d4d",
                 lightBg: "#fdfdfd",
+                whiteBg: "#f5f5f5",
                 purple: "#7e22ce",
                 yellow: "#facc15",
                 lightYellow: "#fef3c7",
+                lightBlue: "#e6cefe",
             },
             fontFamily: {
                 sans: ["Roboto", "sans-serif"],
             },
+
             keyframes: {
                 slideUp: {
                     "0%": { transform: "translateY(100%)", opacity: "0" },
@@ -43,6 +46,7 @@ export default {
                 slideUp: "slideUp 1s ease-in-out",
                 slideDown: "slideDown 1s ease-in-out",
             },
+          
         },
     },
     plugins: [],

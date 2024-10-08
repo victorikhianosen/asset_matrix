@@ -1,5 +1,5 @@
 
-    <section class="bg-[#123d5c]">
+    <section class="bg-white">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
             <div class=" space-y-6">
 
@@ -7,11 +7,11 @@
 
                     <div class="space-y-8">
                         <h2 class="text-3xl md:text-5xl text-white font-semibold"> <span
-                                class="text-primary">Safeguarding</span> Your Financial Interests
+                                class="text-black">Safeguarding</span> Your Financial Interests
                         </h2>
 
                         <div class="space-y-4">
-                            <p class="text-xs md:text-sm tracking-wider text-[#b3b3b3]">
+                            <p class="text-xs md:text-sm tracking-wider text-black">
                                 At AssetMatrix Microfinance Bank, we prioritize your financial security and peace of
                                 mind.
                                 Our operations are fully regulated by the Central Bank of Nigeria (CBN), ensuring that
@@ -23,7 +23,7 @@
                                 highest
                                 national standards.
                             </p>
-                            <p class="text-xs md:text-sm tracking-wider text-[#b3b3b3]">
+                            <p class="text-xs md:text-sm tracking-wider text-black">
                                 With the backing of these esteemed institutions, you can confidently bank with us
                                 knowing
                                 your financial well-being is our top priority. We are committed to maintaining the

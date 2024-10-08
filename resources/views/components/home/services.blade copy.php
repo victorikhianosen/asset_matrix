@@ -199,7 +199,7 @@
                    {{-- First --}}
                    <div class="bg-lightYellow col-span-1 row-span-3 rounded-2xl shadow-sm">
                        <div class="px-6 py-16">
-                           <h2 class="text-3xl text-black font-semibold tracking-wider">Create and <br> schudele content
+                           <h2 class="text-3xl text-black font-semibold tracking-wider">Internet <br> schudele content
                                <span class="text-purple italic">quicker.</span>
                            </h2>
 
@@ -245,7 +245,7 @@
 
 
                    {{-- Third --}}
-                   <div class="bg-[#e6cefe] col-span-1 row-span-4 rounded-2xl shadow-sm">
+                   <div class="bg-lightBlue col-span-1 row-span-4 rounded-2xl shadow-sm">
 
                        <div class="py-12 space-y-4">
 

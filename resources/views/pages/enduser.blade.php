@@ -31,8 +31,6 @@
                             </span>
                             End User License Agreement (EULA)
 
-
-
                         </h4>
 
                         <div class="space-y-5">
