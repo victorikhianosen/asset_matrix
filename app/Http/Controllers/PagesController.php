@@ -59,4 +59,8 @@ class PagesController extends Controller
         ');
     }
 
+    public function internet(){
+        return view('pages.internet');
+    }
+
 }

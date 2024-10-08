@@ -132,20 +132,19 @@
 
 
                 <div class="col-span-2 md:col-span-1 lg:col-span-2">
-                    <div class="grid grid-cols-2 justify-center items-center gap-6 w-full lg:w-9/12">
+                    <h4 class="text-lg text-white font-semibold pb-6">Download app</h4>
 
-                        <div class="bg-white rounded-full px-4 py-2">
+                    <div class="grid grid-cols-2 justify-center items-center gap-6 w-full">
+                        <div class="bg-white rounded-full py-2">
                             <a href="">
                                 <div class="flex justify-center items-center">
                                     <div>
-                                        <i
-                                            class="fa-brands fa-apple text-white group-hover:text-black text-md md:text-lg"></i>
-
+                                        <i class="fa-brands fa-apple text-2xl mr-2"></i>
                                     </div>
                                     <div>
                                         <p
-                                            class="text-[6px] md:text-[12px] text-whiteText group-hover:text-black font-light tracking-wide">
-                                            Downloadon on</p>
+                                            class="text-[4px] md:text-[12px] text-whiteText group-hover:text-black font-light tracking-wide">
+                                            Download on</p>
                                         <h4 class="group-hover:text-black text-sm md:text-md">App Store</h4>
                                     </div>
 
@@ -153,41 +152,22 @@
                             </a>
                         </div>
 
-                        {{-- <span>
+                        <div class="bg-white rounded-full py-2">
                             <a href="">
-                                <div
-                                    class="group flex justify-center border-2 border-black items-center gap-2 bg-black py-2
-                                     px-2 rounded-full text-white hover:bg-white">
+                                <div class="flex justify-center items-center">
                                     <div>
-                                        <i class="fa-brands fa-apple text-white group-hover:text-black text-md md:text-2xl"></i>
+                                        <i class="fa-brands fa-google-play text-2xl mr-2"></i>
                                     </div>
                                     <div>
                                         <p
-                                            class="text-[10px] md:text-[12px] text-whiteText group-hover:text-black font-light tracking-wide">
-                                            Downloadon on the</p>
-                                        <h4 class="group-hover:text-black text-sm md:text-lg">App Store</h4>
+                                            class="text-[4px] md:text-[12px] text-whiteText group-hover:text-black font-light tracking-wide">
+                                            Download on</p>
+                                        <h4 class="group-hover:text-black text-sm md:text-md">Google Play</h4>
                                     </div>
-                                </div>
-                            </a>
-                        </span> --}}
 
-                        {{-- <span>
-                            <a href="">
-                                <div
-                                    class="group flex justify-center items-center gap-2 border-2 border-black
-                                      bg-white py-2 px-2 rounded-full text-white hover:bg-black">
-                                    <div>
-                                        <i class="fa-brands fa-google-play text-black text-md group-hover:text-white md:text-2xl"></i>
-                                    </div>
-                                    <div>
-                                        <p
-                                            class="text-[10px] md:text-[12px] text-[#1a1a1a] group-hover:text-white font-light tracking-wide">
-                                            Downloadon on the</p>
-                                        <h4 class="text-black group-hover:text-white text-sm md:text-lg">Google Play</h4>
-                                    </div>
                                 </div>
                             </a>
-                        </span> --}}
+                        </div>
 
                     </div>
                 </div>

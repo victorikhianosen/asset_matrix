@@ -14,3 +14,4 @@ Route::get('policy/data', [PagesController::class, 'dataPolicy'])->name('policy.
 Route::get('policy/mobile', [PagesController::class, 'mobilePolicy'])->name('policy.mobile');
 Route::get('policy/amt', [PagesController::class, 'amt'])->name('policy.amt');
 Route::get('policy/enduser', [PagesController::class, 'enduser'])->name('policy.enduser');
+Route::get('internet', [PagesController::class, 'internet'])->name('internet');

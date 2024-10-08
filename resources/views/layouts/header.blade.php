@@ -19,6 +19,10 @@
     <script src="https://kit.fontawesome.com/22ded73695.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Asset Matrix</title>
 
     <style>
@@ -69,12 +73,15 @@
                     <div id="businessDropDown"
                         class="absolute right-0 z-10 mt-6 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
                         <div class="py-6">
+
+                            <a href="{{ route('internet') }}"
+                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Internet</a>
                             <a href="{{ route('loan') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Loan</a>
                             <a href="{{ route('savings') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Savings</a>
-                            <a href="{{ route('deposit') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Deposit</a>
+                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Savings Investment</a>
+                            {{-- <a href="{{ route('deposit') }}"
+                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Deposit</a> --}}
                         </div>
                     </div>
                 </div>
