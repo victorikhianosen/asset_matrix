@@ -1,4 +1,4 @@
-    <section class="bg-[#252525]">
+    {{-- <section class="bg-[#252525]">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24 text-white">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="space-y-6">
@@ -67,10 +67,140 @@
                 </div>
             </div>
         </div>
-    </section>    
-    
-    
-    
+    </section>     --}}
+
+
+
+
+
+    <section class="bg-[#252525]">
+
+        <div class="py-10 px-6 md:py-24 md:px-12">
+            <div class="grid grid-cols-2 gap-4 md:gap-6 lg:grid-cols-7">
+                <div class="col-span-2">
+                    <div class="space-y-6">
+                        <span>
+                            <img src="{{ asset('asset/images/logo.png') }}" alt="">
+                        </span>
+                        <div class="flex justify-center items-center gap-2">
+                            <p class="text-xs md:text-sm tracking-wider text-blackText">
+                                AssetMatrix Microfinance Bank Limited is authorised and regulated by the Central
+                                Bank of
+                                Nigeria to offer banking services. Deposits are insured by the Nigerian Deposit
+                                Insurance
+                                Corporation (NDIC).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="">
+                    <h4 class="text-lg text-white font-semibold">Business</h4>
+                    <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                        <p><a href="#" class="hover:text-white">About</a></p>
+                        <p><a href="#" class="hover:text-white">FAQ</a></p>
+                        <p><a href="#" class="hover:text-white">Open Account</a></p>
+                        <p><a href="#" class="hover:text-white">Loan</a></p>
+                    </div>
+                </div>
+
+
+                <div class="">
+                    <h4 class="text-lg text-white font-semibold">Services</h4>
+                    <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                        <p><a href="#" class="hover:text-white">About</a></p>
+                        <p><a href="#" class="hover:text-white">FAQ</a></p>
+                        <p><a href="#" class="hover:text-white">Open Account</a></p>
+                        <p><a href="#" class="hover:text-white">Loan</a></p>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="text-lg text-white font-semibold">Contact</h4>
+                    <div class="flex items-center gap-2 flex-wrap">
+
+                        <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
+                            68 Herbert Macaulay Street <br>
+                            Ebute Metta, Adekunle <br>
+                            Lagos 101245, Lagos
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-span-2 md:col-span-1 lg:col-span-2">
+                    <div class="grid grid-cols-2 justify-center items-center gap-6 w-full lg:w-9/12">
+
+                        <div class="bg-white rounded-full px-4 py-2">
+                            <a href="">
+                                <div class="flex justify-center items-center">
+                                    <div>
+                                        <i
+                                            class="fa-brands fa-apple text-white group-hover:text-black text-md md:text-lg"></i>
+
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="text-[6px] md:text-[12px] text-whiteText group-hover:text-black font-light tracking-wide">
+                                            Downloadon on</p>
+                                        <h4 class="group-hover:text-black text-sm md:text-md">App Store</h4>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        {{-- <span>
+                            <a href="">
+                                <div
+                                    class="group flex justify-center border-2 border-black items-center gap-2 bg-black py-2
+                                     px-2 rounded-full text-white hover:bg-white">
+                                    <div>
+                                        <i class="fa-brands fa-apple text-white group-hover:text-black text-md md:text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="text-[10px] md:text-[12px] text-whiteText group-hover:text-black font-light tracking-wide">
+                                            Downloadon on the</p>
+                                        <h4 class="group-hover:text-black text-sm md:text-lg">App Store</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </span> --}}
+
+                        {{-- <span>
+                            <a href="">
+                                <div
+                                    class="group flex justify-center items-center gap-2 border-2 border-black
+                                      bg-white py-2 px-2 rounded-full text-white hover:bg-black">
+                                    <div>
+                                        <i class="fa-brands fa-google-play text-black text-md group-hover:text-white md:text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="text-[10px] md:text-[12px] text-[#1a1a1a] group-hover:text-white font-light tracking-wide">
+                                            Downloadon on the</p>
+                                        <h4 class="text-black group-hover:text-white text-sm md:text-lg">Google Play</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </span> --}}
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
     {{-- <section class="bg-yellow-700">
         <div class="mx-6 md:mx-8 lg:mx-24">
             <div class="">
@@ -167,6 +297,6 @@
     <script src="{{ asset('asset/js/swiper.js') }}"></script>
     <script src="{{ asset('asset/js/index.js') }}"></script>
 
-</body>
+    </body>
 
-</html>
+    </html>

@@ -35,8 +35,6 @@ window.onclick = function (event) {
     }
 };
 
-
-
 // JavaScript for Accordion
 const policyButtons = [
     document.getElementById("policyMobile3"),
@@ -106,3 +104,30 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element);
     });
 });
+
+// Savings
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll("[data-animation]");
+    const windowHeight = window.innerHeight;
+
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+
+        // Check if the user has scrolled down a specific amount
+        if (scrollY > 50) {
+            // Change this value to adjust when the animation should trigger
+            cards.forEach((card) => {
+                // Add Tailwind classes for animation
+                card.classList.add("animate-slideUp"); // Use your defined animation
+            });
+            window.removeEventListener("scroll", handleScroll); // Remove the event listener after animation
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Run on page load to animate any cards already in view
+});
+
+
+

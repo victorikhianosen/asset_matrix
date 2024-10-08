@@ -37,7 +37,9 @@
     <section>
         <div
             class="z-10 shadow-lg mx-auto md:mx-6 lg:mx-24 mt-6 py-3 px-4 md:py-5 md:px-6 rounded-full flex justify-between items-center fixed top-0 right-0 left-0 bg-white">
-            <img class="w-32 md:w-40" src="{{ asset('asset/images/logo.png') }}" alt="">
+            <a href="{{ route('home') }}">
+                <img class="w-32 md:w-40" src="{{ asset('asset/images/logo.png') }}" alt="">
+            </a>
             <div class="space-x-6 hidden lg:block">
                 <a class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
                     href="{{ route('home') }}">Home</a>
@@ -125,20 +127,26 @@
         </div>
 
         {{-- Mobile Menu --}}
-        <div id="mobileMenu" class="fixed top-0 right-0 w-2/3 h-full bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-20">
-            <div class="flex justify-between p-4">
-                <h2 class="text-xl font-bold">Menu</h2>
+        <div id="mobileMenu"
+            class="fixed top-0 right-0 w-2/3 h-full bg-white rounded-bl-2xl shadow-lg transform transition-transform duration-300 ease-in-out z-20">
+            <div class="flex justify-end items-end p-4">
                 <div id="closeMobileMenuButtonInMenu" class="cursor-pointer" onclick="toggleMobileMenu()">
-                    <i class="fa-regular fa-circle-xmark text-2xl"></i>
+                    <i class="fa-regular fa-circle-xmark text-4xl text-primary"></i>
                 </div>
             </div>
-            <div class="p-4">
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('home') }}">Home</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('about') }}">About Us</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('team') }}">Team</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('loan') }}">Loan</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('savings') }}">Savings</a>
-                <a class="block text-lightBlack font-medium text-md hover:text-black transition-all duration-150" href="{{ route('deposit') }}">Deposit</a>
+            <div class="px-6 space-y-8 py-4">
+                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
+                    href="{{ route('home') }}">Home</a>
+                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
+                    href="{{ route('about') }}">About Us</a>
+                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
+                    href="{{ route('team') }}">Team</a>
+                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
+                    href="{{ route('loan') }}">Loan</a>
+                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
+                    href="{{ route('savings') }}">Savings</a>
+                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
+                    href="{{ route('deposit') }}">Deposit</a>
             </div>
         </div>
     </section>
@@ -150,11 +158,9 @@
             const closeMobileMenuButton = document.getElementById('closeMobileMenuButton');
             const closeMobileMenuButtonInMenu = document.getElementById('closeMobileMenuButtonInMenu');
 
-            // Toggle the mobile menu's active state
             mobileMenu.classList.toggle('active');
             const isActive = mobileMenu.classList.contains('active');
 
-            // Show/Hide buttons based on menu state
             mobileMenuButton.classList.toggle('hidden', isActive);
             closeMobileMenuButton.classList.toggle('hidden', !isActive);
         }

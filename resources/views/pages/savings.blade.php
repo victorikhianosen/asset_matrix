@@ -65,14 +65,12 @@
 
 
 
-
-
-
     <section class="bg-white">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-10 lg:py-24">
-            <div class="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-3 gap-6" id="loan-cards">
+            <div class="grid grids-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="loan-cards">
 
-                <div class="col-span-2 group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-primary text-center rounded-md"
+                {{-- First --}}
+                <div class="col-span-2 md:grid-cols-2 md:col-span-2 group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-primary text-center rounded-md"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-piggy-bank text-5xl pb-4"></i>
@@ -86,7 +84,10 @@
                     </div>
                 </div>
 
-                <div class="group text-black cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-yellow text-center rounded-md"
+
+
+                {{-- Second --}}
+                <div class=" col-span-2 lg:col-span-1    text-black cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-yellow text-center rounded-md"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-comments dollar-sign text-5xl pb-4"></i>
@@ -99,7 +100,8 @@
                     </div>
                 </div>
 
-                <div class="group cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-lightYellow text-center rounded-md"
+                {{-- Third --}}
+                <div class="col-span-2 lg:col-span-1 group cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-lightYellow text-center rounded-md"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-briefcase text-5xl pb-4"></i>
@@ -112,7 +114,8 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 group text-black cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-lightBlue text-center rounded-md"
+                {{-- Fourth --}}
+                <div class="col-span-2  lg:col-span-2 group text-black cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-lightBlue text-center rounded-md"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-heart text-5xl pb-4"></i>
@@ -127,20 +130,22 @@
 
 
 
-                <div class="col-span-2 group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-purple text-center rounded-md"
+                {{-- Five --}}
+                <div class="col-span-2 lg:col-span-2 group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-purple text-center rounded-md"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-heart text-5xl pb-4"></i>
                     </span>
-                    <h4 class="font-semibold text-4xl my-4">Corporate Savings</h4>
-                    <div class="space-y-1 text-white mb-8">
+                    <h4 class="font-semibold text-4xl my-4">Business</h4>
+                    <div class="space-y-1 mb-8">
                         <p class="text-base tracking-wide">
                             Make a difference with our Charity Loan designed for nonprofit organizations.
                         </p>
                     </div>
                 </div>
 
-                <div class="group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-[#06b6d4] text-center rounded-md"
+                {{-- Six --}}
+                <div class="col-span-2 lg:col-span-1 group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-[#06b6d4] text-center rounded-md"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-heart text-5xl pb-4"></i>
@@ -152,37 +157,9 @@
                         </p>
                     </div>
                 </div>
+
             </div>
-        </div>
     </section>
 
 
-
-
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cards = document.querySelectorAll('[data-animation]');
-            const windowHeight = window.innerHeight;
-
-            const handleScroll = () => {
-                const scrollY = window.scrollY;
-
-                // Check if the user has scrolled down a specific amount
-                if (scrollY > 50) { // Change this value to adjust when the animation should trigger
-                    cards.forEach(card => {
-                        // Add Tailwind classes for animation
-                        card.classList.add('animate-slideUp'); // Use your defined animation
-                    });
-                    window.removeEventListener('scroll',
-                        handleScroll); // Remove the event listener after animation
-                }
-            };
-
-            window.addEventListener('scroll', handleScroll);
-            handleScroll(); // Run on page load to animate any cards already in view
-        });
-    </script>
 @endsection
