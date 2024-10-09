@@ -96,7 +96,7 @@
 
 
 
-                <div class="">
+                <div class="space-y-2 md:space-y-4">
                     <h4 class="text-lg text-white font-semibold">Business</h4>
                     <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
                         <p><a href="#" class="hover:text-white">About</a></p>
@@ -107,7 +107,7 @@
                 </div>
 
 
-                <div class="">
+                <div class="space-y-2 md:space-y-4">
                     <h4 class="text-lg text-white font-semibold">Services</h4>
                     <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
                         <p><a href="#" class="hover:text-white">About</a></p>
@@ -116,7 +116,7 @@
                         <p><a href="#" class="hover:text-white">Loan</a></p>
                     </div>
                 </div>
-                <div class="">
+                <div class="space-y-2 md:space-y-4">
                     <h4 class="text-lg text-white font-semibold">Contact</h4>
                     <div class="flex items-center gap-2 flex-wrap">
 

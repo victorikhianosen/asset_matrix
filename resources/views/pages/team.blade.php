@@ -36,8 +36,8 @@
                         </div>
 
                         <div class="mt-6">
-                            <h4 class="text-gray-800 text-lg font-bold">John Doe</h4>
-                            <p class="text-sm text-gray-600 mt-1">CEO</p>
+                            <h4 class="text-gray-800 text-lg font-bold">Tope Oduseso</h4>
+                            <p class="text-sm text-gray-600 mt-1">Chairman / GM</p>
 
                             <div class="space-x-4 mt-6">
                                 <button type="button"

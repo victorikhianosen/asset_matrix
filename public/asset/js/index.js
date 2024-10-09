@@ -129,5 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
     handleScroll(); // Run on page load to animate any cards already in view
 });
 
+// CUSTOMER
 
-
+const satisfiedCustomer = document.getElementById("satisfiedCustomer");
+const clientRating = document.getElementById("satisfiedCustomer");
+const appDownloads = document.getElementById("satisfiedCustomer");

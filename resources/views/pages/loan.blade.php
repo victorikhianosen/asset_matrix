@@ -65,86 +65,10 @@
 
 
 
-
-
-
-    {{-- 
-
-    <section class="bg-whiteBg">
-        <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-10 lg:py-24">
-            <div class="">
-                <!-- Use a grid layout similar to the first section -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
-                    <!-- Slide 1 -->
-                    <div
-                        class="group cursor-pointer shadow-xl h-80 p-6 border-2 border-gray-100 bg-white text-center rounded-md">
-                        <span>
-                            <i class="fa-solid fa-piggy-bank text-5xl pb-4"></i>
-                        </span>
-                        <h4 class="font-semibold text-4xl my-4">Esusu Loan</h4>
-                        <div class="space-y-1 text-black mb-8">
-                            <p class="text-base tracking-wide">
-                                Our Esusu Loan provides quick, easy funding for micro-businesses and entrepreneurs,
-                                with no hidden fees or charges.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div
-                        class="group cursor-pointer shadow-xl h-80 p-6 border-2 border-black bg-black text-center rounded-md text-white">
-                        <span>
-                            <i class="fa-solid fa-business-time text-5xl pb-4"></i>
-                        </span>
-                        <h4 class="font-semibold text-4xl my-4">Business Loan</h4>
-                        <div class="space-y-1 text-black mb-8">
-                            <p class="text-white text-base tracking-wide">
-                                Our Business Loan provides fast, transparent access to funds for entrepreneurs and
-                                SMEs, helping your business grow efficiently.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div
-                        class="group cursor-pointer shadow-xl h-80 p-6 border-2 border-gray-100 bg-white text-center rounded-md">
-                        <span>
-                            <i class="fa-solid fa-truck-fast text-5xl pb-4"></i>
-                        </span>
-                        <h4 class="font-semibold text-4xl my-4">Instant Cash Loan</h4>
-                        <div class="space-y-1 text-black mb-8">
-                            <p>
-                                Get urgent funds in 24 hours with our Instant Cash Loan—apply online and receive
-                                your money quickly after approval.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div
-                        class="group cursor-pointer shadow-xl h-80 p-6 border-2 border-black bg-black text-center rounded-md text-white">
-                        <span>
-                            <i class="fa-solid fa-helmet-safety text-5xl pb-4"></i>
-                        </span>
-                        <h4 class="font-semibold text-4xl my-4">Salary Advance</h4>
-                        <div class="space-y-1 text-black mb-8">
-                            <p class="text-white text-base tracking-wide">
-                                Access quick cash within 24 hours with our Salary Advance, tailored for salaried
-                                individuals to meet urgent needs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
-
     <section class="bg-white">
         <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-10 lg:py-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6" id="loan-cards">
-                <div class="group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-primary text-center rounded-md"
+                <div class="group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-primary text-center rounded-2xl"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-piggy-bank text-5xl pb-4"></i>
@@ -158,10 +82,10 @@
                     </div>
                 </div>
 
-                <div class="group text-black cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-yellow text-center rounded-md"
+                <div class="group text-black cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-[#c0cad0] text-center rounded-2xl"
                     data-animation>
                     <span>
-                        <i class="fa-solid fa-comments dollar-sign text-5xl pb-4"></i>
+                        <i class="fa-solid fa-truck-fast text-5xl pb-4"></i>
                     </span>
                     <h4 class="font-semibold text-4xl my-4">Quick Loan</h4>
                     <div class="space-y-1 mb-8">
@@ -171,7 +95,7 @@
                     </div>
                 </div>
 
-                <div class="group cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-lightYellow text-center rounded-md"
+                <div class="group black cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-white text-center rounded-2xl"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-briefcase text-5xl pb-4"></i>
@@ -184,10 +108,10 @@
                     </div>
                 </div>
 
-                <div class="group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-purple text-center rounded-md"
+                <div class="group text-white cursor-pointer shadow-xl h-80 p-6 border-2 border-white bg-purple text-center rounded-2xl"
                     data-animation>
                     <span>
-                        <i class="fa-solid fa-heart text-5xl pb-4"></i>
+                        <i class="fa-solid fa-hand-holding-heart text-5xl pb-4"></i>
                     </span>
                     <h4 class="font-semibold text-4xl my-4">Charity Loan</h4>
                     <div class="space-y-1 text-white mb-8">

@@ -20,11 +20,11 @@
                                     Savings Products
 
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">
+                                {{-- <p class="text-[#333333] font-light text-sm md:text-md">
                                     Introducing Matrix Savings, a revolutionary saving solution designed to help you achieve
                                     your financial goals effortlessly. With our Matrix Savings plan, you can choose from a
                                     variety of saving frequencies tailored to your preferences:
-                                </p>
+                                </p> --}}
 
                             </div>
 
@@ -127,6 +127,7 @@
                 <div class="col-xl-5 content px-6 lg:px-0">
 
 
+                    <img src="{{ asset('asset/images/investment.png') }}" alt="">
                     <h2 class="font-bold text-2xl md:text-4xl mt-4">
                         Experience Instant Banking at Your Fingertips
 
@@ -143,7 +144,7 @@
 
 
                     </p>
-                  
+
                     <div class="mt-12">
                         <a href="{{ url('https://cashmatrix.app/') }}" target="_blank"
                             class="bg-primary py-3 px-6 text-white border-2 border-primary hover:bg-white hover:text-primary rounded-full transition-all duration-300">
@@ -165,12 +166,12 @@
 
                 {{-- First --}}
                 <div class="col-span-2 md:grid-cols-2 md:col-span-2 group text-white cursor-pointer 
-                shadow-xl h-80 p-6 border-2 border-white bg-primary text-center rounded-md hover:scale-y-105 transition-all duration-200"
+                shadow-xl h-80 p-6 border-2 border-white bg-primary text-center rounded-2xl hover:scale-y-105 transition-all duration-200"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-piggy-bank text-5xl pb-4"></i>
                     </span>
-                    <h4 class="font-semibold text-4xl my-4">Esusu Saving</h4>
+                    <h4 class="font-semibold text-4xl my-4">Esusu Savings</h4>
                     <div class="space-y-1 mb-8">
                         <p class="text-base tracking-wide">
                             Our Esusu Loan provides quick, easy funding for micro-businesses and entrepreneurs,
@@ -183,7 +184,7 @@
 
                 {{-- Second --}}
                 <div class=" col-span-2 lg:col-span-1 text-white cursor-pointer 
-                shadow-xl h-80 p-6 border-2 border-white bg-black text-center rounded-md hover:scale-y-105 duration-200"
+                shadow-xl h-80 p-6 border-2 border-white bg-black text-center rounded-2xl hover:scale-y-105 transition-all duration-200"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-bullseye  dollar-sign text-5xl pb-4"></i>
@@ -198,37 +199,26 @@
 
                 {{-- Third --}}
                 <div class="col-span-2 lg:col-span-1 group cursor-pointer shadow-xl 
-                h-80 p-6 border-2 border-white bg-lightYellow text-center rounded-md hover:scale-y-105 duration-200"
+                h-80 p-6 border-2 text-white border-white bg-purple text-center rounded-2xl hover:scale-y-105 duration-200"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-user-group text-5xl pb-4"></i>
                     </span>
-                    <h4 class="font-semibold text-4xl my-4">Saving Club</h4>
+                    <h4 class="font-semibold text-4xl my-4">Savings Club</h4>
                     <div class="space-y-1 mb-8">
                         <p class="text-base tracking-wide">
-                            Secure financing to grow your business with our tailored Business Loan options.
+
+                            Students can invest in a savings club account with higher returns than savings accounts.
+
+
                         </p>
                     </div>
                 </div>
 
                 {{-- Fourth --}}
-                <div class="col-span-2  lg:col-span-1 group text-black cursor-pointer 
-                shadow-xl h-80 p-6 border-2 border-white bg-lightBlue text-center rounded-md hover:scale-y-105 duration-200"
-                    data-animation>
-                    <span>
-                        <i class="fa-solid fa-briefcase text-5xl pb-4"></i>
-                    </span>
-                    <h4 class="font-semibold text-4xl my-4">Business Saving</h4>
-                    <div class="space-y-1 mb-8">
-                        <p class="text-base tracking-wide">
-                            Make a difference with our Charity Loan designed for nonprofit organizations.
-                        </p>
-                    </div>
-                </div>
-
 
                 <div class="col-span-2 lg:col-span-1 group text-black cursor-pointer 
-                shadow-xl h-80 p-6 border-2 border-white bg-white text-center rounded-md hover:scale-y-105 duration-200"
+                shadow-xl h-80 p-6 border-2 border-white bg-white text-center rounded-2xl hover:scale-y-105 duration-200"
                     data-animation>
                     <span>
                         <i class="fa-solid fa-user text-5xl pb-4"></i>
@@ -236,16 +226,32 @@
                     <h4 class="font-semibold text-4xl my-4">Personal Savings</h4>
                     <div class="space-y-1 mb-8">
                         <p class="text-base tracking-wide">
-                            Make a difference with our Charity Loan designed for nonprofit organizations.
+                            Our personal savings account encourages a strong savings habit for financial growth.
+
                         </p>
                     </div>
                 </div>
 
 
+
+                <div class="col-span-2  lg:col-span-1 group cursor-pointer 
+                shadow-xl h-80 p-6 border-2 text-black border-white bg-[#FEF3C7] text-center rounded-2xl hover:scale-y-105 duration-200"
+                    data-animation>
+                    <span>
+                        <i class="fa-solid fa-briefcase text-5xl pb-4"></i>
+                    </span>
+                    <h4 class="font-semibold text-4xl my-4">Business Savings</h4>
+                    <div class="space-y-1 mb-8">
+                        <p class="text-base tracking-wide">
+                            Secure financing to grow your business with our tailored Business Loan options.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
     </section>
-
-
-
-
 @endsection

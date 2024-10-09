@@ -3,7 +3,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center">
 
                 <div class="space-y-4 md:space-y-8">
-                    <h1 class="text-3xl md:text-5xl leading-0 md:leading-loose text-white font-semibold">
+                    <h1 class="text-3xl md:text-5xl leading-0 text-white font-semibold">
                         Explore Our Flexible Loan Products for Every Need
                     </h1>
                     <p class="text-xs md:text-sm tracking-wider text-white">We make access to loans simple and

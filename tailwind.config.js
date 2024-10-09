@@ -23,7 +23,7 @@ export default {
                 lightBlack: "#4d4d4d",
                 lightBg: "#fdfdfd",
                 whiteBg: "#f5f5f5",
-                purple: "#7e22ce",
+                purple: "#163b50",
                 yellow: "#facc15",
                 lightYellow: "#fef3c7",
                 lightBlue: "#e6cefe",
@@ -46,7 +46,6 @@ export default {
                 slideUp: "slideUp 1s ease-in-out",
                 slideDown: "slideDown 1s ease-in-out",
             },
-          
         },
     },
     plugins: [],

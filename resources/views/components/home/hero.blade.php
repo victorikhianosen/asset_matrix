@@ -1,5 +1,5 @@
     <section class="bg-whiteBg">
-        <div class="mx-6 md:mx-8 lg:mx-24 pb-10 pt-28 md:pb-24 md:pt-44">
+        <div class="mx-6 md:mx-8 lg:mx-24 pb-6 pt-28 md:pb-24 md:pt-38">
 
             <div class="swiper mySwiperHero">
 
@@ -33,7 +33,7 @@
                             </div>
 
                             <div>
-                                <img class="" src="{{ asset('asset/images/hero3.png') }}" alt="">
+                                <img class="w-11/12	h-11/12" src="{{ asset('asset/images/mock.png') }}" alt="">
                             </div>
                         </div>
                     </div>

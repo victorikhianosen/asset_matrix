@@ -24,7 +24,7 @@
 
                     <!-- Second animated div (scroll-triggered) -->
                     <div id=""
-                        class="flex justify-center items-center gap-x-2 bg-yellow text-white p-4 md:p-6 rounded-full w-full md:w-9/12 transition-opacity duration-500">
+                        class="flex text-white justify-center items-center gap-x-2 bg-[#426172] p-4 md:p-6 rounded-full w-full md:w-9/12 transition-opacity duration-500">
                         <div class="w-8 h-8 md:w-24 md:h-24">
                             <img class="rounded-full" src="{{ asset('asset/images/customer1.jpg') }}" alt="">
                         </div>
@@ -70,20 +70,25 @@
                     </p>
 
                     <div class="flex justify-between items-center">
-                        <div>
+                        <div id="satisfiedCustomer">
                             <span class="text-lg md:text-4xl font-bold">200K+</span>
                             <h2 class="text-xs text-black font-noraml md:text-sm">Satisfied Customers</h2>
                         </div>
-                        <div>
+                        <div id="clientRating">
                             <span class="text-lg md:text-4xl font-bold">200K+</span>
                             <h2 class="text-xs text-black font-noraml md:text-sm">Clients Rating</h2>
                         </div>
-                        <div>
+                        <div class="appDownloads">
                             <span class="text-lg md:text-4xl font-bold">200K+</span>
                             <h2 class="text-xs text-black font-noraml md:text-sm">App Download</h2>
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
         </div>
     </section>
+
+
+

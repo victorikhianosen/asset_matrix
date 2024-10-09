@@ -18,7 +18,7 @@
     <section class="relative bg-white">
         <!-- Purple background with curve effect -->
         <!-- Apply the clip-path only for medium screens (md) and above -->
-        <div class="absolute inset-0 w-full h-full bg-lightBlue md:w-1/2 md:clip-path-diagonal"></div>
+        <div class="absolute inset-0 w-full h-full bg-[#eceff1] md:w-1/2 md:clip-path-diagonal"></div>
 
         <!-- Content Area -->
         <div class="relative z-2 mx-6 md:mx-8 lg:mx-24 py-10 md:py-16">
@@ -65,12 +65,14 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
 
                     <div
-                        class="group cursor-pointer shadow-xl p-6 border-2 border-purple bg-purple text-center rounded-md hover:border-primary transition-all duration-200 text-white">
+                        class="group cursor-pointer shadow-xl p-6 border-2
+                         bg-primary text-center rounded-2xl hover:scale-y-105 transition-all duration-200
+                          text-black">
                         <span>
                             <i class="fa-solid fa-wifi text-5xl pb-4"></i>
                         </span>
                         <h4 class="font-semibold text-2xl my-4">Vision</h4>
-                        <div class="space-y-1 text-white">
+                        <div class="space-y-1">
                             <p class="text-base tracking-wide">
                                 To be the market leader in the provision of microfinance and related financial services in
                                 Nigeria's sub-financial sector.
@@ -79,44 +81,43 @@
                     </div>
 
                     <div
-                        class="row-span-0 lg:row-span-2 group cursor-pointer shadow-xl p-6 border-2 border-lightBlue bg-lightBlue text-center rounded-md text-black hover:border-primary">
+                        class="row-span-0 lg:row-span-2 group cursor-pointer 
+                        shadow-xl p-6 border-2 bg-purple text-white text-center rounded-2xl
+                          hover:scale-y-105 transition-all duration-200">
                         <span>
                             <i class="fa-solid fa-circle-right text-5xl pb-4"></i>
                         </span>
-                        <h4 class="font-semibold text-2xl my-4 row-span-2">Mission</h4>
-                        <div class="space-y-1 text-black mb-8">
-                            <p class="text-black text-base tracking-wide">
-                                Our mission is to empower micro-entrepreneurs and low-income earners by providing accessible
-                                and tailored financial services that meet their unique needs. We achieve this through a
-                                dedicated team of passionate individuals committed to driving positive change in underserved
-                                communities. By leveraging advanced and innovative technology, we aim to create a seamless
-                                experience that facilitates financial growth and inclusion. We believe that everyone
-                                deserves the opportunity to thrive, and our services are designed to help individuals build
-                                a more secure financial future.
+                        <h4 class="font-semibold text-2xl my-4 row-span-2">Core Values</h4>
+                        <div class="space-y-1 mb-8">
+                            <p class="text-base tracking-wide">
+                                We prioritize high-quality services to ensure every client receives the best outcomes. Our
+                                maturity helps us navigate challenges with effective resolutions, while our positive
+                                attitude and diligence fuel our commitment to excellence. </p>
 
-                            </p>
+                            <p class=" hidden lg:block text-base tracking-wide">
+                                We embrace resilience when facing obstacles, understanding that challenges are opportunities
+                                for growth and innovation. Above all, we uphold trust and integrity in all our interactions,
+                                fostering strong relationships with clients and partners. By embodying these values, we aim
+                                to create a culture of excellence that inspires confidence and drives success.
 
-                            <p class="text-black hidden lg:block text-base tracking-wide">
-                                
-                                Through education, support, and resources, we help our clients navigate the complexities of
-                                financial management, enabling them to make informed decisions. Our approach fosters not
-                                only individual prosperity but also broader economic development within communities.
-                                Together, we can bridge the gap between financial institutions and those who need support
-                                the most, creating pathways to success for micro-entrepreneurs and low-income earners alike.
+
                             </p>
                         </div>
                     </div>
 
                     <div
-                        class="group cursor-pointer shadow-xl p-6 border-2 border-yellow bg-yellow text-center rounded-md hover:border-primary">
+                        class="group cursor-pointer shadow-xl p-6 border-2
+                         border-yellow bg-yellow text-center rounded-2xl hover:scale-y-105 transition-all duration-200">
                         <span>
                             <i class="fa-solid fa-coins text-5xl pb-4"></i>
                         </span>
-                        <h4 class="font-semibold text-2xl my-4">Core Values</h4>
+                        <h4 class="font-semibold text-2xl my-4">Mission</h4>
                         <div class="space-y-1 text-black mb-8">
                             <p>
-                                To be the market leader in the provision of microfinance and related financial services in
-                                Nigeria's sub-financial sector.
+                                Empowering micro-entrepreneurs with tailored financial services for growth, inclusion, and a
+                                secure financial future.
+
+
                             </p>
                         </div>
                     </div>
