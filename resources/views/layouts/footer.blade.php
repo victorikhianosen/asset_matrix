@@ -125,6 +125,14 @@
                             Ebute Metta, Adekunle <br>
                             Lagos 101245, Lagos
                         </p>
+
+                        <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2 hover:text-white">
+                            <a href="mailto:info@assetmatrixmfb.com" class="text-blackText hover:text-white">info@assetmatrixmfb.com</a>
+                        </p>
+                        <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2 hover:text-white">
+                            <a href="tel:+2348023049873" class="text-blackText hover:text-white">+234 (0) 80-2304-9873</a>
+                        </p>
+
                     </div>
                 </div>
 
@@ -135,7 +143,7 @@
                     <h4 class="text-lg text-white font-semibold pb-6">Download app</h4>
 
                     <div class="grid grid-cols-2 justify-center items-center gap-6 w-full">
-                        <div class="bg-white rounded-full py-2">
+                        <div class="bg-black border-2 text-white border-white rounded-full py-2">
                             <a href="">
                                 <div class="flex justify-center items-center">
                                     <div>

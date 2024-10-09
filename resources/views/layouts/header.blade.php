@@ -24,6 +24,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Asset Matrix</title>
+    <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
 
     <style>
         /* Additional custom styles for the mobile menu */
@@ -75,11 +76,11 @@
                         <div class="py-6">
 
                             <a href="{{ route('internet') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Internet</a>
+                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Digital Banking</a>
                             <a href="{{ route('loan') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Loan</a>
                             <a href="{{ route('savings') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Savings Investment</a>
+                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Investment | Deposit</a>
                             {{-- <a href="{{ route('deposit') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Deposit</a> --}}
                         </div>
