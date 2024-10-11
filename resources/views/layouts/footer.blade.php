@@ -1,117 +1,102 @@
 <section class="bg-[#252525]">
     <div class="py-10 px-6 md:py-24 md:px-12">
-        <div class="flex justify-between items-start">
+        <div class="text-white grid grid-cols-2 lg:grid-cols-5 gap-6">
 
-            {{-- DIV 1 --}}
-            <div class="w-1/4">
-                <div class="space-y-3">
-                    <span>
-                        <img class="w-56" src="{{ asset('asset/images/logobg.png') }}" alt="">
-                    </span>
-                    <div class="flex justify-center items-center gap-2">
-                        <p class="text-xs md:text-sm tracking-wider text-blackText">
+            <div class="col-span-1 lg:col-span-2 text-xs md:text-sm tracking-wider text-blackText">
+                <div class="space-y-6">
+                    <img class="w-56" src="{{ asset('asset/images/logobg.png') }}" alt="">
+                    <div class="space-y-2">
+                        <p class="mr-6">
                             AssetMatrix Microfinance Bank Limited is authorised and regulated by the Central
                             Bank of
                             Nigeria to offer banking services. Deposits are insured by the Nigerian Deposit
                             Insurance
                             Corporation (NDIC).
                         </p>
+                        <div>
+                            <span>
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <a href="mailto:info@assetmatrixmfb.com"
+                                class="text-blackText hover:text-white">info@assetmatrixmfb.com</a>
+                        </div>
+                        <div>
+                            <a href="tel:+2348023049873" class="text-blackText hover:text-white">+234 (0)
+                                80-2304-9873</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
 
-            {{-- DIV 2 --}}
-            <div class="space-y-2 md:space-y-4">
-                <h4 class="text-lg text-white font-semibold">Business</h4>
-                <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
-                    <p><a href="#" class="hover:text-white">About</a></p>
-                    <p><a href="#" class="hover:text-white">FAQ</a></p>
-                    <p><a href="#" class="hover:text-white">Open Account</a></p>
-                    <p><a href="#" class="hover:text-white">Loan</a></p>
-                </div>
-            </div>
-
-
-            {{-- DIV 3 --}}
-            <div class="space-y-2 md:space-y-4">
-                <h4 class="text-lg text-white font-semibold">Services</h4>
-                <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
-                    <p><a href="#" class="hover:text-white">About</a></p>
-                    <p><a href="#" class="hover:text-white">FAQ</a></p>
-                    <p><a href="#" class="hover:text-white">Open Account</a></p>
-                    <p><a href="#" class="hover:text-white">Loan</a></p>
-                </div>
-            </div>
-
-
-            {{-- DIV 4 --}}
-            <div class="w-1/4">
-                <h4 class="text-lg text-white font-semibold">Contact</h4>
-                <div class="flex items-center gap-2 flex-wrap">
-
-                    <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
-                        68 Herbert Macaulay Street <br>
-                        Ebute Metta, Adekunle <br>
-                        Lagos 101245, Lagos
-                    </p>
-
-                    <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2 hover:text-white">
-                        <a href="mailto:info@assetmatrixmfb.com"
-                            class="text-blackText hover:text-white">info@assetmatrixmfb.com</a>
-                    </p>
-                    <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2 hover:text-white">
-                        <a href="tel:+2348023049873" class="text-blackText hover:text-white">+234 (0)
-                            80-2304-9873</a>
-                    </p>
-
-                </div>
-            </div>
-
-
-
-            {{-- DIV 5 --}}
-            <div class="">
-                <div>
-
-                </div>
-                <h4 class="text-lg text-white font-semibold pb-6">Download app</h4>
-
-                <div class="grid grid-cols-2 justify-center items-center gap-6 w-full">
-
-                    <div class="bg-black border-2 text-white border-white rounded-full py-1">
-                        <a href="">
-                            <div class="flex justify-center items-center">
-                                <div>
-                                    <i class="fa-brands fa-apple text-lg mr-2"></i>
-                                </div>
-                                <div>
-                                    <p
-                                        class="text-[3px] md:text-[10px] text-whiteText group-hover:text-black font-light tracking-wide">
-                                        Download on</p>
-                                    <h4 class="group-hover:text-black text-sm md:text-sm">App Store</h4>
-                                </div>
-
-                            </div>
-                        </a>
+            <div class="col-span-1">
+                <div class="space-y-4">
+                    <h4 class="text-lg text-white font-semibold">Business</h4>
+                    <div class="text-xs md:text-sm tracking-wider text-blackText space-y-3">
+                        <p><a href="{{ route('about') }}" class="hover:text-white">Digital Banking</a></p>
+                        <p><a href="{{ route('loan') }}" class="hover:text-white">Loan</a></p>
+                        <p><a href="{{ route('savings') }}" class="hover:text-white">Investment</a></p>
+                        <p><a href="{{ route('savings') }}" class="hover:text-white">Desposit</a></p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="bg-white rounded-full py-1">
-                        <a href="">
-                            <div class="flex justify-center items-center">
-                                <div>
-                                    <i class="fa-brands fa-google-play text-lg mr-2"></i>
-                                </div>
-                                <div>
-                                    <p
-                                        class="text-[3px] md:text-[10px] text-whiteText group-hover:text-black font-light tracking-wide">
-                                        Download on</p>
-                                    <h4 class="group-hover:text-black text-sm md:text-sm">Google Play</h4>
-                                </div>
-
-                            </div>
-                        </a>
+            <div class="col-span-1">
+                <div class="space-y-4">
+                    <h4 class="text-lg text-white font-semibold">Useful Links</h4>
+                    <div class="text-xs md:text-sm tracking-wider text-blackText space-y-3">
+                        <p><a href="{{ route('about') }}" target="_blank" class="hover:text-white">About</a></p>
+                        <p><a href="{{ route('team') }}" target="_blank" class="hover:text-white">Team</a></p>
+                        <p><a href="{{ url('https://cashmatrix.app/') }}" target="_blank" class="hover:text-white">Open
+                                Account</a></p>
+                        <p><a href="{{ route('loan') }}" target="_blank" class="hover:text-white">Loan</a></p>
                     </div>
+                </div>
+            </div>
 
+            <div class="col-span-1">
+                <div class="space-y-4">
+                    <h4 class="text-lg text-white font-semibold">Download</h4>
+
+                    <div class="grid grid-cols-2 items-center gap-2">
+                        <span>
+                            <a href="{{ url('https://apps.apple.com/us/app/cashmatrix/id6470770885 ') }}">
+                                <div
+                                    class="group flex justify-center border-2 border-white items-center gap-2 bg-black py-2
+                                     px-2 rounded-full text-white hover:bg-white">
+                                    <div>
+                                        <i
+                                            class="fa-brands fa-apple text-white group-hover:text-black text-md md:text-base"></i>
+                                    </div>
+                                    <div>
+
+                                        <h4 class="group-hover:text-black text-[8px] md:text-[10px]">App Store</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </span>
+
+                        <span>
+                            <a href="{{ url('https://play.google.com/store/apps/details?id=com.assetcashmatrix.mfb&hl=en') }}"
+                                target="_blank">
+                                <div
+                                    class="group flex justify-center items-center gap-2 border-2 border-black
+                                      bg-white py-2 px-2 rounded-full text-white hover:bg-black hover:border-white">
+                                    <div>
+                                        <i
+                                            class="fa-brands fa-google-play text-black text-[12px] group-hover:text-white md:text-base"></i>
+                                    </div>
+                                    <div>
+
+                                        <h4 class="text-black group-hover:text-white text-[6px] md:text-[10px]">Google
+                                            Play
+                                        </h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </span>
+
+                    </div>
                 </div>
             </div>
 
@@ -123,138 +108,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="bg-[#252525]">
-
-    <div class="py-10 px-6 md:py-24 md:px-12">
-        <div class="grid grid-cols-2 gap-4 md:gap-6 lg:grid-cols-7">
-            <div class="col-span-2">
-                <div class="space-y-3">
-                    <span>
-                        <img class="w-56" src="{{ asset('asset/images/logobg.png') }}" alt="">
-                    </span>
-                    <div class="flex justify-center items-center gap-2">
-                        <p class="text-xs md:text-sm tracking-wider text-blackText">
-                            AssetMatrix Microfinance Bank Limited is authorised and regulated by the Central
-                            Bank of
-                            Nigeria to offer banking services. Deposits are insured by the Nigerian Deposit
-                            Insurance
-                            Corporation (NDIC).
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="space-y-2 md:space-y-4">
-                <h4 class="text-lg text-white font-semibold">Business</h4>
-                <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
-                    <p><a href="#" class="hover:text-white">About</a></p>
-                    <p><a href="#" class="hover:text-white">FAQ</a></p>
-                    <p><a href="#" class="hover:text-white">Open Account</a></p>
-                    <p><a href="#" class="hover:text-white">Loan</a></p>
-                </div>
-            </div>
-
-
-            <div class="space-y-2 md:space-y-4">
-                <h4 class="text-lg text-white font-semibold">Services</h4>
-                <div class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
-                    <p><a href="#" class="hover:text-white">About</a></p>
-                    <p><a href="#" class="hover:text-white">FAQ</a></p>
-                    <p><a href="#" class="hover:text-white">Open Account</a></p>
-                    <p><a href="#" class="hover:text-white">Loan</a></p>
-                </div>
-            </div>
-            <div class="space-y-2 md:space-y-4 col-span-2">
-                <h4 class="text-lg text-white font-semibold">Contact</h4>
-                <div class="flex items-center gap-2 flex-wrap">
-
-                    <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2">
-                        68 Herbert Macaulay Street <br>
-                        Ebute Metta, Adekunle <br>
-                        Lagos 101245, Lagos
-                    </p>
-
-                    <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2 hover:text-white">
-                        <a href="mailto:info@assetmatrixmfb.com"
-                            class="text-blackText hover:text-white">info@assetmatrixmfb.com</a>
-                    </p>
-                    <p class="text-xs md:text-sm tracking-wider text-blackText space-y-2 hover:text-white">
-                        <a href="tel:+2348023049873" class="text-blackText hover:text-white">+234 (0)
-                            80-2304-9873</a>
-                    </p>
-
-                </div>
-            </div>
-
-
-            <div>
-                <h2>Hello</h2>
-            </div>
-
-
-            {{-- <div class="col-span-2 md:col-span-1 lg:col-span-1">
-                    <h4 class="text-lg text-white font-semibold pb-6">Download app</h4>
-
-                    <div class="grid grid-cols-2 justify-center items-center gap-6 w-full">
-
-                        <div class="bg-black border-2 text-white border-white rounded-full py-1">
-                            <a href="">
-                                <div class="flex justify-center items-center">
-                                    <div>
-                                        <i class="fa-brands fa-apple text-lg mr-2"></i>
-                                    </div>
-                                    <div>
-                                        <p
-                                            class="text-[3px] md:text-[10px] text-whiteText group-hover:text-black font-light tracking-wide">
-                                            Download on</p>
-                                        <h4 class="group-hover:text-black text-sm md:text-sm">App Store</h4>
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="bg-white rounded-full py-1">
-                            <a href="">
-                                <div class="flex justify-center items-center">
-                                    <div>
-                                        <i class="fa-brands fa-google-play text-lg mr-2"></i>
-                                    </div>
-                                    <div>
-                                        <p
-                                        class="text-[3px] md:text-[10px] text-whiteText group-hover:text-black font-light tracking-wide">
-                                            Download on</p>
-                                        <h4 class="group-hover:text-black text-sm md:text-sm">Google Play</h4>
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div> --}}
-
-
-
-
-        </div>
-
-    </div>
-</section>
 
 
 {{-- <section class="bg-yellow-700">

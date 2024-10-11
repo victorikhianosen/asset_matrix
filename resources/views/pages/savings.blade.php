@@ -47,7 +47,7 @@
 
 
 
-    <section id="about" class="about bg-[#f0e2fe] section py-16">
+    <section id="about" class="about bg-[#eaedef] section py-16">
 
         <div class="container mx-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

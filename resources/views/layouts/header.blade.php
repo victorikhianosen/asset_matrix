@@ -52,8 +52,10 @@
                 <!-- Our Bank Dropdown -->
                 <div class="relative inline-block" onmouseenter="showDropdown('bankDropDown')"
                     onmouseleave="hideDropdown('bankDropDown')">
-                    <button class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                        onclick="toggleDropdown('bankDropDown')">Our Bank</button>
+                    <button class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
+                        onclick="toggleDropdown('bankDropDown')">Our Bank 
+                                            <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
+</button>
                     <div id="bankDropDown"
                         class="absolute right-0 z-10 mt-6 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
                         <div class="py-6">
@@ -69,8 +71,10 @@
                 <!-- Business Banking Dropdown -->
                 <div class="relative inline-block" onmouseenter="showDropdown('businessDropDown')"
                     onmouseleave="hideDropdown('businessDropDown')">
-                    <button class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                        onclick="toggleDropdown('businessDropDown')">Business Banking</button>
+                    <button class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
+                        onclick="toggleDropdown('businessDropDown')">Business Banking
+                                            <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
+</button>
                     <div id="businessDropDown"
                         class="absolute right-0 z-10 mt-6 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
                         <div class="py-6">
@@ -97,8 +101,10 @@
                 <!-- Policy Dropdown -->
                 <div class="relative inline-block" onmouseenter="showDropdown('policyDropDown')"
                     onmouseleave="hideDropdown('policyDropDown')">
-                    <button class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                        onclick="toggleDropdown('policyDropDown')">Policy</button>
+                    <button class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
+                        onclick="toggleDropdown('policyDropDown')">Policy
+                        <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
+                    </button>
                     <div id="policyDropDown"
                         class="absolute right-0 z-10 mt-6 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
                         <div class="py-6">
@@ -133,6 +139,8 @@
                 <i class="fa-regular fa-circle-xmark text-3xl"></i>
             </div>
         </div>
+
+
 
         {{-- Mobile Menu --}}
         <div id="mobileMenu"
