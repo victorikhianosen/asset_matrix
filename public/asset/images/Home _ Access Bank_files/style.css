@@ -1,0 +1,3211 @@
+/*
+|-----------------------------------------------------------------
+| ACCESS BANK GROUP
+|-----------------------------------------------------------------
+| START DATE: 9th October 2020
+| REMARKS: Nativebrands Digital Agency;
+| CSS Stylesheet
+|-----------------------------------------------------------------
+|
+| Please do not edit any content here, if any changes has to be made,
+| create a new file and link it to the corresponding page.
+|
+*/
+
+/*
+|-----------------------------------------------------------------
+| # TABLE OF CONTENT
+| 1. Body Default GLobal CSS
+| 2. Banner Title container and unchangeable
+|-----------------------------------------------------------------
+*/
+
+/*
+|-----------------------------------------------------------------
+| # FONT FACE FAMILIES
+|-----------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'EffraCorp-Bold';
+    src: url('../content/fonts/EffraCorp-Bold.eot');
+    src: url('../content/fonts/EffraCorp-Bold.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-Bold.woff2') format('woff2'), url('../content/fonts/EffraCorp-Bold.woff') format('woff'), url('../content/fonts/EffraCorp-Bold.ttf') format('truetype'), url('../content/fonts/EffraCorp-Bold.svg#EffraCorp-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EffraCorp-Medium';
+    src: url('../content/fonts/EffraCorp-Medium.eot');
+    src: url('../content/fonts/EffraCorp-Medium.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-Medium.woff2') format('woff2'), url('../content/fonts/EffraCorp-Medium.woff') format('woff'), url('../content/fonts/EffraCorp-Medium.ttf') format('truetype'), url('../content/fonts/EffraCorp-Medium.svg#EffraCorp-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EffraCorp-Regular';
+    src: url('../content/fonts/EffraCorp-Regular.eot');
+    src: url('../content/fonts/EffraCorp-Regular.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-Regular.woff2') format('woff2'), url('../content/fonts/EffraCorp-Regular.woff') format('woff'), url('../content/fonts/EffraCorp-Regular.ttf') format('truetype'), url('../content/fonts/EffraCorp-Regular.svg#EffraCorp-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EffraCorp-Light';
+    src: url('../content/fonts/EffraCorp-Light.eot');
+    src: url('../content/fonts/EffraCorp-Light.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-Light.woff2') format('woff2'), url('../content/fonts/EffraCorp-Light.woff') format('woff'), url('../content/fonts/EffraCorp-Light.ttf') format('truetype'), url('../content/fonts/EffraCorp-Light.svg#EffraCorp-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EffraCorp-Italic';
+    src: url('../content/fonts/EffraCorp-Italic.eot');
+    src: url('../content/fonts/EffraCorp-Italic.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-Italic.woff2') format('woff2'), url('../content/fonts/EffraCorp-Italic.woff') format('woff'), url('../content/fonts/EffraCorp-Italic.ttf') format('truetype'), url('../content/fonts/EffraCorp-Italic.svg#EffraCorp-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EffraCorp-BoldItalic';
+    src: url('../content/fonts/EffraCorp-BoldItalic.eot');
+    src: url('../content/fonts/EffraCorp-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-BoldItalic.woff2') format('woff2'), url('../content/fonts/EffraCorp-BoldItalic.woff') format('woff'), url('../content/fonts/EffraCorp-BoldItalic.ttf') format('truetype'), url('../content/fonts/EffraCorp-BoldItalic.svg#EffraCorp-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EffraCorp-MediumItalic';
+    src: url('../content/fonts/EffraCorp-MediumItalic.eot');
+    src: url('../content/fonts/EffraCorp-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-MediumItalic.woff2') format('woff2'), url('../content/fonts/EffraCorp-MediumItalic.woff') format('woff'), url('../content/fonts/EffraCorp-MediumItalic.ttf') format('truetype'), url('../content/fonts/EffraCorp-MediumItalic.svg#EffraCorp-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EffraCorp-LightItalic';
+    src: url('../content/fonts/EffraCorp-LightItalic.eot');
+    src: url('../content/fonts/EffraCorp-LightItalic.eot?#iefix') format('embedded-opentype'), url('../content/fonts/EffraCorp-LightItalic.woff2') format('woff2'), url('../content/fonts/EffraCorp-LightItalic.woff') format('woff'), url('../content/fonts/EffraCorp-LightItalic.ttf') format('truetype'), url('../content/fonts/EffraCorp-LightItalic.svg#EffraCorp-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+.text-italized {
+    font-family: 'EffraCorp-italic';
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --orange-color: #ee7e01;
+    --private-banking-color: #000000;
+    --blue-color: var(--business-brand);
+    --green-color: #a4c519;
+    --base-brand: #ee7e01;
+    --personal-brand: #a4c519;
+    --private-brand: #000000;
+    --business-brand: #014086;
+    --xclusive-brand: #003624;
+    --secondary-1-brand: #007168;
+    --secondary-2-brand: #b8061f;
+    --white-brand: #ffffff;
+}
+
+html, body {
+    font-family: 'EffraCorp-Regular';
+    line-height: normal;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+@media (max-width: 974px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 574px) {
+    body {
+        font-size: 80%;
+    }
+}
+
+body {
+    /*overflow-x: hidden;*/
+    overflow-x: clip;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+.linking {
+    color: var(--business-brand) !important;
+    /*text-decoration: underline !important;*/
+}
+
+    .linking.personal {
+        color: var(--personal-brand) !important;
+    }
+
+    .linking.business {
+        color: var(--business-brand) !important;
+    }
+
+    .linking.dark {
+        color: var(--private-brand) !important;
+    }
+
+    .linking.main {
+        color: var(--base-brand) !important;
+    }
+
+    .linking.xclusive {
+        color: var(--xclusive-brand) !important;
+    }
+
+    .linking.white {
+        color: var(--white-brand) !important;
+    }
+
+    .linking.sec1 {
+        color: var(--secondary-1-brand) !important;
+    }
+
+    .linking.sec2 {
+        color: var(--secondary-2-brand) !important;
+    }
+
+    .linking.external:after {
+        content: '';
+        padding: 0 10px;
+        background-image: url("../images/arrow-up-right.svg");
+        background-repeat: no-repeat;
+        background-size: 95%;
+    }
+
+    .linking.external.private:after {
+        content: '';
+        padding: 0 10px;
+        background-image: url("../images/arrow-up-right-p.svg");
+        background-repeat: no-repeat;
+        background-size: 95%;
+    }
+
+.pointer {
+    cursor: pointer;
+}
+.search_header form{
+    width: 100%;
+}
+.search_header .form-group{
+    max-width: unset !important;
+}
+/* Just title-banner class will be used ***************************************************************
+*  Started changes from products and services folder **************************************************
+*  Remember to change across all pagess ***************************************************************
+*/
+/* Title banner start here */
+.title-banner, .title-banner .no-banner {
+    background-image: url("../images/gradient-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+    .title-banner .no-banner {
+        background-image: url("../images/gradient-banner.png");
+    }
+
+.edu-loan-banner, .business-banner {
+    height: 100%;
+}
+
+/* Title banner ends here */
+
+.slant-line {
+    position: absolute;
+    top: 0;
+    left: -17px;
+    width: 10%;
+    height: 32%;
+    clip-path: polygon(94% 0, 100% 0%, 6% 100%, 0% 100%);
+    background: #F98537;
+}
+
+.orange-bg {
+    background: #F37C26;
+    color: #fff;
+}
+
+.orange-text {
+    color: #F37C26;
+}
+
+.black-bg {
+    background: #000;
+    color: #fff;
+}
+
+.main-text {
+    color: #014086;
+}
+
+.rounded-check-icon, .c-check-icon, .c-check-icon-lemon {
+    border-radius: 50%;
+    padding: .25rem;
+    width: 24px;
+    height: 24px;
+}
+
+.c-check-icon {
+    color: #EB7824;
+    background: rgb(235, 119, 36, 0.2);
+}
+
+.c-check-icon-lemon {
+    color: #9BC002;
+    background: rgba(155, 192, 2, 0.2);
+}
+
+.c-check-icon-blue {
+    background: #014086;
+    color: #fff;
+}
+
+@media screen and (max-width:1024px) {
+    .slant-line {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slant-line {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .slant-line {
+        width: 30%;
+    }
+}
+
+.main-quick-menu a {
+    background: #014086;
+    color: #fff;
+}
+
+#mySidenav a {
+    color: #fff;
+    position: fixed;
+    right: -160px;
+    transition: 0.3s;
+    padding: 10px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+    #mySidenav a:hover {
+        right: -1px;
+    }
+
+    #mySidenav a > img {
+        vertical-align: middle;
+    }
+
+#messenger {
+    top: 50%;
+    top: 300px;
+}
+
+#group {
+    top: 55%;
+    top: 340px;
+}
+
+#comm {
+    top: 60%;
+    top: 380px;
+}
+
+.section-bg {
+    background: #F1F1F1;
+}
+
+/* Main Breadcrum nav */
+
+.main-breadcrumb-nav {
+    background: #014086 !important;
+    color: #fff !important;
+}
+
+    .main-breadcrumb-nav a {
+        color: #fff;
+    }
+
+    .main-breadcrumb-nav .active {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+/*Page Description Box*/
+.page-desc-box, .desc-box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+}
+
+.ad-bg-sizng {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 270px;
+}
+
+@media screen and (max-width:450px) {
+    .ad-bg-sizng {
+        height: 130px;
+    }
+}
+
+.page-desc-box {
+    background-image: url('../images/about-images/ambition.png');
+}
+
+/* Box bg start here */
+
+/* Box bg ends here */
+
+.page-down-arrow {
+    position: absolute;
+    left: 3rem;
+    bottom: -1.6rem;
+    background: #014086;
+    color: #fff;
+}
+
+    .page-down-arrow:hover {
+        color: #fff;
+    }
+
+#pageDescription {
+    transition: .5s ease;
+}
+
+.section-text {
+    margin-bottom: 80px !important;
+}
+
+    .section-text h5 {
+        color: #014086;
+    }
+
+    .section-text p {
+        color: #333333;
+    }
+
+.shared-price-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+    .shared-price-list .list-group-item {
+        width: 92.5px;
+        font-size: 12px;
+    }
+
+        .shared-price-list .list-group-item small {
+            vertical-align: middle;
+        }
+
+@media screen and (max-width:670px) {
+    .shared-price-list {
+        display: none;
+    }
+}
+
+/**********Expanded Aside menu style start here************/
+
+.aside-list-header, .shared-price-list > li:first-child, .aside-list-say-to-us {
+    background: #F1F1F1;
+}
+
+.main-close-aside-btn {
+    background: #014086;
+    color: #fff;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 96px;
+    cursor: pointer;
+}
+
+.aside-about-bg {
+    background: #ece6f3 !important;
+}
+
+.h-v-border {
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    border-width: 0 0 1.5px 1.5px;
+    border-style: solid;
+    border-color: #014086;
+    position: absolute;
+    z-index: 1;
+    left: -1rem;
+    top: -.5rem;
+}
+
+#personal .h-v-border {
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    border-width: 0 0 1.5px 1.5px;
+    border-style: solid;
+    border-color: var(--base-brand);
+    position: absolute;
+    z-index: 1;
+    left: -1rem;
+    top: -.5rem;
+}
+
+/* For longer text */
+
+.double-line-hv-border {
+    top: -2rem;
+    height: 60px;
+}
+
+.aside-menu-list .active {
+    background: rgba(1, 64, 134, .1);
+    color: #014086;
+    border-radius: 0px;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: 6px solid #014086 !important;
+    border-left: none;
+}
+
+.aside-menu-list .comment-sec {
+    color: #fff;
+    background: #F37C26;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 65% 87%, 43% 100%, 46% 86%, 0 86%);
+    padding: 1.5rem 1.5rem 2.5rem;
+}
+
+.comment-sec .bold-line {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.aside-nav {
+    position: absolute;
+    transition: .8s;
+    width: 340px;
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding-bottom: 100px;
+    height: 100%;
+    z-index: 0;
+    overflow: auto;
+}
+
+.scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.aside-nav::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px hsla(212, 99%, 26%, 0.2);
+    -webkit-box-shadow: inset 0 0 6px hsla(212, 99%, 26%, 0.2);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.aside-nav::-webkit-scrollbar {
+    width: 4px;
+    background-color: #F5F5F5;
+}
+
+.aside-nav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px hsla(212, 99%, 26%, 0.2);
+    -webkit-box-shadow: inset 0 0 6px hsla(212, 99%, 26%, 0.2);
+    background-color: #555;
+    background-color: hsl(212, 99%, 26%);
+}
+
+.fold-for-mob {
+    background: #fff;
+}
+
+.aside-feedback {
+    display: none;
+}
+
+.display-feedback {
+    display: block;
+    transition: all .5s linears;
+    transform: translateY(0%);
+    scroll-behavior: smooth;
+}
+
+.aside-feedback .form-control {
+    border: 2px solid #ffffff80 !important;
+}
+
+.aside-feedback ::placeholder {
+    color: #ffffff99;
+}
+
+/********** Mobile sidebar interaction *********/
+
+@media screen and (max-width:991px) {
+    .aside-nav {
+        width: 100%;
+    }
+
+    .aside-nav-folded .main-close-aside-btn, .main-close-aside-btn {
+        left: 50% !important;
+        transform: translate(-100%, 0%);
+    }
+
+    .aside-nav-folded {
+        position: unset;
+        padding: 0 !important;
+        width: 0% !important;
+        background: none;
+    }
+
+        .aside-nav-folded .fold-for-mob {
+            position: absolute;
+            display: none;
+            transition: .4s;
+        }
+}
+
+/* Abdulsalam: Overiding: Adding this z-index for the nav to work perfectly */
+
+.list-group-item.active {
+    z-index: 1;
+}
+
+.list-group-item .plus-minus {
+    color: #00000070;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.years-accordion .plus-minus::before {
+    color: #EB7824;
+}
+
+/* Plus and minu dynamism form accordion and sidebar  */
+
+.list-group-item .plus-minus::before, .years-accordion .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+    display: inline-block;
+    font-weight: 600;
+}
+
+.years-accordion [aria-expanded="true"] .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    display: inline-block;
+    font-weight: 400;
+    transition: .1s ease-in;
+}
+
+.years-accordion h5 {
+    transition: .1s ease-in;
+    will-change: transform;
+}
+
+.years-accordion [aria-expanded="true"] h5 {
+    color: var(--base-brand);
+    transition: .1s ease-in;
+    transform: scale(1.5) translateX(5px);
+    will-change: transform;
+}
+
+.list-group-item .collapsed .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f067";
+    display: inline-block;
+    font-weight: 600;
+}
+
+.years-accordion .collapsed .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    display: inline-block;
+    font-weight: 400;
+    color: #444;
+    transform: rotate(-45deg);
+    transition: .1s ease-in;
+}
+
+.list-group-item [aria-expanded="true"] .plus-minus::before {
+    color: var(--business-brand);
+    font-family: "Font Awesome 5 Free";
+    content: "\f067";
+    display: inline-block;
+    font-weight: 600;
+}
+
+#personal .list-group-item [aria-expanded="true"] .plus-minus::before {
+    color: var(--base-brand);
+    font-family: "Font Awesome 5 Free";
+    content: "\f067";
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+.faq-accordion .card {
+    background: transparent;
+    border: none;
+    font-weight: 400;
+}
+
+.faq-accordion .list-group-item {
+    background: transparent;
+    border-width: 0 0 0 7px;
+    border-color: rgba(255, 255, 255, .2);
+    border-style: solid;
+    padding: .25rem 1rem;
+}
+
+.faq-accordion .plus-times::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    display: inline-block;
+    font-weight: 600;
+    padding: .25rem .65rem;
+    border-radius: 50%;
+    color: #014086;
+    background: #fff;
+}
+
+.faq-accordion .collapsed .plus-times::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f067";
+    display: inline-block;
+    font-weight: 600;
+    background: #014086;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .25rem .55rem;
+}
+
+
+#personal .faq-accordion .card, #business .faq-accordion .card {
+    background: #fff;
+    border: none;
+    font-weight: 400;
+}
+
+#personal .faq-accordion .card-header, #business .faq-accordion .card-header {
+    background: #fff;
+    border: none;
+}
+
+#personal .faq-accordion p, #business .faq-accordion p {
+    padding: .25rem 1.25rem;
+}
+
+#personal .faq-accordion .collapsed .plus-minus::before, #business .faq-accordion .collapsed .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    display: inline-block;
+    font-weight: 400;
+    color: #444;
+    transform: rotate(-45deg);
+    transition: .1s ease-in;
+}
+
+
+#personal .faq-accordion [aria-expanded="true"] .plus-minus::before, #business .faq-accordion [aria-expanded="true"] .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    display: inline-block;
+    font-weight: 400;
+    color: var(--base-brand);
+    transform: rotate(0deg);
+    transition: .1s ease-in;
+}
+
+#personal .faq-accordion [aria-expanded="true"] h5, #business .faq-accordion [aria-expanded="true"] h5 {
+    color: var(--base-brand);
+    transition: .1s ease-in;
+}
+
+#personal .faq-accordion2 .collapsed .plus-minus::before, #business .faq-accordion2 .collapsed .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    display: inline-block;
+    font-weight: 400;
+    /* color: #444; */
+    transform: rotate(-45deg);
+    transition: .1s ease-in;
+}
+
+#personal .faq-accordion2 [aria-expanded="true"] .plus-minus::before, #business .faq-accordion2 [aria-expanded="true"] .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    display: inline-block;
+    font-weight: 400;
+    transform: rotate(0deg);
+    transition: .1s ease-in;
+    color: #fff;
+}
+
+#personal .faq-accordion2 [aria-expanded="true"] h5, #business .faq-accordion2 [aria-expanded="true"] h5 {
+    /* color: var(--base-brand); */
+    transition: .1s ease-in;
+}
+
+.aside-nav .img-say-to-us-sm {
+    display: none;
+}
+
+.aside-nav .img-say-to-us {
+    display: block;
+}
+
+.aside-nav .open-icon {
+    display: none;
+}
+
+.aside-nav .close-icon {
+    display: block;
+}
+
+/**********Expand Aside menu style Ends here************/
+
+/**********Folded aside menu style start here************/
+
+.aside-nav-folded {
+    position: absolute;
+    transition: .4s;
+    width: 91px;
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding-bottom: 100px;
+    z-index: 2;
+    height: 100%;
+    z-index: 0;
+}
+.list-group-item a {
+    display: flex;
+}
+.aside-nav-folded .list-group-item {
+    width: auto !important;
+    height: fit-content !important;
+    border-width: 0px 0px .5px;
+    margin: 0px !important;
+}
+    .aside-nav-folded .list-group-item span > span {
+        display: none;
+    }
+    .aside-nav-folded .comment-sec {
+        margin: 1rem auto !important;
+    }
+
+    .aside-nav-folded .main-close-aside-btn {
+        left: 16px;
+    }
+
+    .aside-nav-folded .open-icon {
+        display: block;
+    }
+
+    .aside-nav-folded .close-icon, .aside-nav-folded .h-v-border, .aside-nav-folded .list-plus, .aside-nav-folded .side-list-text, .aside-nav-folded .sub-active-menu, .aside-nav-folded .plus-minus {
+        display: none;
+    }
+
+    .aside-nav-folded .aside-list-header {
+        height: 40px;
+    }
+
+    .aside-nav-folded .aside-menu-img {
+        margin-right: 0 !important;
+        margin: 0px 9px !important;
+        margin-bottom: 0px !important;
+        text-align: center;
+    }
+
+    .aside-nav-folded .img-say-to-us {
+        display: none;
+    }
+
+    .aside-nav-folded .img-say-to-us-sm {
+        display: block;
+    }
+
+/**********Folded Aside menu style End here************/
+
+/* aside with boxed menu */
+
+.aside-menu-boxed .list-group-item {
+    border: 2px solid #ccc;
+    display: inline-block;
+    width: 170px;
+    height: 120px;
+    margin: 0 0 1rem 3rem;
+}
+
+.aside-menu-boxed .active {
+    color: #000;
+    background: none !important;
+    border: 2px solid #EB7824 !important;
+}
+
+.linked-active {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    width: 4px;
+    height: 30px;
+    background: #EB7824;
+}
+
+.aside-menu-boxed .sub-active-menu {
+    list-style: none;
+    background: #EB7824;
+    color: #fff;
+    padding: .8rem 1rem;
+    width: 170px;
+}
+
+.aside-menu-boxed .img-say-to-us-sm {
+    margin: 1.5rem !important;
+}
+
+.aside-menu-boxed .list-plus {
+    display: none;
+}
+
+.aside-menu-boxed .aside-menu-img {
+    display: block;
+}
+
+.orange-download {
+    background: #F98537;
+    width: 300px;
+    padding: 1.2rem 2rem;
+    bottom: -5.5rem;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+/* .focus-list .list-group-item {
+    background: none;
+    border-left: 10px solid #EEB58B;
+} */
+
+.focus-slant-line {
+    position: absolute;
+    width: 7px;
+    max-height: 400px;
+    min-height: 100px;
+    transform: rotate(220deg);
+    background: #ee7e01;
+    bottom: -20px;
+    right: 4%;
+    z-index: 99;
+}
+
+.focus-slant-line-white {
+    background: #fff;
+}
+
+.tab-menu-item {
+    width: fit-content;
+    background: #D9DFE6;
+    position: relative;
+    overflow: hidden;
+    margin-right: -1rem;
+    z-index: 10;
+    border-width: 0px 0px 0px 1px;
+}
+
+    .tab-menu-item:after {
+        height: 100%;
+        width: 100%;
+        background: #F1F1F1;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        transform: rotate(60deg);
+        transform-origin: bottom right;
+    }
+
+.clip-tabs .tab-menu-item:after {
+    height: 100%;
+    width: 100%;
+    background: #F1F1F1;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: rotate(60deg);
+    transform-origin: bottom right;
+}
+
+@media (max-width: 992px) {
+    .clip-tabs .tab-menu-item:after {
+        display: none;
+    }
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+}
+
+    .nav-tabs .nav-link.active {
+        color: #007bff;
+    }
+
+.board-mgt-tabs .tab-menu-item {
+    width: 220px;
+}
+
+.clip-tabs .tab-menu-item {
+    width: 120px;
+    padding: 1rem 1.5rem !important;
+}
+
+@media screen and (max-width:992px) {
+    .clip-tabs .tab-menu-item {
+        width: 100%;
+        display: grid;
+        padding: 1rem 0rem !important;
+        place-items: center;
+    }
+
+    .clip-tabs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(77px, 1fr));
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .board-mgt-tabs .tab-menu-item {
+        width: 170px;
+    }
+}
+
+.board-mgt-tabs .nav-link, .clip-tabs .nav-link {
+    background: #F98537;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 0px;
+}
+
+    .board-mgt-tabs .nav-link:focus, .board-mgt-tabs .nav-link:hover,
+    .clip-tabs .nav-link:focus, .clip-tabs .nav-link:hover {
+        color: #fff;
+    }
+
+    .board-mgt-tabs .nav-link.active, .clip-tabs .nav-link.active {
+        color: var(--base-brand);
+    }
+
+.card-1 > div {
+    border-top: 4px solid var(--business-brand) !important;
+}
+
+.card-2 > div {
+    border-top: 4px solid var(--personal-brand) !important;
+}
+
+.card-3 > div {
+    border-top: 4px solid var(--base-brand) !important;
+}
+
+.card-4 > div {
+    border-top: 4px solid var(--secondary-1-brand) !important;
+}
+
+.card-5 > div {
+    border-top: 4px solid var(--secondary-2-brand) !important;
+}
+
+.card-6 > div {
+    border-top: 4px solid #287FC2 !important;
+}
+
+.card-1 .number-trapezium {
+    background: var(--business-brand);
+}
+
+.card-2 .number-trapezium {
+    background: var(--personal-brand);
+}
+
+.card-3 .number-trapezium {
+    background: var(--base-brand);
+}
+
+.card-4 .number-trapezium {
+    background: var(--secondary-1-brand);
+}
+
+.card-5 .number-trapezium {
+    background: var(--secondary-2-brand);
+}
+
+.card-6 .number-trapezium {
+    background: #287FC2;
+}
+
+#personal hr {
+    border-top: 1px solid rgba(164, 197, 25, .5);
+}
+
+#business hr {
+    border-top: 1px solid rgba(238, 126, 1, .5);
+}
+
+/*Colored box 1*/
+.colored-boxes .row .col-md-6:nth-child(1) > div {
+    border-top: 4px solid var(--business-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(1) .number-trapezium {
+    background: var(--business-brand);
+}
+
+/*Colored box 2*/
+.colored-boxes .row .col-md-6:nth-child(2) > div {
+    border-top: 4px solid var(--personal-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(2) .number-trapezium {
+    background: var(--personal-brand);
+}
+
+/*Colored box 3*/
+.colored-boxes .row .col-md-6:nth-child(3) > div {
+    border-top: 4px solid var(--base-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(3) .number-trapezium {
+    background: var(--base-brand);
+}
+
+/*Colored box 4*/
+.colored-boxes .row .col-md-6:nth-child(4) > div {
+    border-top: 4px solid var(--secondary-1-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(4) .number-trapezium {
+    background: var(--secondary-1-brand);
+}
+
+/*Colored box 5*/
+.colored-boxes .row .col-md-6:nth-child(5) > div {
+    border-top: 4px solid var(--secondary-2-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(5) .number-trapezium {
+    background: var(--secondary-2-brand);
+}
+
+/*Colored box 6*/
+.colored-boxes .row .col-md-6:nth-child(6) > div {
+    border-top: 4px solid #287FC2 !important
+}
+
+.colored-boxes .row .col-md-6:nth-child(6) .number-trapezium {
+    background: #287FC2;
+}
+
+/*Colored box 7*/
+.colored-boxes .row .col-md-6:nth-child(7) > div {
+    border-top: 4px solid var(--personal-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(7) .number-trapezium {
+    background: var(--personal-brand);
+}
+
+/*Colored box 8*/
+.colored-boxes .row .col-md-6:nth-child(8) > div {
+    border-top: 4px solid var(--base-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(8) .number-trapezium {
+    background: var(--base-brand);
+}
+
+/*Colored box 9*/
+.colored-boxes .row .col-md-6:nth-child(9) > div {
+    border-top: 4px solid var(--secondary-1-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(9) .number-trapezium {
+    background: var(--secondary-1-brand);
+}
+
+/*Colored box 10*/
+.colored-boxes .row .col-md-6:nth-child(10) > div {
+    border-top: 4px solid var(--secondary-2-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(10) .number-trapezium {
+    background: var(--secondary-2-brand);
+}
+
+/*Colored box 11*/
+.colored-boxes .row .col-md-6:nth-child(11) > div {
+    border-top: 4px solid #287FC2 !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(11) .number-trapezium {
+    background: #287FC2;
+}
+
+/*Colored box 12*/
+.colored-boxes .row .col-md-6:nth-child(12) > div {
+    border-top: 4px solid var(--personal-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(12) .number-trapezium {
+    background: var(--personal-brand);
+}
+
+/*Colored box 13*/
+.colored-boxes .row .col-md-6:nth-child(13) > div {
+    border-top: 4px solid var(--base-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(13) .number-trapezium {
+    background: var(--base-brand);
+}
+
+/*Colored box 14*/
+.colored-boxes .row .col-md-6:nth-child(14) > div {
+    border-top: 4px solid var(--secondary-1-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(14) .number-trapezium {
+    background: var(--secondary-1-brand);
+}
+
+/*Colored box 15*/
+.colored-boxes .row .col-md-6:nth-child(15) > div {
+    border-top: 4px solid var(--secondary-2-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(15) .number-trapezium {
+    background: var(--secondary-2-brand);
+}
+
+/*Colored box 16*/
+.colored-boxes .row .col-md-6:nth-child(16) > div {
+    border-top: 4px solid #287FC2;
+    !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(16) .number-trapezium {
+    background: #287FC2;
+}
+
+/*Colored box 17*/
+.colored-boxes .row .col-md-6:nth-child(17) > div {
+    border-top: 4px solid var(--business-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(17) .number-trapezium {
+    background: var(--business-brand);
+}
+
+/*Colored box 18*/
+.colored-boxes .row .col-md-6:nth-child(18) > div {
+    border-top: 4px solid var(--personal-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(18) .number-trapezium {
+    background: var(--personal-brand);
+}
+
+/*Colored box 19*/
+.colored-boxes .row .col-md-6:nth-child(19) > div {
+    border-top: 4px solid var(--base-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(19) .number-trapezium {
+    background: var(--base-brand);
+}
+
+/*Colored box 20*/
+.colored-boxes .row .col-md-6:nth-child(20) > div {
+    border-top: 4px solid var(--secondary-1-brand) !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(20) .number-trapezium {
+    background: var(--secondary-1-brand);
+}
+
+
+/*Numbering*/
+.colored-boxes .row .col-md-6:nth-child(1) .number-trapezium span:after {
+    content: '1' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(2) .number-trapezium span:after {
+    content: '2' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(3) .number-trapezium span:after {
+    content: '3' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(4) .number-trapezium span:after {
+    content: '4' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(5) .number-trapezium span:after {
+    content: '5' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(6) .number-trapezium span:after {
+    content: '6' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(7) .number-trapezium span:after {
+    content: '7' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(8) .number-trapezium span:after {
+    content: '8' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(9) .number-trapezium span:after {
+    content: '9' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(10) .number-trapezium span:after {
+    content: '10' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(11) .number-trapezium span:after {
+    content: '11' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(12) .number-trapezium span:after {
+    content: '12' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(13) .number-trapezium span:after {
+    content: '13' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(14) .number-trapezium span:after {
+    content: '14' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(15) .number-trapezium span:after {
+    content: '15' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(16) .number-trapezium span:after {
+    content: '16' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(17) .number-trapezium span:after {
+    content: '17' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(18) .number-trapezium span:after {
+    content: '18' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(19) .number-trapezium span:after {
+    content: '19' !important;
+}
+
+.colored-boxes .row .col-md-6:nth-child(20) .number-trapezium span:after {
+    content: '20' !important;
+}
+
+.number-trapezium {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.75rem;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    background: #FF0000;
+    /* z-index: 3; */
+}
+
+.beginning-card {
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.number-trapezium span {
+    position: relative;
+    z-index: 4;
+}
+
+.number-trapezium:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* z-index: 2; */
+    background: inherit;
+    transform-origin: bottom left;
+    -ms-transform: skew(-20deg, 0deg);
+    -webkit-transform: skew(-20deg, 0deg);
+    transform: skew(-20deg, 0deg);
+}
+
+.years-accordion .card {
+    background: transparent;
+    border: none;
+    /* will-change: transform; */
+    /* transition: .1s ease-in; */
+    /* overflow-x: revert; */
+}
+
+.years-accordion .card-header {
+    background: #fff;
+    position: relative;
+}
+
+/* .years-accordion .card {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    transition: .1s ease-in;
+} */
+
+/* .years-accordion a:before {
+    float: right !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f068";
+    padding-right: 5px;
+}
+
+.years-accordion a .collapsed:before {
+    float: right !important;
+    content: "\f067";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+} */
+
+/* .years-accordion .list-group-flush .list-group-item, .accordion-thick-orange-border { */
+.accordion-thick-orange-border {
+    background: transparent;
+    border-width: 0px 8px;
+    border-style: solid;
+    border-color: #EEB58B;
+}
+
+.mgt-team-card {
+    background: #F1F1F1;
+}
+
+    .mgt-team-card, .mgt-team-card img {
+        max-height: 500px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+@media screen and (max-width:1200px) {
+    .mgt-team-card {
+        max-height: fit-content;
+    }
+
+        .mgt-team-card img {
+            height: fit-content;
+        }
+}
+
+.mgt-team-card h3 {
+    color: var(--business-brand);
+}
+
+.mgt-team-card h6 {
+    color: var(--base-brand);
+    text-transform: uppercase;
+}
+
+.mgt-team-card p {
+    color: #444;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btn-blue-bg {
+    background: #014086;
+    color: #fff;
+    border-radius: 0px;
+}
+
+    .btn-blue-bg:hover {
+        color: #ffffffbf;
+    }
+
+.single-team-bg {
+    background: url("../images/team-Frame2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mgt-back-btn {
+    border: 2px solid #014086;
+    color: #014086;
+    font-weight: 600;
+}
+
+.offering-card {
+    height: 300px;
+}
+
+    .offering-card p {
+        max-width: 265px;
+        color: #555;
+    }
+
+    .offering-card img {
+        height: 300px;
+        /* Abdulsalam added this */
+        object-fit: cover;
+    }
+
+@media screen and (max-width:769px) {
+    .offering-card {
+        height: auto;
+    }
+
+        .offering-card img {
+            height: 100%;
+        }
+}
+/*
+.blue-table tbody tr:nth-child(odd) {
+    color: #fff;
+    background: rgb(108 144 185);
+} */
+
+.blue-table thead th {
+    color: #fff;
+    background: rgb(108, 144, 185);
+}
+
+.blue-table tbody tr:nth-child(odd) {
+    color: #fff;
+    background: rgb(168 187 208);
+}
+
+.blue-table tbody tr {
+    color: #fff;
+    background: rgb(168 187 208);
+}
+
+/******Blue table striped ends here  *********/
+
+/*********Lemon Striped *********/
+
+.lemon-table-striped thead {
+    color: #000000;
+    background: #b1c759;
+}
+
+.lemon-table-striped tbody tr:nth-child(odd) {
+    color: #000;
+    background: #d7e2a9;
+}
+
+.lemon-table-striped tbody tr:nth-child(even) {
+    color: #000;
+    background: #c1d66b;
+}
+
+/******Lemon table striped ends here  *********/
+
+.non-fin-card {
+    background: #F2F9FA;
+}
+
+    .non-fin-card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+@media screen and (max-width:500px) {
+    .non-fin-card img {
+        height: fit-content;
+    }
+}
+
+.advisory-desk-section {
+    background: url("../images/advisory-desk.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 6rem;
+    padding: .15rem;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+    .advisory-desk-section .advisory-card {
+        color: #fff;
+        background: #057A82;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        transform: translateY(4rem);
+    }
+
+        .advisory-desk-section .advisory-card p {
+            line-height: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+    .advisory-desk-section .list-group .list-group-item {
+        background: transparent;
+        border-width: 0 0 0 5px;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+.thick-side-list .list-group-item {
+    background: transparent;
+    border-width: 0 0 0 5px;
+    border-color: rgb(235, 120, 36, 0.2);
+}
+
+.mood-container {
+    height: 95px;
+    position: relative;
+}
+
+    .mood-container::after {
+        height: 3px;
+        background-color: #fff;
+        width: 64%;
+        z-index: 0;
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+.mood-icon {
+    cursor: pointer;
+    padding: .4rem;
+    border-radius: 50%;
+    background: #fff;
+    transition: .2s ease;
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+    will-change: transform;
+}
+
+    .mood-icon:hover {
+        transform: scale(1.3);
+    }
+
+.mood-icon-scaled {
+    transform: scale(1.3);
+}
+
+.d-or-get-in-touch {
+    color: #fff;
+    background: #E7450F;
+    position: relative;
+    z-index: 3;
+}
+
+    .d-or-get-in-touch:after {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: inherit;
+        transform-origin: bottom left;
+        -ms-transform: skew(-3deg, 0deg);
+        -webkit-transform: skew(-3deg, 0deg);
+        transform: skew(-3deg, 0deg);
+    }
+
+@media screen and (max-width:500px) {
+    .d-or-get-in-touch:after {
+        -ms-transform: skew(-2deg, 0deg);
+        -webkit-transform: skew(-2deg, 0deg);
+        transform: skew(-2deg, 0deg);
+    }
+}
+
+.download-center-tab .list-group-item {
+    color: rgba(0, 0, 0, .5);
+}
+
+    .download-center-tab .list-group-item:hover, .download-center-tab .list-group-item:focus, .download-center-tab .list-group-item:active {
+        border-left: 6px solid #014086 !important;
+        color: rgba(1, 64, 134, .7) !important;
+    }
+
+.btn-download:hover {
+    color: #fff;
+    background: #014086;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.div-left-thick-border {
+    border-left: 8px solid #EB7824;
+}
+
+    .div-left-thick-border:before {
+        content: '';
+        background: url("../images/about-images/svgIcons/quote.svg") no-repeat;
+        padding: 0 12px
+    }
+
+.rl-thick-border {
+    border-width: 0 7px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .2);
+}
+
+.touch-row {
+    height: 630px;
+}
+
+.touch-bg {
+    background: url("../images/touch-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.touch-form {
+    width: 700px;
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+}
+
+@media screen and (max-width:769px) {
+    .touch-form {
+        top: 160px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .touch-row {
+        height: auto;
+    }
+
+    .touch-form {
+        width: auto;
+        position: unset;
+    }
+}
+
+.thick-top-padding {
+    border-width: 8px 0 0;
+    border-style: solid;
+    border-color: #EB7824;
+}
+
+.world-remit-list-bg {
+    background: url("../images/list-side-bg.png") no-repeat;
+    background-position: 100%;
+    background-size: cover;
+}
+
+.wu-list-1-bg, .wu-list-2-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+.wu-list-1-bg {
+    background: url("../images/WU-list-bg-1.png") no-repeat;
+}
+
+.wu-list-2-bg {
+    background: url("../images/WU-list-bg-2.png") no-repeat;
+}
+
+.more-xp {
+    position: absolute;
+    bottom: -2rem;
+}
+
+.acc-header-caret {
+    padding: .1rem .7rem;
+    color: #EB7824;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: .3rem;
+    right: 1.2rem;
+    font-size: 20px;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+    .acc-header-caret::before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f106';
+        display: inline-block;
+        font-weight: 600
+    }
+
+.accordion .collapsed .acc-header-caret {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg)
+}
+
+.card-text small {
+    font-weight: 500;
+}
+
+.orange-blend-card .card-header {
+    background: #EB7824;
+    color: #fff;
+}
+
+    .orange-blend-card .card-header img {
+        border-radius: 50%;
+        padding: .5rem;
+        background: rgba(255, 255, 255, .8);
+    }
+
+.orange-blend-card .card-body {
+    background: rgba(235, 120, 36, .7);
+    color: #fff;
+}
+
+.slant-side-box {
+    position: relative;
+    position: 2;
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+    .slant-side-box.orange-bg {
+        background: #E7450F;
+    }
+
+    .slant-side-box.green-bg {
+        background: #9BC002;
+        color: #444444;
+    }
+
+.orange-overlap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background: #EB7824;
+    clip-path: polygon(0 0, 100% 0%, 97% 100%, 0% 100%);
+}
+
+.blue-overlap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background: #014086;
+    clip-path: polygon(0 0, 100% 0%, 97% 100%, 0% 100%);
+}
+
+#personal .orange-overlap {
+    background: #9BC002;
+}
+
+.action-boxes .business-bg p,
+.action-boxes .dark-orange-bg p,
+.action-boxes .linking,
+.download-box.business-bg p {
+    color: #ffffff !important;
+}
+
+.business-tab {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: 0;
+}
+
+    .business-tab .nav-link {
+        background: var(--business-brand);
+        color: #fff;
+        margin: 0;
+        border: none;
+        clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 1rem 2rem !important;
+    }
+
+        .business-tab .nav-link.active {
+            color: var(--business-brand);
+            background: #fff;
+        }
+
+.main-tab .nav-link {
+    background: var(--base-brand);
+    color: #fff;
+    margin: 0;
+    border: none;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem 2rem !important;
+}
+
+    .main-tab .nav-link.active {
+        color: var(--base-brand);
+        background: #fff;
+    }
+
+@media screen and (max-width:992px) {
+    .business-tab .nav-link {
+        width: 100%;
+        padding: 1rem 2rem !important;
+        place-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .business-tab {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.base-tab {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: 0;
+}
+
+    .base-tab .nav-link {
+        background: var(--base-brand);
+        color: #fff;
+        margin: 0;
+        border: none;
+        clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 1rem 2rem !important;
+    }
+
+        .base-tab .nav-link.active {
+            color: var(--base-brand);
+            background: #fff;
+        }
+
+@media screen and (max-width:992px) {
+    .base-tab .nav-link {
+        width: 100%;
+        padding: 1rem 2rem !important;
+        place-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .base-tab {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.alert-deep-blue-bg {
+    background: #1D366B;
+    color: #fff;
+}
+
+.table-height {
+    max-height: 500px;
+}
+
+.slant-right-bottom {
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+/* pr-v = personal color variant */
+
+.dsc-img-bg, .pr-v-light {
+    background: #9bc0024d;
+}
+
+.pr-v-lighter {
+    background: #9bc0021a;
+}
+
+.text-underline {
+    text-decoration: underline !important;
+}
+
+.orange-light-info {
+    background: #eb78241a;
+}
+
+    .orange-light-info img {
+        background: #eb782466;
+    }
+
+.diamondxtra-tab .nav-link {
+    border-width: 2px 1.5px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 0px;
+    font-weight: 500;
+    color: #fff;
+}
+
+    .diamondxtra-tab .nav-link.active {
+        background: #fff;
+        color: #EB7824;
+    }
+
+.pitch-color-list {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+    .pitch-color-list .list-group-item:nth-child(odd) {
+        background: #f9853733;
+    }
+
+    .pitch-color-list .list-group-item:nth-child(even) {
+        background: #fff;
+    }
+
+.d-f-img-position {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 25%;
+}
+
+@media screen and (min-width: 800px) and (max-width:1024px) {
+    .d-f-img-position {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .d-f-img-position {
+        position: unset;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+/* .nav-tabs .nav-item {
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+    margin-left: -.7rem;
+}
+
+.nav-tabs .nav-item:first-child {
+    margin-left: 0;
+} */
+
+/* Trapezium tab menu for all tab compoenent */
+
+.orange-tab .nav-link {
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+    margin-left: -.5rem;
+    padding-right: 1.5rem;
+}
+
+.orange-tab .nav-tabs {
+    position: relative;
+    top: -56px;
+    border-bottom: 0;
+}
+
+.orange-tab .nav-link {
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 0px;
+    margin-right: .25rem;
+    font-weight: 500;
+}
+
+    .orange-tab .nav-link.active {
+        color: #fff;
+        background: #F37C26;
+        border: none;
+    }
+
+.h-350 {
+    height: 350px;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2000;
+    transition: 5s ease-in-out;
+}
+
+/**********************************************
+* This Section contains classes of the Personal
+* background: #B5D335;
+* color: #ffffff;
+************************************************/
+
+#personal .personal-bg, #personal .main-breadcrumb-nav, #personal .main-quick-menu a, #personal .main-close-aside-btn, #personal .page-down-arrow {
+    background: var(--personal-brand) !important;
+    color: #ffffff !important;
+}
+
+#personal .personal-text {
+    color: var(--personal-brand);
+}
+
+#personal .aside-menu-list .active {
+    background: rgba(238, 126, 1, 0.15) !important;
+    color: #000;
+    border-right: 6px solid var(--base-brand) !important;
+}
+
+#personal .personal-theme .aside-menu-list .active {
+    background: rgba(241, 241, 241, 1) !important;
+    color: #000;
+    border-right: 6px solid var(--personal-brand) !important;
+}
+
+#personal .personal-theme .plus-minus::before {
+    color: rgba(68, 68, 68, 1) !important;
+}
+
+#personal .personal-theme .h-v-border {
+    border-color: rgba(68, 68, 68, 1);
+}
+
+/********************************************************************************************************************
+* This Section contains id and classes of the Rivate banking pages
+* background: #000000;
+* color: #ffffff;
+*********************************************************************************************************************/
+
+#private .private-bg, #private .main-breadcrumb-nav, #private .main-quick-menu a, #private .main-close-aside-btn, #private .page-down-arrow, #private .comment-sec {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+#private .private-text {
+    color: #000000;
+}
+
+
+/**********************************************
+* This Section contains classes of the Exclusive
+* background: #003624;
+* color: #ffffff;
+************************************************/
+
+#xclusive .personal-bg, #xclusive .main-breadcrumb-nav, #xclusive .main-quick-menu a, #xclusive .main-close-aside-btn, #xclusive .page-down-arrow {
+    background: var(--xclusive-brand) !important;
+    color: #ffffff !important;
+}
+
+#xclusive .personal-text {
+    color: var(--xclusive-brand);
+}
+
+#xclusive .aside-menu-list .active {
+    background: #003624 !important;
+    color: #000;
+    border-right: 6px solid var(--xclusive-brand) !important;
+}
+
+#xclusive .personal-theme .aside-menu-list .active {
+    background: rgba(241, 241, 241, 1) !important;
+    color: #000;
+    border-right: 6px solid var(--xclusive-brand) !important;
+}
+
+#xclusive .personal-theme .plus-minus::before {
+    color: #003624 !important;
+}
+
+#xclusive .personal-theme .h-v-border {
+    border-color: #003624;
+}
+
+/**********************************************
+* Additional Css for New Back to School Design
+* By Niyi
+************************************************/
+
+ #back-to-school_pg .hero-section2 .sub-title {
+     font-size: 1.1rem;
+ }
+
+ #back-to-school_pg .hero-section2 h1.title {
+     font-size: 2.75rem;
+     font-family: 'EffraCorp-Bold';
+ }
+
+ #back-to-school_pg .hero-inner2 {
+     max-height: 700px !important;
+     min-height: auto !important;
+ }
+
+ #bks {
+     padding: 5% 0;
+     background-position: left center;
+     background-repeat: no-repeat;
+     
+ }
+
+ #bks .contact-form {
+     width: 90%;
+     max-width: 720px;
+     margin: 0 auto;
+     background-color: #ffffff;
+     padding: 2%;
+     border: 1px solid #b5b3b3;
+ }
+
+ #bks.form-control2 {
+     border: none !important;
+     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+ }
+
+ #bks .form_bold_border>.custom-select,
+ #bks .form_bold_border>.form-control,
+ #bks .form_bold_border>.form_control2 {
+     background: #dcdcdc !important;
+     border: none !important;
+     /* padding: 1.3em 1em; */
+     height: 50px;
+     font-size: 1em;
+     color: #696565;
+ }
+
+ #back-to-school_pg .hero-section2 {
+     background: none;
+ }
+
+
+/*********************************************************
+ **********************************************************
+ AMEX CARD LANDING PAGE NEW - STYLE
+  **********************************************************
+ **********************************************************/
+
+
+ html {
+    overflow-x: clip;
+  }
+  .white-bg select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg width='17' height='10' viewBox='0 0 17 10' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M1.63232 1.94629L8.34533 8.65929L15.0583 1.94629' stroke='black' stroke-width='2.23767' stroke-linecap='round' stroke-linejoin='round'/> </svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    padding-right: 2rem;
+  }
+  #amexcard-pg .subtitle {
+    max-width: 33rem;
+    font-size: 1.2rem;
+    color: #4a4a4c;
+    line-height: 120%;
+  }
+  #amexcard-pg .h1 {
+    font-size: 2rem;
+  }
+  @media (min-width: 760px) {
+    #amexcard-pg .subtitle {
+      font-size: 1.5rem;
+    }
+    #amexcard-pg .h1 {
+      font-size: 2.5rem;
+    }
+  }
+  #amexcard-pg .application-form div.white-bg input,
+  #amexcard-pg .application-form div.white-bg select {
+    height: 60px;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: inherit !important;
+  }
+
+  .focus-slant-line {
+    position: absolute;
+    width: 7px;
+    /* max-height: 400px; */
+    min-height: 100px;
+    transform: rotateZ(40deg);
+    background: #ee7e01;
+    bottom: -1rem;
+    right: 4%;
+    height: 100%;
+    top: -1rem;
+    z-index: 99;
+  }
+
+  #amexcard-pg {
+    overflow-x: clip;
+    width: 100vw;
+    --amex-brand-color: #006fcf;
+    background-color: #eee;
+  }
+  #amexcard-pg .form-group {
+    display: grid;
+    gap: 0.75rem;
+  }
+  #amexcard-pg .title-banner {
+    background-image: url("../images/amexcard/amexcard-hero-bg.png");
+    min-height: 100vh;
+    /* height: 100vh; */
+    background-position-y: top;
+  }
+  #amexcard-pg .title-banner .inner {
+    margin-bottom: 25vh;
+    width: 90% !important;
+  }
+  #amexcard-pg .title-banner p {
+    max-width: 24rem;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 120%;
+    margin: 0 0 1rem !important;
+    text-align: left;
+  }
+  #amexcard-pg .title-banner h1 {
+    font-size: 4rem;
+    line-height: 80%;
+    padding-bottom: 2rem;
+    letter-spacing: -0.16rem;
+    background: linear-gradient(180deg, #fff5cc 32.63%, #fbfbfb 86.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 44rem;
+  }
+
+  #amexcard-pg .warrior-img {
+    bottom: -170%;
+    right: -65%;
+    width: 27rem;
+    height: 35rem;
+  }
+  #amexcard-pg .star-img {
+    bottom: -180px;
+    left: 16%;
+  }
+  #amexcard-pg .warrior-img img {
+    width: 100%;
+    height: 100%;
+  }
+  @media (min-width: 760px) {
+    #amexcard-pg .form-group {
+      display: flex;
+    }
+    #amexcard-pg .title-banner p {
+      font-size: 1.5rem;
+    }
+    #amexcard-pg .title-banner h1 {
+      font-size: 7.5rem;
+    }
+    #amexcard-pg .title-banner .inner {
+      margin-bottom: 15vh;
+    }
+    #amexcard-pg .warrior-img {
+      bottom: -70%;
+      right: 0;
+    }
+  }
+
+  #amexcard-pg main {
+    margin-top: 7rem;
+  }
+
+  #amexcard-pg .amexcard-feature-content {
+    width: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: height 0.6s;
+  }
+
+  #amexcard-pg .amexcard-feature {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+  }
+
+  #amexcard-pg .amexcard-container {
+    max-width: 70rem;
+    margin: auto;
+    width: 100%;
+    background-color: var(--amex-brand-color);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #amexcard-pg .premium-card .amexcard-container,
+  #amexcard-pg #amex_premium_modal .amexcard-container {
+    background-color: #444444;
+  }
+  #amexcard-pg .amexcard-feature-content .back .amexcard-container {
+    flex-direction: column;
+    font-weight: 400;
+  }
+
+  #amexcard-pg .amexcard-container .right,
+  #amexcard-pg .amexcard-container .left {
+    position: relative;
+    width: 100%;
+  }
+
+  #amexcard-pg .amexcard-container h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 85%;
+    letter-spacing: -0.06rem;
+  }
+  #amexcard-pg .amexcard-feature-content .back h3 {
+    max-width: 26rem;
+  }
+  #amexcard-pg .amexcard-container .atm-card {
+    max-width: 30rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.25);
+  }
+  #amexcard-pg .card-interest-form > div {
+    margin-top: 1.5rem;
+  }
+  #amexcard-pg .card-interest-form input,
+  #amexcard-pg .card-interest-form select {
+    height: 3rem;
+  }
+  #amexcard-pg .amexcard-feature-content .back .atm-card {
+    margin-top: -8.5rem;
+    margin-bottom: 2rem;
+    max-width: 20rem;
+  }
+  #amexcard-pg .list-group li {
+    background-color: transparent;
+    padding: 0.5rem 0;
+  }
+  #amexcard-pg .benefits-section {
+    flex-wrap: wrap-reverse;
+    margin-top: 6rem;
+  }
+  #amexcard-pg .benefits-section .left {
+    max-width: 30rem;
+    margin-top: 2rem;
+  }
+  #amexcard-pg .img-container {
+    width: 100%;
+    max-width: 53rem;
+    margin: auto;
+    position: relative;
+  }
+  #amexcard-pg .img-container .display-img {
+    width: 100%;
+    height: 100%;
+  }
+  #amexcard-pg .reward-card {
+    border: 2px solid;
+    border-image: linear-gradient(to top, #f1f1f1, var(--amex-brand-color))
+      1;
+    border-image-slice: 2;
+    background: #f1f1f1;
+    box-shadow: 0px 3.66px 3.66px 0px rgba(0, 0, 0, 0.1);
+    min-height: 15rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #amexcard-pg .reward-card .icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+  }
+  #amexcard-pg .reward-cards-wrapper {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  #amexcard-pg .service-box {
+    height: 25rem;
+  }
+  #amexcard-pg .personal-more-1 {
+    background-image: url("../images/amexcard/access-branch.png");
+  }
+  #amexcard-pg .personal-more-2 {
+    background-image: url("../images/amexcard/diner-img.png");
+  }
+  #amexcard-pg .personal-more-3 {
+    background-image: url("../images/amexcard/radisson-blu.png");
+  }
+  #amexcard-pg #gold-service-container .personal-more-1 {
+    background-image: url("../images/amexcard/credit-card.png");
+  }
+  #amexcard-pg #gold-service-container .personal-more-2 {
+    background-image: url("../images/amexcard/priority.png");
+  }
+  #amexcard-pg #gold-service-container .personal-more-3 {
+    background-image: url("../images/amexcard/car-rental.png");
+  }
+
+  @media (min-width: 760px) {
+    #amexcard-pg .amexcard-container {
+      padding: 3rem;
+    }
+    #amexcard-pg .amexcard-container .right,
+    #amexcard-pg .amexcard-container .left {
+      width: 46%;
+    }
+    #amexcard-pg .amexcard-container .bordered-line {
+      background: linear-gradient(
+        var(--amex-brand-color) 0%,
+        #fff 46.87%,
+        var(--amex-brand-color) 100%
+      );
+      height: 33rem;
+      width: 0.18rem;
+    }
+    #amexcard-pg .premium-card .amexcard-container .bordered-line {
+      background: linear-gradient(#444 0%, #fff 46.87%, #444 100%);
+    }
+    #amexcard-pg .amexcard-container .atm-card {
+      max-width: 30rem;
+      transform: scale(1.2);
+      transform-origin: right;
+      margin: 5rem 0;
+    }
+    #amexcard-pg .back .amexcard-container .atm-card {
+      transform: scale(1);
+    }
+    #amexcard-pg .benefits-section .left {
+      width: auto;
+    }
+    #amexcard-pg .reward-card {
+      width: 47%;
+      min-height: 20rem;
+    }
+  }
+
+  #amexcard-pg .features-table,
+  .feature-note {
+    max-width: 58rem;
+    width: 100%;
+    margin: 2rem auto;
+    position: relative;
+  }
+  #amexcard-pg .features-table::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-6px);
+    width: 3px;
+    background-color: var(--amex-brand-color);
+    bottom: 0;
+  }
+  #amexcard-pg .features-table .table-row {
+    display: flex;
+    margin-bottom: 0.5rem;
+    background-color: #eee;
+    color: #555555;
+  }
+  #amexcard-pg .features-table .table-head {
+    background-color: #000;
+    color: white;
+  }
+  #amexcard-pg .table-row span {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  #amexcard-pg .faq {
+    margin-top: 5rem;
+  }
+  #amexcard-pg .faq p {
+    padding: 0;
+  }
+  #amexcard-pg .faq li > div {
+    margin-top: 0.2rem;
+  }
+  #amexcard-pg .faq li span {
+    width: calc(100% - 30px);
+    word-wrap: break-word;
+  }
+  #amexcard-pg .white-section {
+    background-color: #fff;
+    padding: 5rem 0;
+  }
+  @media (min-width: 1100px) {
+    #amexcard-pg .white-section {
+      padding-top: 10rem;
+      margin-top: -3rem;
+    }
+    #amexcard-pg .img-container {
+      max-width: 35rem;
+      margin: 0;
+    }
+  }
+  @media (min-width: 1400px) {
+    #amexcard-pg .white-section {
+      padding-top: 12rem;
+      margin-top: -4.8rem;
+    }
+    #amexcard-pg .img-container {
+      max-width: 53rem;
+    }
+  }
+
+  #amexcard-pg .nav-tabs.clip-tabs {
+    margin-bottom: -2.5px;
+    position: relative;
+    z-index: 1;
+  }
+  #amexcard-pg .clip-tabs .nav-link.active {
+    color: #000;
+    background-color: #eee;
+    border: 1px solid #000;
+    border-bottom: 0px;
+    position: relative;
+  }
+  #amexcard-pg .white-tab .nav-link.active {
+    background-color: #fff;
+  }
+
+  #amexcard-pg .clip-tabs .nav-link {
+    background-color: var(--amex-brand-color);
+  }
+  #amexcard-pg .tab-content {
+    position: relative;
+  }
+  #amexcard-pg .tab-pane {
+    position: relative;
+    z-index: 10;
+  }
+  #amexcard-pg .tab-content::after {
+    content: "";
+    position: absolute;
+    height: 15rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid;
+    border-image: linear-gradient(to top, #eee, #000) 1;
+    border-image-slice: 2;
+  }
+  #amexcard-pg .tab-content.white-border::after {
+    border-image: linear-gradient(to top, #fff, #000) 1;
+  }
+
+  #amexcard-pg .modal-dialog.amexcard-feature {
+    width: 100vw;
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #amexcard-pg .modal-dialog.amexcard-feature {
+    margin: 10rem auto 5rem;
+  }
+  #amexcard-pg .title-banner .inner {
+    max-width: 1300px;
+  }
+  #amexcard-pg #amex_gold_modal,
+  #amexcard-pg #amex_premium_modal {
+    padding-left: 0 !important;
+  }
+  @media (min-width: 760px) {
+    #amexcard-pg .nav-link.active::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      right: 14px;
+      bottom: 0;
+      width: 1px;
+      height: 110%;
+      transform: rotate(-28deg);
+      background: #000;
+    }
+    #amexcard-pg .modal-dialog.amexcard-feature {
+      max-width: 70vw;
+      margin: 15rem auto 15rem;
+    }
+  }
+
+
+
+
+ /*
+ html {
+    overflow-x: clip;
+}
+.white-bg select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg width='17' height='10' viewBox='0 0 17 10' fill='none' xmlns='http://www.w3.org/2000/svg'> <path d='M1.63232 1.94629L8.34533 8.65929L15.0583 1.94629' stroke='black' stroke-width='2.23767' stroke-linecap='round' stroke-linejoin='round'/> </svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    padding-right: 2rem;
+}
+
+#amexcard-pg .subtitle {
+    max-width: 33rem;
+    font-size: 1.2rem;
+    color: #4a4a4c;
+    line-height: 120%;
+}
+
+#amexcard-pg .h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 760px) {
+    #amexcard-pg .subtitle {
+        font-size: 1.5rem;
+    }
+
+    #amexcard-pg .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+#amexcard-pg .application-form div.white-bg input,
+#amexcard-pg .application-form div.white-bg select {
+    height: 60px;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: inherit !important;
+}
+
+.focus-slant-line {
+    position: absolute;
+    width: 7px;
+    /* max-height: 400px; */
+    min-height: 100px;
+    transform: rotateZ(40deg);
+    background: #ee7e01;
+    bottom: -1rem;
+    right: 4%;
+    height: 100%;
+    top: -1rem;
+    z-index: 99;
+}
+
+#amexcard-pg {
+    overflow-x: clip;
+    --amex-brand-color: #006fcf !important;
+    background-color: #eee !important;
+}
+
+#amexcard-pg .form-group {
+    display: grid;
+    gap: 0.75rem;
+}
+
+#amexcard-pg .title-banner {
+    background-image: url("../images/amexcard/amexcard-hero-bg.png") !important;
+    min-height: 100vh;
+    /* height: 100vh; */
+    background-position-y: top;
+}
+
+#amexcard-pg .title-banner .inner {
+    margin-bottom: 25vh;
+}
+
+#amexcard-pg .title-banner p {
+    max-width: 24rem;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+}
+
+#amexcard-pg .title-banner h1 {
+    font-size: 4rem;
+    line-height: 80%;
+    padding-bottom: 2rem;
+    letter-spacing: -0.16rem;
+    background: linear-gradient(180deg, #fff5cc 32.63%, #fbfbfb 86.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 44rem;
+}
+
+#amexcard-pg .warrior-img {
+    bottom: -170%;
+    right: -65%;
+    width: 27rem;
+    height: 35rem;
+}
+
+#amexcard-pg .star-img {
+    bottom: -180px;
+    left: 16%;
+}
+
+#amexcard-pg .warrior-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 760px) {
+    #amexcard-pg .form-group {
+        display: flex;
+    }
+
+    #amexcard-pg .title-banner p {
+        font-size: 1.5rem;
+    }
+
+    #amexcard-pg .title-banner h1 {
+        font-size: 7.5rem;
+    }
+
+    #amexcard-pg .title-banner .inner {
+        margin-bottom: 15vh;
+        /*added by niyi*/
+        width:100%;
+        max-width: 900px;
+       
+    }
+
+    #amexcard-pg .warrior-img {
+        bottom: -70%;
+        right: 0;
+    }
+}
+
+#amexcard-pg main {
+    margin-top: 7rem;
+}
+
+#amexcard-pg .amexcard-feature-content {
+    width: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: height 0.6s;
+}
+
+#amexcard-pg .amexcard-feature {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+}
+
+#amexcard-pg .amexcard-feature-content .front {
+    transform: rotateY(0deg);
+}
+
+#amexcard-pg .amexcard-feature-content .back {
+    transform: rotateY(-180deg);
+}
+
+#amexcard-pg .amexcard-feature-content.flipped .front {
+    transform: rotateY(180deg);
+}
+
+#amexcard-pg .amexcard-feature-content.flipped .back {
+    transform: rotateY(0deg);
+}
+
+#amexcard-pg .amexcard-container {
+    max-width: 70rem;
+    margin: auto;
+    width: 100%;
+    background-color: var(--amex-brand-color);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#amexcard-pg .premium-card .amexcard-container {
+    background-color: #444444;
+}
+
+#amexcard-pg .amexcard-feature-content .back .amexcard-container {
+    flex-direction: column;
+    font-weight: 400;
+}
+
+#amexcard-pg .amexcard-container .right,
+#amexcard-pg .amexcard-container .left {
+    position: relative;
+    width: 100%;
+}
+
+#amexcard-pg .amexcard-container h3 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 85%;
+    letter-spacing: -0.06rem;
+}
+
+#amexcard-pg .amexcard-feature-content .back h3 {
+    max-width: 26rem;
+}
+
+#amexcard-pg .amexcard-container .atm-card {
+    max-width: 30rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+#amexcard-pg .card-interest-form>div {
+    margin-top: 1.5rem;
+}
+
+#amexcard-pg .card-interest-form input,
+#amexcard-pg .card-interest-form select {
+    height: 3rem;
+}
+
+#amexcard-pg .amexcard-feature-content .back .atm-card {
+    margin-top: -8.5rem;
+    margin-bottom: 2rem;
+    max-width: 20rem;
+}
+
+#amexcard-pg .list-group li {
+    background-color: transparent;
+    padding: 0.5rem 0;
+}
+
+#amexcard-pg .benefits-section {
+    flex-wrap: wrap-reverse;
+    margin-top: 6rem;
+}
+
+#amexcard-pg .benefits-section .left {
+    max-width: 30rem;
+    margin-top: 2rem;
+}
+
+#amexcard-pg .img-container {
+    width: 100%;
+    max-width: 53rem;
+    margin: auto;
+    position: relative;
+}
+
+#amexcard-pg .img-container .display-img {
+    width: 100%;
+    height: 100%;
+}
+
+#amexcard-pg .reward-card {
+    border: 2px solid;
+    border-image: linear-gradient(to top, #f1f1f1, var(--amex-brand-color)) 1;
+    border-image-slice: 2;
+    background: #f1f1f1;
+    box-shadow: 0px 3.66px 3.66px 0px rgba(0, 0, 0, 0.1);
+    min-height: 15rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#amexcard-pg .reward-card .icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+#amexcard-pg .reward-cards-wrapper {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#amexcard-pg .service-box {
+    height: 25rem;
+}
+
+#amexcard-pg .personal-more-1 {
+    background-image: url("../images/amexcard/access-branch.png") !important;
+}
+
+#amexcard-pg .personal-more-2 {
+    background-image: url("../images/amexcard/diner-img.png") !important;
+}
+
+#amexcard-pg .personal-more-3 {
+    background-image: url("../images/amexcard/radisson-blu.png") !important;
+}
+
+#amexcard-pg #gold-service-container .personal-more-4 {
+    background-image: url("../images/amexcard/credit-card.png") !important;
+}
+
+#amexcard-pg #gold-service-container .personal-more-5 {
+    background-image: url("../images/amexcard/priority.png") !important;
+}
+
+#amexcard-pg #gold-service-container .personal-more-6 {
+    background-image: url("../images/amexcard/car-rental.png") !important;
+}
+
+@media (min-width: 760px) {
+    #amexcard-pg .amexcard-container {
+        padding: 3rem;
+    }
+
+    #amexcard-pg .amexcard-container .right,
+    #amexcard-pg .amexcard-container .left {
+        width: 46%;
+    }
+
+    #amexcard-pg .amexcard-container .bordered-line {
+        background: linear-gradient(var(--amex-brand-color) 0%,
+                #fff 46.87%,
+                var(--amex-brand-color) 100%);
+        height: 33rem;
+        width: 0.18rem;
+    }
+
+    #amexcard-pg .premium-card .amexcard-container .bordered-line {
+        background: linear-gradient(#444 0%, #fff 46.87%, #444 100%);
+    }
+
+    #amexcard-pg .amexcard-container .atm-card {
+        max-width: 30rem;
+        transform: scale(1.2);
+        transform-origin: right;
+        margin: 5rem 0;
+    }
+
+    #amexcard-pg .back .amexcard-container .atm-card {
+        transform: scale(1);
+    }
+
+    #amexcard-pg .benefits-section .left {
+        width: auto;
+    }
+
+    #amexcard-pg .reward-card {
+        width: 47%;
+        min-height: 20rem;
+    }
+}
+
+#amexcard-pg .features-table,
+.feature-note {
+    max-width: 58rem;
+    width: 100%;
+    margin: 2rem auto;
+    position: relative;
+}
+
+#amexcard-pg .features-table::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-6px);
+    width: 3px;
+    background-color: var(--amex-brand-color);
+    bottom: 0;
+}
+
+#amexcard-pg .features-table .table-row {
+    display: flex;
+    margin-bottom: 0.5rem;
+    background-color: #eee;
+    color: #555555;
+}
+
+#amexcard-pg .features-table .table-head {
+    background-color: #000;
+    color: white;
+}
+
+#amexcard-pg .table-row span {
+    width: 50%;
+    padding: 1rem;
+}
+
+#amexcard-pg .faq {
+    margin-top: 5rem;
+}
+
+#amexcard-pg .faq p {
+    padding: 0;
+}
+
+#amexcard-pg .faq li>div {
+    margin-top: 0.2rem;
+}
+
+#amexcard-pg .faq li span {
+    width: calc(100% - 30px);
+    word-wrap: break-word;
+}
+
+#amexcard-pg .white-section {
+    background-color: #fff;
+    padding: 5rem 0;
+}
+
+@media (min-width: 1100px) {
+    #amexcard-pg .white-section {
+        padding-top: 10rem;
+        margin-top: -3rem;
+    }
+
+    #amexcard-pg .img-container {
+        max-width: 35rem;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    #amexcard-pg .white-section {
+        padding-top: 12rem;
+        margin-top: -4.8rem;
+    }
+
+    #amexcard-pg .img-container {
+        max-width: 53rem;
+    }
+}
+
+#amexcard-pg .nav-tabs.clip-tabs {
+    margin-bottom: -2.5px;
+    position: relative;
+    z-index: 1;
+}
+
+#amexcard-pg .clip-tabs .nav-link.active {
+    color: #000;
+    background-color: #eee;
+    border: 1px solid #000;
+    border-bottom: 0px;
+    position: relative;
+}
+
+#amexcard-pg .white-tab .nav-link.active {
+    background-color: #fff;
+}
+
+#amexcard-pg .clip-tabs .nav-link {
+    background-color: var(--amex-brand-color);
+}
+
+#amexcard-pg .tab-content {
+    position: relative;
+}
+
+#amexcard-pg .tab-pane {
+    position: relative;
+    z-index: 10;
+}
+
+#amexcard-pg .tab-content::after {
+    content: "";
+    position: absolute;
+    height: 15rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid;
+    border-image: linear-gradient(to top, #eee, #000) 1;
+    border-image-slice: 2;
+}
+
+#amexcard-pg .tab-content.white-border::after {
+    border-image: linear-gradient(to top, #fff, #000) 1;
+}
+
+@media (min-width: 760px) {
+    #amexcard-pg .nav-link.active::after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        right: 14px;
+        bottom: 0;
+        width: 1px;
+        height: 110%;
+        transform: rotate(-28deg);
+        background: #000;
+    }
+}
+
+.faq-accordion .collapsed .plus-minus::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f057";
+    display: inline-block;
+    font-weight: 400;
+    color: #444;
+    transform: rotate(-45deg);
+    transition: 0.1s ease-in;
+}*/
+div.amexform {width:100% !important; max-width:800px;}
+div.amexform > form {width:70% !important}
