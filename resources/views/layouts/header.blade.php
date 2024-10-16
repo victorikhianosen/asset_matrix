@@ -36,6 +36,73 @@
             transform: translateX(0%);
         }
     </style>
+
+    <style>
+        .flash-message {
+            position: fixed;
+            top: 20px;
+            right: -400px;
+            /* Start off-screen */
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border: 3px;
+            border-color: #fff;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            transition: right 0.5s ease-in-out;
+            z-index: 289;
+        }
+
+        .flash-message.success {
+            background-color: #F77A10;
+            /* Green for success */
+        }
+
+        .flash-message.error {
+            background-color: #dc3545;
+            /* Red for error */
+        }
+
+        .flash-message.slide-in {
+            right: 20px;
+            /* Slide into view */
+        }
+
+        .flash-message.slide-out {
+            right: -400px;
+            /* Slide out of view */
+        }
+    </style>
+
+
+    @if (session('success'))
+        <div id="flash-message" class="flash-message success">
+            {{ session('success') }}
+        </div>
+    @elseif(session('error'))
+        <div id="flash-message" class="flash-message error">
+            {{ session('error') }}
+        </div>
+    @endif
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const flashMessage = document.getElementById('flash-message');
+
+            if (flashMessage) {
+                // Slide the message in
+                flashMessage.classList.add('slide-in');
+
+                // Slide the message out after 5 seconds
+                setTimeout(function() {
+                    flashMessage.classList.remove('slide-in');
+                    flashMessage.classList.add('slide-out');
+                }, 5000);
+            }
+        });
+    </script>
 </head>
 
 <body class="">
@@ -45,19 +112,22 @@
             <a href="{{ route('home') }}">
                 <img class="w-32 md:w-40" src="{{ asset('asset/images/logo.png') }}" alt="">
             </a>
+
             <div class="space-x-6 hidden lg:block">
                 <a class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                    href="{{ route('home') }}">Home</a>
+                    href="{{ route('home') }}">Home
+                </a>
 
                 <!-- Our Bank Dropdown -->
                 <div class="relative inline-block" onmouseenter="showDropdown('bankDropDown')"
                     onmouseleave="hideDropdown('bankDropDown')">
-                    <button class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                        onclick="toggleDropdown('bankDropDown')">Our Bank 
-                                            <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
-</button>
+                    <button
+                        class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
+                        onclick="toggleDropdown('bankDropDown')">Our Bank
+                        <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
+                    </button>
                     <div id="bankDropDown"
-                        class="absolute right-0 z-10 mt-6 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+                        class="absolute -left-2 z-10 mt-5 w-24 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
                         <div class="py-6">
                             <a href="{{ route('about') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150"
@@ -71,20 +141,23 @@
                 <!-- Business Banking Dropdown -->
                 <div class="relative inline-block" onmouseenter="showDropdown('businessDropDown')"
                     onmouseleave="hideDropdown('businessDropDown')">
-                    <button class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
+                    <button
+                        class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
                         onclick="toggleDropdown('businessDropDown')">Business Banking
-                                            <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
-</button>
+                        <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
+                    </button>
                     <div id="businessDropDown"
-                        class="absolute right-0 z-10 mt-6 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+                        class="absolute -left-2 z-10 mt-5 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
                         <div class="py-6">
 
                             <a href="{{ route('internet') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Digital Banking</a>
+                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Digital
+                                Banking</a>
                             <a href="{{ route('loan') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Loan</a>
                             <a href="{{ route('savings') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Investment | Deposit</a>
+                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Investment
+                                | Deposit</a>
                             {{-- <a href="{{ route('deposit') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Deposit</a> --}}
                         </div>
@@ -93,7 +166,7 @@
 
                 <!-- Online Banking -->
                 <div class="relative inline-block">
-                    <a href="{{ url('https://cashmatrix.app/') }}"
+                    <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
                         class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150">Online
                         Banking</a>
                 </div>
@@ -101,12 +174,13 @@
                 <!-- Policy Dropdown -->
                 <div class="relative inline-block" onmouseenter="showDropdown('policyDropDown')"
                     onmouseleave="hideDropdown('policyDropDown')">
-                    <button class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
+                    <button
+                        class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
                         onclick="toggleDropdown('policyDropDown')">Policy
                         <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
                     </button>
                     <div id="policyDropDown"
-                        class="absolute right-0 z-10 mt-6 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+                        class="absolute -right-16 z-10 mt-5 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
                         <div class="py-6">
                             <a href="{{ route('policy.data') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150"
@@ -117,15 +191,15 @@
                             <a href="{{ route('policy.amt') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Anti-Money
                                 Laundering</a>
-                            <a href="{{ route('policy.enduser') }}" target="_blank"
+                            <a href="{{ route('policy.enduser') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">End
                                 User Agreement</a>
                         </div>
                     </div>
                 </div>
 
-                <a href=""
-                    class="bg-white border-2 border-primary hover:bg-white hover:text-black hover:border-black transition-all duration-150 py-2 px-4 font-medium rounded-full text-primary">Request
+                <a href="{{ route('request.loan') }}"
+                    class="bg-white border-2 border-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-150 py-2 px-4 font-medium rounded-full text-primary">Request
                     Loan</a>
             </div>
 
@@ -140,32 +214,20 @@
             </div>
         </div>
 
-
-
         {{-- Mobile Menu --}}
-        <div id="mobileMenu"
-            class="fixed top-0 right-0 w-2/3 h-full bg-white rounded-bl-2xl shadow-lg transform transition-transform duration-300 ease-in-out z-20">
-            <div class="flex justify-end items-end p-4">
-                <div id="closeMobileMenuButtonInMenu" class="cursor-pointer" onclick="toggleMobileMenu()">
-                    <i class="fa-regular fa-circle-xmark text-4xl text-primary"></i>
-                </div>
-            </div>
-            <div class="px-6 space-y-8 py-4">
-                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                    href="{{ route('home') }}">Home</a>
-                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                    href="{{ route('about') }}">About Us</a>
-                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                    href="{{ route('team') }}">Team</a>
-                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                    href="{{ route('loan') }}">Loan</a>
-                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                    href="{{ route('savings') }}">Savings</a>
-                <a class="block text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                    href="{{ route('deposit') }}">Deposit</a>
-            </div>
-        </div>
+        <x-mobile-menu />
+
+
+
     </section>
+
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle('hidden');
+        }
+    </script>
 
     <script>
         function toggleMobileMenu() {

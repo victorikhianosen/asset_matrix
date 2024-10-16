@@ -15,3 +15,5 @@ Route::get('policy/mobile', [PagesController::class, 'mobilePolicy'])->name('pol
 Route::get('policy/amt', [PagesController::class, 'amt'])->name('policy.amt');
 Route::get('policy/enduser', [PagesController::class, 'enduser'])->name('policy.enduser');
 Route::get('internet', [PagesController::class, 'internet'])->name('internet');
+Route::get('request', [PagesController::class, 'requestLoan'])->name('request.loan');
+Route::post('process/loan', [PagesController::class, 'processLoan'])->name('process.loan');

@@ -139,18 +139,7 @@
                         paying bills and making transfers, every feature is designed for your convenience. With
                         state-of-the-art security protocols, you can bank with confidence, knowing your information is
                         protected. Experience banking that adapts to your lifestyle!
-
-
-
-
                     </p>
-
-                    <div class="mt-12">
-                        <a href="{{ url('https://cashmatrix.app/') }}" target="_blank"
-                            class="bg-primary py-3 px-6 text-white border-2 border-primary hover:bg-white hover:text-primary rounded-full transition-all duration-300">
-                            <span>Read More</span><i class="bi bi-arrow-right ml-2 text-lg"></i>
-                        </a>
-                    </div>
 
                 </div>
 

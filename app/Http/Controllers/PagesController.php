@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\LoanMail;
 use Illuminate\Http\Request;
+use App\Mail\CustomerReplyLoan;
+use Illuminate\Support\Facades\Mail;
 
 class PagesController extends Controller
 {
@@ -61,6 +64,32 @@ class PagesController extends Controller
 
     public function internet(){
         return view('pages.internet');
+    }
+
+    public function requestLoan(){
+        return view('pages.request_loan');
+    }
+
+    public function processLoan(Request $request){
+        $data = $request->validate([
+            'first_name' => 'required',
+            'last_name'=> 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'purpose' => 'required',
+            'duration' => 'required',
+            'amount' => 'required',
+            'address' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+            'country' => 'required',            
+        ]);
+
+        $matricEmail = ['victorikhianosen@assetmatrix.com', ];
+        Mail::to($data['email'])->send(mailable: new CustomerReplyLoan($data));
+        Mail::to($data['email'])->send(mailable: new LoanMail($data));
+    
+        return back()->with('success', 'Loan submitted successfully');
     }
 
 }

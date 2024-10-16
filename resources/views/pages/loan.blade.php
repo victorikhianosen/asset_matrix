@@ -17,7 +17,7 @@
                                 <h1
                                     class="text-white text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tigh">
 
-                                    Loan Product
+                                    Loan Products
                                 </h1>
 
 
@@ -43,31 +43,33 @@
     <section class="">
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="px-6 md:pl-8 lg:pl-24 py-10 md:py-24 bg-whiteBg">
-                <img src="{{ asset('asset/images/loan11.png') }}" alt="">
+                {{-- <img src="{{ asset('asset/images/loan11.png') }}" alt=""> --}}
+                <img src="{{ asset('asset/images/lll.png') }}" alt="">
+
             </div>
             <div class="px-6 md:pr-8 lg:pr-24 text-white py-10 md:py-24 bg-purple pl-6 lg:pl-12 space-y-10">
-                 <h2 class="text-3xl md:text-5xl font-semibold">
-                        <span class="text-primary">Quick and</span> Reliable Loan Options for Your Needs
-                    </h2>
-                    <div class="space-y-4">
-                        <p class="text-xs md:text-sm tracking-wider">
-                            Discover our diverse loan products designed to meet the financial needs of businesses and
-                            individuals alike. Our Esusu Loan supports micro-businesses, entrepreneurs, traders, and
-                            individuals, offering a simple application process with no hidden charges. We believe in
-                            empowering your business without the stress of complicated repayment structures. For business
-                            owners and SMEs, our Business Loan provides quick, transparent access to funds without needing
-                            to save with us first.
-                        </p>
+                <h2 class="text-3xl md:text-5xl font-semibold">
+                    <span class="text-primary">Quick and</span> Reliable Loan Options for Your Needs
+                </h2>
+                <div class="space-y-4">
+                    <p class="text-xs md:text-sm tracking-wider">
+                        Discover our diverse loan products designed to meet the financial needs of businesses and
+                        individuals alike. Our Esusu Loan supports micro-businesses, entrepreneurs, traders, and
+                        individuals, offering a simple application process with no hidden charges. We believe in
+                        empowering your business without the stress of complicated repayment structures. For business
+                        owners and SMEs, our Business Loan provides quick, transparent access to funds without needing
+                        to save with us first.
+                    </p>
 
-                        <p class="text-xs md:text-sm tracking-wider">
-                            Just have a viable business ready for investment, and we’ll help you achieve your growth goals.
-                            For urgent needs, our Instant Cash Loan delivers funds within 24 hours, allowing you to apply
-                            online and withdraw from correspondent banking after approval. Similarly, our Salary Advance is
-                            tailored for salaried individuals, ensuring quick access to funds to cover unexpected expenses.
-                            Experience seamless financial support tailored for your needs—apply today and take the first
-                            step toward financial security!
-                        </p>
-                    </div>
+                    <p class="text-xs md:text-sm tracking-wider">
+                        Just have a viable business ready for investment, and we’ll help you achieve your growth goals.
+                        For urgent needs, our Instant Cash Loan delivers funds within 24 hours, allowing you to apply
+                        online and withdraw from correspondent banking after approval. Similarly, our Salary Advance is
+                        tailored for salaried individuals, ensuring quick access to funds to cover unexpected expenses.
+                        Experience seamless financial support tailored for your needs—apply today and take the first
+                        step toward financial security!
+                    </p>
+                </div>
             </div>
         </div>
     </section>

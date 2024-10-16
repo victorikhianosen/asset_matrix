@@ -2,11 +2,11 @@
 
 
 @section('main')
-    <section class="bg-whiteBg">
+    <section class="bg-primary text-white">
         <div class="mx-6 md:mx-8 lg:mx-24 pb- pt-28 md:pb-16 md:pt-44">
             <div class="">
                 <h1
-                    class="text-black text-star text-2xl md:text-6xl lg:text-4xl font-semibold gap-6 tracking-tighter leading-tight">
+                    class="text-white text-star text-2xl md:text-6xl lg:text-4xl font-semibold gap-6 tracking-tighter leading-tight">
                     About Us</h1>
 
 
@@ -50,7 +50,7 @@
 
                 <!-- Image Section -->
                 <div>
-                    <img src="{{ asset('asset/images/about.png') }}" alt="">
+                    <img src="{{ asset('asset/images/aboutus.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
 
                     <div
                         class="group cursor-pointer shadow-xl p-6 border-2
-                         border-yellow bg-yellow text-center rounded-2xl hover:scale-y-105 transition-all duration-200">
+                         border-[#C0CAD0] bg-[#C0CAD0] text-center rounded-2xl hover:scale-y-105 transition-all duration-200">
                         <span>
                             <i class="fa-solid fa-coins text-5xl pb-4"></i>
                         </span>

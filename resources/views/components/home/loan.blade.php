@@ -59,15 +59,17 @@
 
                     </div>
 
-                    <button
-                        class="bg-white mt-12 font-semibold py-2 px-10 rounded-full text-black border-2 border-black
-                                 hover:bg-white hover:text-black hover:border-black transition-all duration-200">Get
-                        Start
-                    </button>
+                    <div>
+                        <a href="{{ route('loan') }}"
+                            class="bg-white mt-12 font-semibold py-2 px-10 rounded-full text-black border-2 border-black
+                                 hover:bg-primary hover:text-white hover:border-white transition-all duration-200">Get
+                            Start
+                        </a>
+                    </div>
                 </div>
 
-                <div class="bg-white rounded-lg">
-                    <img src="{{ asset('asset/images/loan.png') }}" alt="">
+                <div class="">
+                    <img src="{{ asset('asset/images/request.png') }}" alt="">
                 </div>
             </div>
         </div>

@@ -77,7 +77,7 @@
                         </span>
 
                         <span>
-                            <a href="{{ url('https://play.google.com/store/apps/details?id=com.assetcashmatrix.mfb&hl=en') }}"
+                            <a href="{{ url('https://play.google.com/store/apps/details?id=com.assetcashmatrix.mfb&hl=en ') }}"
                                 target="_blank">
                                 <div
                                     class="group flex justify-center items-center gap-2 border-2 border-black
@@ -203,6 +203,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script src="{{ asset('asset/js/swiper.js') }}"></script>
 <script src="{{ asset('asset/js/index.js') }}"></script>
 

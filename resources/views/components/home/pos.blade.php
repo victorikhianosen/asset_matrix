@@ -3,9 +3,6 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
 
 
-                <div class="bg-white">
-                    <img class="w-fit h-96" src="{{ asset('asset/images/pos.png') }}" alt="">
-                </div>
 
 
                 <div class="bg-purple p-6 md:px-8 lg:px-24 py-10 md:py-24 space-y-6 text-white">
@@ -109,12 +106,16 @@
 
 
                     <div class="pt-6">
-                        <button
+                        <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
                             class="bg-white  text-black py-2 px-6 text-sm rounded-full border-2 border-white hover:bg-purple hover:text-white transition-all duration-150">Get
-                            Started</button>
+                            Started</a>
                     </div>
 
 
+                </div>
+
+                <div class="bg-white">
+                    <img class="w-full h-fit" src="{{ asset('asset/images/pos44.png') }}" alt="">
                 </div>
 
 

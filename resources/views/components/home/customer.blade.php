@@ -12,9 +12,10 @@
                     </div>
                     <div>
                         <h2 class="text-sm md:text-md font-semibold tracking-wider">John Matthews</h2>
-                        <p class="text-xs md:text-sm font-extralight">Web Developer</p>
+                        <p class="text-xs md:text-sm font-extralight">CEO Mark Inc</p>
                         <p class="text-xs whiteText font-extralight tracking-wide">
-                            Lorem ipsum dolor sit Obcaecati quia nostrum, cupiditate necessitatibus
+                            Fast, secure, and reliable! This interbanking app makes managing my accounts and transfers
+                            across banks so easy. A must-have for seamless banking!
                         </p>
                     </div>
                 </div>
@@ -27,10 +28,10 @@
                     </div>
                     <div>
                         <h2 class="text-sm md:text-md font-semibold tracking-wider">John Matthews</h2>
-                        <p class="text-xs md:text-sm font-extralight">Web Developer</p>
+                        <p class="text-xs md:text-sm font-extralight">MD Jomatip</p>
                         <p class="text-xs whiteText font-extralight tracking-wide">
-                            Lorem ipsum dolor sit Obcaecati quia nostrum, cupiditate necessitatibus
-                        </p>
+                            Effortless banking at my fingertips! This app simplifies transfers between banks and keeps
+                            my transactions secure and swift. Highly recommend! </p>
                     </div>
                 </div>
 
@@ -42,9 +43,10 @@
                     </div>
                     <div>
                         <h2 class="text-sm md:text-md font-semibold tracking-wider">John Matthews</h2>
-                        <p class="text-xs md:text-sm font-extralight">Web Developer</p>
+                        <p class="text-xs md:text-sm font-extralight">Director, GGT</p>
                         <p class="text-xs whiteText font-extralight tracking-wide">
-                            Lorem ipsum dolor sit Obcaecati quia nostrum, cupiditate necessitatibus
+                            Smooth and convenient! This app makes interbank transfers a breeze, with a user-friendly
+                            interface and top-notch security. Love it!
                         </p>
                     </div>
                 </div>
@@ -152,4 +154,3 @@
         animateCounter("appDownloadCount", 0, appDownloads, 1000); // 1 second duration
     };
 </script>
-
