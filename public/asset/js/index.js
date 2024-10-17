@@ -1,134 +1,190 @@
-let dropdownTimeout;
 
-function toggleDropdown(dropdownId) {
-    const dropdown = document.getElementById(dropdownId);
-    dropdown.classList.toggle("hidden"); // Toggle visibility
+// BEGINING OF HEADER DROP
+const ourBank = document.getElementById("ourBank");
+const ourBankDropDown = document.getElementById("ourBankDropDown");
 
-    // Close other dropdowns if any are open
-    document.querySelectorAll(".absolute").forEach(function (drop) {
-        if (drop.id !== dropdownId) {
-            drop.classList.add("hidden");
-        }
-    });
-}
+const businessBanking = document.getElementById("businessBanking");
+const businessBankingDropDown = document.getElementById(
+    "businessBankingDropDown"
+);
+const policy = document.getElementById("policy");
+const policyDropDown = document.getElementById("policyDropDown");
 
-function showDropdown(dropdownId) {
-    clearTimeout(dropdownTimeout); // Clear any timeout to hide the dropdown
-    const dropdown = document.getElementById(dropdownId);
-    dropdown.classList.remove("hidden"); // Show the dropdown
-}
+// Mobile Selector
+const ourBankMobile = document.getElementById("ourBankMobile");
+const ourBankDropDownMobile = document.getElementById("ourBankDropDownMobile");
 
-function hideDropdown(dropdownId) {
-    const dropdown = document.getElementById(dropdownId);
-    dropdownTimeout = setTimeout(() => {
-        dropdown.classList.add("hidden"); // Hide the dropdown after delay
-    }, 90); // 100 milliseconds delay
-}
+const businessMobile = document.getElementById("businessMobile");
+const businessDropDownMobile = document.getElementById(
+    "businessDropDownMobile"
+);
 
-// Close dropdowns when clicking outside
-window.onclick = function (event) {
-    if (!event.target.matches(".relative button")) {
-        const dropdowns = document.querySelectorAll(".absolute");
-        dropdowns.forEach(function (dropdown) {
-            dropdown.classList.add("hidden");
-        });
-    }
-};
+const policyMobile = document.getElementById("policyMobile");
+const policyDropDownMobile = document.getElementById("policyDropDownMobile");
 
-// JavaScript for Accordion
-const policyButtons = [
-    document.getElementById("policyMobile3"),
-    document.getElementById("policyMobile4"),
-    document.getElementById("policyMobile5"),
-];
 
-const contentSections = [
-    document.getElementById("content-345"),
-    document.getElementById("content-346"),
-    document.getElementById("content-347"),
-];
-
-// Policy
-accordionBtns.forEach((btn) => {
-    btn.addEventListener("click", function () {
-        const targetAccordion = document.querySelector(this.dataset.target);
-        const targetIcon = this.querySelector("span svg");
-
-        // Close all open accordions
-        allAccordions.forEach((accordion) => {
-            if (accordion !== targetAccordion) {
-                accordion.classList.add("hidden");
-                accordion.style.maxHeight = null;
-            }
-        });
-
-        // Toggle the clicked accordion
-        if (targetAccordion.classList.contains("hidden")) {
-            targetAccordion.classList.remove("hidden");
-            targetAccordion.style.maxHeight =
-                targetAccordion.scrollHeight + "px";
-            targetIcon.classList.add("rotate-180");
-        } else {
-            targetAccordion.classList.add("hidden");
-            targetAccordion.style.maxHeight = null;
-            targetIcon.classList.remove("rotate-180");
-        }
-    });
+// Show dropdown on mouseover
+ourBank.addEventListener("mouseover", () => {
+    ourBankDropDown.classList.remove("hidden");
+});
+ourBankDropDown.addEventListener("mouseover", () => {
+    ourBankDropDown.classList.remove("hidden");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const elementsToAnimate = [
-        document.getElementById("customer1"),
-        document.getElementById("customer2"),
-        document.getElementById("customer3"),
-    ];
-
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.remove("opacity-0"); // Make visible
-                    entry.target.classList.add("animate-slideUp"); // Apply animation
-                } else {
-                    entry.target.classList.add("opacity-0"); // Hide again when scrolled out
-                    entry.target.classList.remove("animate-slideUp"); // Reset animation to allow it to retrigger
-                }
-            });
-        },
-        {
-            threshold: 0.5, // Trigger when 50% of the element is in view
+ourBank.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!ourBankDropDown.matches(':hover')) {
+            ourBankDropDown.classList.add("hidden");
         }
+    }, 100);
+});
+ourBankDropDown.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!ourBank.matches(":hover")) {
+            ourBankDropDown.classList.add("hidden");
+        }
+    }, 100);
+});
+
+
+businessBanking.addEventListener("mouseover", () => {
+    businessBankingDropDown.classList.remove("hidden");
+});
+businessBankingDropDown.addEventListener("mouseover", () => {
+    businessBankingDropDown.classList.remove("hidden");
+});
+
+businessBanking.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!businessBankingDropDown.matches(":hover")) {
+            businessBankingDropDown.classList.add("hidden");
+        }
+    }, 100);
+});
+businessBankingDropDown.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!businessBanking.matches(":hover")) {
+            businessBankingDropDown.classList.add("hidden");
+        }
+    }, 100);
+});
+
+// Same logic for the 'Policy' dropdown
+policy.addEventListener("mouseover", () => {
+    policyDropDown.classList.remove("hidden");
+});
+policyDropDown.addEventListener("mouseover", () => {
+    policyDropDown.classList.remove("hidden");
+});
+
+policy.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!policyDropDown.matches(":hover")) {
+            policyDropDown.classList.add("hidden");
+        }
+    }, 100);
+});
+policyDropDown.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!policy.matches(":hover")) {
+            policyDropDown.classList.add("hidden");
+        }
+    }, 100);
+});
+
+
+// END OF HEADER DROP DOWN
+
+// BEGINING OF MOBILE MENU
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileMenuButton = document.getElementById("mobileMenuButton");
+    const closeMobileMenuButton = document.getElementById(
+        "closeMobileMenuButton"
+    );
+    const closeMobileMenuButtonInMenu = document.getElementById(
+        "closeMobileMenuButtonInMenu"
     );
 
-    elementsToAnimate.forEach((element) => {
-        observer.observe(element);
-    });
+    mobileMenu.classList.toggle("active");
+    const isActive = mobileMenu.classList.contains("active");
+
+    mobileMenuButton.classList.toggle("hidden", isActive);
+    closeMobileMenuButton.classList.toggle("hidden", !isActive);
+}
+
+
+// Show dropdown on mouseover
+// Mobile Dropdowns
+
+// Our Bank Mobile
+ourBankMobile.addEventListener("mouseover", () => {
+    ourBankDropDownMobile.classList.remove("hidden");
+});
+ourBankDropDownMobile.addEventListener("mouseover", () => {
+    ourBankDropDownMobile.classList.remove("hidden");
 });
 
-// Savings
-
-document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll("[data-animation]");
-    const windowHeight = window.innerHeight;
-
-    const handleScroll = () => {
-        const scrollY = window.scrollY;
-
-        // Check if the user has scrolled down a specific amount
-        if (scrollY > 50) {
-            // Change this value to adjust when the animation should trigger
-            cards.forEach((card) => {
-                // Add Tailwind classes for animation
-                card.classList.add("animate-slideUp"); // Use your defined animation
-            });
-            window.removeEventListener("scroll", handleScroll); // Remove the event listener after animation
+ourBankMobile.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!ourBankDropDownMobile.matches(':hover')) {
+            ourBankDropDownMobile.classList.add("hidden");
         }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Run on page load to animate any cards already in view
+    }, 100);
+});
+ourBankDropDownMobile.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!ourBankMobile.matches(':hover')) {
+            ourBankDropDownMobile.classList.add("hidden");
+        }
+    }, 100);
 });
 
-// CUSTOMER
+// Business Banking Mobile
+businessMobile.addEventListener("mouseover", () => {
+    businessDropDownMobile.classList.remove("hidden");
+});
+businessDropDownMobile.addEventListener("mouseover", () => {
+    businessDropDownMobile.classList.remove("hidden");
+});
+
+businessMobile.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!businessDropDownMobile.matches(':hover')) {
+            businessDropDownMobile.classList.add("hidden");
+        }
+    }, 100);
+});
+businessDropDownMobile.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!businessMobile.matches(':hover')) {
+            businessDropDownMobile.classList.add("hidden");
+        }
+    }, 100);
+});
+
+// Policy Mobile
+policyMobile.addEventListener("mouseover", () => {
+    policyDropDownMobile.classList.remove("hidden");
+});
+policyDropDownMobile.addEventListener("mouseover", () => {
+    policyDropDownMobile.classList.remove("hidden");
+});
+
+policyMobile.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!policyDropDownMobile.matches(':hover')) {
+            policyDropDownMobile.classList.add("hidden");
+        }
+    }, 100);
+});
+policyDropDownMobile.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        if (!policyMobile.matches(':hover')) {
+            policyDropDownMobile.classList.add("hidden");
+        }
+    }, 100);
+});
+
 
 

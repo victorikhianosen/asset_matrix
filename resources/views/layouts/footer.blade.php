@@ -6,8 +6,8 @@
                 <div class="space-y-6">
                     <img class="w-56" src="{{ asset('asset/images/logobg.png') }}" alt="">
                     <div class="space-y-2">
-                        <p class="mr-6">
-                            AssetMatrix Microfinance Bank Limited is authorised and regulated by the Central
+                        <p class="mr-6" align="justify">
+                            Asset Matrix Microfinance Bank Limited is authorised and regulated by the Central
                             Bank of
                             Nigeria to offer banking services. Deposits are insured by the Nigerian Deposit
                             Insurance
@@ -33,10 +33,10 @@
                 <div class="space-y-4">
                     <h4 class="text-lg text-white font-semibold">Business</h4>
                     <div class="text-xs md:text-sm tracking-wider text-blackText space-y-3">
-                        <p><a href="{{ route('about') }}" class="hover:text-white">Digital Banking</a></p>
+                        <p><a href="{{ route('internet') }}" class="hover:text-white">Digital Banking</a></p>
                         <p><a href="{{ route('loan') }}" class="hover:text-white">Loan</a></p>
                         <p><a href="{{ route('savings') }}" class="hover:text-white">Investment</a></p>
-                        <p><a href="{{ route('savings') }}" class="hover:text-white">Desposit</a></p>
+                        <p><a href="{{ route('savings') }}" class="hover:text-white">Deposit</a></p>
                     </div>
                 </div>
             </div>
@@ -45,11 +45,11 @@
                 <div class="space-y-4">
                     <h4 class="text-lg text-white font-semibold">Useful Links</h4>
                     <div class="text-xs md:text-sm tracking-wider text-blackText space-y-3">
-                        <p><a href="{{ route('about') }}" target="_blank" class="hover:text-white">About</a></p>
-                        <p><a href="{{ route('team') }}" target="_blank" class="hover:text-white">Team</a></p>
+                        <p><a href="{{ route('about') }}" class="hover:text-white">About</a></p>
+                        <p><a href="{{ route('team') }}" class="hover:text-white">Team</a></p>
+                        <p><a href="{{ route('loan') }}" class="hover:text-white">Loan</a></p>
                         <p><a href="{{ url('https://cashmatrix.app/') }}" target="_blank" class="hover:text-white">Open
                                 Account</a></p>
-                        <p><a href="{{ route('loan') }}" target="_blank" class="hover:text-white">Loan</a></p>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,8 @@
 
                     <div class="grid grid-cols-2 items-center gap-2">
                         <span>
-                            <a href="{{ url('https://apps.apple.com/us/app/cashmatrix/id6470770885 ') }}">
+                            <a href="{{ url('https://apps.apple.com/us/app/cashmatrix/id6470770885 ') }}"
+                                target="_blank">
                                 <div
                                     class="group flex justify-center border-2 border-white items-center gap-2 bg-black py-2
                                      px-2 rounded-full text-white hover:bg-white">

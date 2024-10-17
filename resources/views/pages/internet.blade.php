@@ -18,7 +18,8 @@
                                     Banking @ ease...
 
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we
+                                <p class="text-[#333333] font-light text-sm md:text-md" align="justify">At Asset
+                                    Micro-finance, we
                                     Experience the freedom of managing your finances from anywhere with our all-in-one
                                     Mobile Banking App. Whether you need to check your balance, transfer funds, or pay
                                     bills, our app brings the bank to you — no matter where you are.
@@ -28,7 +29,8 @@
                                 <div class="grid grid-cols-2 justify-center items-center gap-6 w-full lg:w-9/12 pt-8">
 
                                     <span>
-                                        <a href="{{ url('https://apps.apple.com/us/app/cashmatrix/id6470770885') }}" target="_blink">
+                                        <a href="{{ url('https://apps.apple.com/us/app/cashmatrix/id6470770885') }}"
+                                            target="_blink">
                                             <div
                                                 class="group flex justify-center border-2 border-black items-center gap-2 bg-black py-2
                                      px-2 rounded-full text-white hover:bg-white">
@@ -47,7 +49,8 @@
                                     </span>
 
                                     <span>
-                                        <a href="{{ url('https://play.google.com/store/apps/details?id=com.assetcashmatrix.mfb&hl=en') }}" target="_blink">
+                                        <a href="{{ url('https://play.google.com/store/apps/details?id=com.assetcashmatrix.mfb&hl=en') }}"
+                                            target="_blink">
                                             <div
                                                 class="group flex justify-center items-center gap-2 border-2 border-black
                                       bg-white py-2 px-2 rounded-full text-white hover:bg-black">
@@ -99,7 +102,7 @@
                         Experience Effortless Banking Anywhere
 
                     </h2>
-                    <p class="mt-4">
+                    <p class="mt-4" align="justify">
                         Managing your finances has never been easier. Our app offers a seamless banking experience with
                         intuitive features and top-notch security. Whether you're checking balances or making transfers,
                         we've got you covered—no hassle, just results.
@@ -273,12 +276,16 @@
 
 
                     <h2 class="font-bold text-2xl md:text-4xl mt-4">
-                       Experience Instant Banking at Your Fingertips
+                        Experience Instant Banking at Your Fingertips
 
 
                     </h2>
-                    <p class="mt-4">
-                       Take control of your finances with our comprehensive internet banking platform. Enjoy a user-friendly interface that makes managing your accounts effortless. From checking your balance to paying bills and making transfers, every feature is designed for your convenience. With state-of-the-art security protocols, you can bank with confidence, knowing your information is protected. Experience banking that adapts to your lifestyle!
+                    <p class="mt-4" align="justify">
+                        Take control of your finances with our comprehensive internet banking platform. Enjoy a
+                        user-friendly interface that makes managing your accounts effortless. From checking your balance to
+                        paying bills and making transfers, every feature is designed for your convenience. With
+                        state-of-the-art security protocols, you can bank with confidence, knowing your information is
+                        protected. Experience banking that adapts to your lifestyle!
 
 
 
@@ -301,6 +308,4 @@
         </div>
 
     </section>
-
-
 @endsection

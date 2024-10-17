@@ -133,7 +133,7 @@
 
 
                     </h2>
-                    <p class="mt-4">
+                    <p class="mt-4" align="justify">
                         Take control of your finances with our comprehensive internet banking platform. Enjoy a
                         user-friendly interface that makes managing your accounts effortless. From checking your balance to
                         paying bills and making transfers, every feature is designed for your convenience. With

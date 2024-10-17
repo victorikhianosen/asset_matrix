@@ -52,7 +52,7 @@
                     <span class="text-primary">Quick and</span> Reliable Loan Options for Your Needs
                 </h2>
                 <div class="space-y-4">
-                    <p class="text-xs md:text-sm tracking-wider">
+                    <p class="text-xs md:text-sm tracking-wider" align="justify">
                         Discover our diverse loan products designed to meet the financial needs of businesses and
                         individuals alike. Our Esusu Loan supports micro-businesses, entrepreneurs, traders, and
                         individuals, offering a simple application process with no hidden charges. We believe in
@@ -61,7 +61,7 @@
                         to save with us first.
                     </p>
 
-                    <p class="text-xs md:text-sm tracking-wider">
+                    <p class="text-xs md:text-sm tracking-wider" align="justify">
                         Just have a viable business ready for investment, and we’ll help you achieve your growth goals.
                         For urgent needs, our Instant Cash Loan delivers funds within 24 hours, allowing you to apply
                         online and withdraw from correspondent banking after approval. Similarly, our Salary Advance is

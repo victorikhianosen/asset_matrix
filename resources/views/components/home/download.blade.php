@@ -9,14 +9,33 @@
                 <div class="space-y-6">
                     <h4 class="text-3xl md:text-5xl text-black font-semibold"><span class="text-primary">CashMatrix</span>
                         Is The Fastest Mobile Banking Solution</h4>
-                    <p class="text-xs md:text-sm tracking-wider text-blackText">Lorem ipsum dolor sit, amet consectetur
 
-                        Experience seamless banking with CashMatrix, the fastest mobile banking solution designed for
-                        your financial needs. With just a few taps, you can manage your accounts, transfer funds, pay
-                        bills, and monitor your transactions—all in real-time. Our secure platform ensures your personal
-                        and financial data is protected, giving you peace of mind while you bank on the go. Download
-                        CashMatrix today and take control of your finances anytime, anywhere!
-                    </p>
+                    <div class="space-y-2">
+
+                        <p class="text-xs md:text-sm tracking-wider text-blackText" align="justify">
+
+                            Experience seamless banking with CashMatrix, the fastest mobile banking solution designed
+                            for
+                            your financial needs. With just a few taps, you can manage your accounts, transfer funds,
+                            pay
+                            bills, and monitor your transactions all in real-time.
+                        </p>
+
+                        <p class="text-xs md:text-sm tracking-wider text-blackText" align="justify">
+                            Our secure platform ensures your
+                            personal and financial data is protected, giving you peace of mind while you bank on the go.
+                        </p>
+
+
+
+                        <p class="text-xs md:text-sm tracking-wider text-blackText" align="justify">
+
+                            Download
+                            CashMatrix today and take control of your finances anytime, anywhere!
+                        </p>
+
+                    </div>
+
 
 
 

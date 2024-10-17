@@ -25,12 +25,12 @@
             <!-- Grid layout for text and image -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
                 <!-- Text Section -->
-                <div class="space-y-12">
+                <div class="space-y-12 pr-0 lg:pr-4">
                     <h2 class="text-3xl md:text-5xl text-black font-semibold">
                         <span class="text-primary">Financial goal</span> are our priority
                     </h2>
                     <div class="space-y-4">
-                        <p class="text-xs md:text-sm tracking-wider text-black">
+                        <p class="text-xs md:text-sm tracking-wider text-black" align="justify">
                             Asset Matrix Microfinance Bank Limited (AMMFB) is a financial institution dedicated to providing
                             affordable and dependable financial solutions for the enterprising poor and small to
                             medium-sized enterprises. Our mission is to reduce poverty in Nigeria by enhancing the
@@ -38,7 +38,7 @@
                             initiatives for poverty alleviation.
                         </p>
 
-                        <p class="text-xs md:text-sm tracking-wider text-black">
+                        <p class="text-xs md:text-sm tracking-wider text-black" align="justify">
                             We focus on the unbanked segments of the Nigerian economy, aiming to transition them into the
                             formal sector and establish viable businesses. Incorporated on August 3, 2009, as a limited
                             liability company, AMMFB is licensed by the Central Bank of Nigeria to operate as a microfinance
@@ -73,28 +73,28 @@
                         </span>
                         <h4 class="font-semibold text-2xl my-4">Vision</h4>
                         <div class="space-y-1">
-                            <p class="text-base tracking-wide">
+                            <p class="text-base tracking-wide" align="justify">
                                 To be the market leader in the provision of microfinance and related financial services in
                                 Nigeria's sub-financial sector.
                             </p>
                         </div>
                     </div>
 
-                    <div
-                        class="row-span-0 lg:row-span-2 group cursor-pointer 
+                    <div 
+                        class="row-span-0 lg:row-span-2 group cursor-pointer
                         shadow-xl p-6 border-2 bg-purple text-white text-center rounded-2xl
                           hover:scale-y-105 transition-all duration-200">
                         <span>
                             <i class="fa-solid fa-circle-right text-5xl pb-4"></i>
                         </span>
                         <h4 class="font-semibold text-2xl my-4 row-span-2">Core Values</h4>
-                        <div class="space-y-1 mb-8">
-                            <p class="text-base tracking-wide">
+                        <div class="space-y-1 mb-8 "> 
+                            <p class="text-base tracking-wide" align="justify">
                                 We prioritize high-quality services to ensure every client receives the best outcomes. Our
                                 maturity helps us navigate challenges with effective resolutions, while our positive
                                 attitude and diligence fuel our commitment to excellence. </p>
 
-                            <p class=" hidden lg:block text-base tracking-wide">
+                            <p class=" hidden lg:block text-base tracking-wide" align="justify">
                                 We embrace resilience when facing obstacles, understanding that challenges are opportunities
                                 for growth and innovation. Above all, we uphold trust and integrity in all our interactions,
                                 fostering strong relationships with clients and partners. By embodying these values, we aim
@@ -113,7 +113,7 @@
                         </span>
                         <h4 class="font-semibold text-2xl my-4">Mission</h4>
                         <div class="space-y-1 text-black mb-8">
-                            <p>
+                            <p align="justify">
                                 Empowering micro-entrepreneurs with tailored financial services for growth, inclusion, and a
                                 secure financial future.
 

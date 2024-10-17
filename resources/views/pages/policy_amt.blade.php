@@ -32,7 +32,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             This Anti-Money Laundering & Combating the Financing of Terrorism (AML/CFT) Risk Assessment and
                             Mitigation Policy (AML/CFT RAM Policy) sets out the framework which Asset Matrix Microfinance
                             Bank Limited (Asset Matrix MFB or the Company) shall apply in identifying the degree of
@@ -44,7 +44,7 @@
                         </p>
 
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black"align="justify">
                             Asset Matrix MFB adopts a risk-based approach that is commensurate with the specific risks of
                             money laundering and terrorism financing. Higher money laundering risks demand stronger
                             controls. However, all risks, whether low, medium or high, must be mitigated by the application
@@ -56,24 +56,24 @@
 
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             This AML/CFT RAM Policy applies to all of Asset Matrix MFB’s Personnel. You must read,
                             understand and comply with this AML/CFT RAM Policy when processing transactions with Customers.
                             This AML/CFT RAM Policy sets out what we expect from you for the Company to comply with relevant
                             ML/FT laws.
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             This AML/CFT RAM Policy is an internal document and cannot be shared with third parties,
                             Customers or regulators without prior authorisation from the Company.
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Unless otherwise expressly defined herein, the definitions set out in the AML/CFT Policy of
                             Asset Matrix MFB are incorporated in this AML/CFT Policy.
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             While our clients sit back and relax, we initiate and complete the instant fund transfer based
                             on clients' requested. and the beneficiary is paid instantly after confirmation of the necessary
                             requirements.
@@ -87,7 +87,7 @@
                         Scope
                     </h4>
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
 
                             The Personnel of Asset Matrix MFB, its board of directors, management and every person working
                             for ASSET MATRIX MFB are required to adhere to this AML/CFT RAM Policy to protect Asset Matrix
@@ -96,7 +96,7 @@
                             this AML/CFT Policy.
 
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Asset Matrix MFB Limited shall apply this AML/CFT Policy to its relationships with its
                             counterparties or partners.
 
@@ -105,21 +105,21 @@
 
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
 
                             Specifically, the AML/CFT RAM Policy shall be incorporated into the operations of business
                             marketing, business origination, market regulation, financial control, as well as any other
                             relevant departments within Asset Matrix MFB Limited.
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
 
                             Asset Matrix MFB Limited shall review this AML/CFT RAM Policy from time to time, as is required.
                         </p>
 
 
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
 
                             Please contact the Company with any questions about the operation of this AML/CFT RAM Policy, or
                             if you have any concerns that this policy is not being or has not been followed.
@@ -147,7 +147,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Provide guidance for identifying the degree of potential ML/TF risks associated with
                                     specific customers and transactions in order to ensure focused monitoring of those
                                     customers and transactions that potentially pose the greatest risks of ML/TF.
@@ -161,7 +161,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Provide an internal risk assessment and mitigation policy for ASSET MATRIX MFB.
 
 
@@ -174,7 +174,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Provide guidance on the standards of conduct and practice that must be followed in the
                                     implementation of the KYC and CDD requirements of a financial institution.
 
@@ -188,7 +188,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Protect ASSET MATRIX MFB against fraud, reputational and other financial market risks.
 
 
@@ -202,7 +202,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Minimise the risks of ASSET MATRIX MFB inadvertently processing proceeds of crime.
 
 
@@ -214,7 +214,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Protect the integrity of the financial market against all forms of abuse, fraudulent and
                                     unfair trade practices.
 
@@ -227,7 +227,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Comply with relevant rules and regulations of the CBN.
 
                                 </p>

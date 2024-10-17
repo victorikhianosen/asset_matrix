@@ -1,7 +1,7 @@
     <div id="mobileMenu"
-            class="fixed top-0 right-0 w-2/3 h-full bg-white rounded-bl-2xl shadow-lg transform transition-transform duration-300 ease-in-out z-20">
+            class="fixed top-0 right-0 w-2/3 h-screen bg-white rounded-bl-2xl shadow-lg transform transition-transform duration-300 ease-in-out z-20">
             <div class="flex justify-end items-end p-4">
-                <div id="closeMobileMenuButtonInMenu" class="cursor-pointer" onclick="toggleMobileMenu()">
+                <div id="closeMobileMenuButtonInMenu" class="cursor-pointer text-primary" onclick="toggleMobileMenu()">
                     <i class="fa-regular fa-circle-xmark text-4xl text-primary"></i>
                 </div>
             </div>
@@ -10,13 +10,14 @@
                     href="{{ route('home') }}">Home</a>
 
                 <!-- Our Bank Mobile Dropdown -->
+            
                 <div>
-                    <button
+                    <button type="button" id="ourBankMobile"
                         class="block w-full text-left text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                        onclick="toggleDropdown('bankDropDownMobile')">Our Bank
+                        >Our Bank
                         <span><i class="fa-solid fa-sort-down ml-1"></i></span>
                     </button>
-                    <div id="bankDropDownMobile" class="hidden pl-4">
+                    <div id="ourBankDropDownMobile" class="hidden 5pl-4">
                         <a href="{{ route('about') }}"
                             class="block py-2 text-sm text-black hover:text-primary transition-all duration-150">About
                             Us</a>
@@ -26,10 +27,11 @@
                 </div>
 
                 <!-- Business Banking Mobile Dropdown -->
+               
                 <div>
-                    <button
+                    <button id="businessMobile"
                         class="block w-full text-left text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                        onclick="toggleDropdown('businessDropDownMobile')">Business Banking
+                        >Business Banking
                         <span><i class="fa-solid fa-sort-down ml-1"></i></span>
                     </button>
                     <div id="businessDropDownMobile" class="hidden pl-4">
@@ -49,15 +51,16 @@
                     href="{{ url('https://cashmatrix.app/') }}" target="_blink">Online Banking</a>
 
                 <!-- Policy Mobile Dropdown -->
+
                 <div>
-                    <button
+                    <button id="policyMobile" type="button"
                         class="block w-full text-left text-black font-medium text-lg hover:text-primary transition-all duration-150"
-                        onclick="toggleDropdown('policyDropDownMobile')">Policy
+                        >Policy
                         <span><i class="fa-solid fa-sort-down ml-1"></i></span>
                     </button>
                     <div id="policyDropDownMobile" class="hidden pl-4">
                         <a href="{{ route('policy.data') }}"
-                            class="block py-2 text-sm text-black hover:text-primary transition-all duration-150">Data
+                            class="hidden block py-2 text-sm text-black hover:text-primary transition-all duration-150">Data
                             Consent
                             Policy</a>
                         <a href="{{ route('policy.mobile') }}"

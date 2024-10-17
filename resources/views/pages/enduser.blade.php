@@ -26,7 +26,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             This End User License Agreement (EULA or Agreement) is a legal agreement between You (Licensee
                             or you) and Asset Matrix Microfinance Bank Limited (Cash Matrix, the Licensor or We). This
                             Agreement governs your use of the CashMatrix mobile banking application on all platforms such as
@@ -41,7 +41,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Cash Matrix provides you with the Mobile Application to enable you to access financial
                                     services offered by Cash Matrix.
                                 </p>
@@ -52,7 +52,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     We license the use of the Mobile Application to you on the basis of this Agreement. We
                                     do not sell the Mobile Application to you. We remain the owners of the Mobile
                                     Application at all times.
@@ -67,7 +67,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Please read the EULA properly and carefully before clicking the “I AGREE” button,
                                     installing or using this Mobile Application.
 
@@ -80,7 +80,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     By clicking the “I AGREE” button, or installing or downloading or otherwise using this
                                     Mobile Application, you:
 
@@ -95,7 +95,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Acknowledge that you have read and understood this Agreement
 
 
@@ -107,7 +107,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     If you do not agree to the terms and conditions of this Agreement, then the Licensee may
                                     not click on the “I AGREE” button nor install nor download nor use the Mobile
                                     Application
@@ -126,7 +126,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             In consideration of you agreeing to abide by the terms of this Agreement, the Licensor hereby
                             grants you a non-exclusive, non-transferable license to download, install and use the Mobile
                             Application for your personal, non-commercial use on a mobile device owned or otherwise
@@ -165,7 +165,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Copy the Mobile Application, except as expressly permitted by this license;
                                 </p>
                             </div>
@@ -175,7 +175,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Modify, translate, adapt, or otherwise create derivative works or improvements, whether
                                     or not patentable, of the Mobile Application;
 
@@ -190,7 +190,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Reverse engineer, disassemble, decompile, decode, or otherwise attempt to derive or gain
                                     access to the source code of the Mobile Application or any part thereof;
 
@@ -204,7 +204,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Remove, delete, alter, or obscure any trademarks or any copyright, trademark, patent, or
                                     other intellectual property or proprietary rights notices from the application,
                                     including any copy thereof;
@@ -221,7 +221,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Rent, lease, lend, sell, sublicense, assign, distribute, publish, transfer, or otherwise
                                     make available the Mobile Application, or any features or functionality of the Mobile
                                     Application, to any third party for any reason, including by making the Mobile
@@ -236,7 +236,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Remove, disable, circumvent, or otherwise create or implement any workaround to any
                                     copyright protection, rights management, or security features in or protecting the
                                     Mobile Application; or
@@ -252,7 +252,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Use the Mobile Application in, or in association with, the design, construction,
                                     maintenance, or operation of any hazardous environments or systems, including any power
                                     generation systems; aircraft navigation or communication systems, air traffic control
@@ -279,7 +279,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             You acknowledge that all intellectual property rights in the Mobile Application belong to the
                             Licensor, that rights in the Mobile Application are licensed (not sold) to you, and that you
                             have no intellectual property rights in, or to, the Mobile Application other than the right to
@@ -289,7 +289,7 @@
 
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             <strong>Cash Matrix</strong> and its 3rd party service providers reserve and shall retain their
                             entire right,
                             title, and interest in and to the Mobile Application, including all copyrights, trademarks, and
@@ -310,7 +310,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             You acknowledge that when you download, install, or use the Mobile Application, We may use
                             automatic means (including, for example, cookies and web beacons) to collect information about
                             your mobile device and about your use of the Mobile Application. You also may be required to
@@ -318,7 +318,7 @@
                             the Mobile Application or certain of its features or functionality.
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             All information we collect through or in connection with this Mobile Application is subject to
                             our Privacy Policy. By downloading, installing, using, and providing information to or through
                             this Mobile Application, you consent to all actions taken by us with respect to your information
@@ -338,7 +338,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             The Mobile Application may provide you with access to products and services accessible thereon,
                             including
                         </p>
@@ -412,7 +412,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Savings accounts; on Cash Matrix’s website located at www.cashmatrix.ng (the
                                     Website),and certain features, functionality, and content accessible on or through the
                                     Mobile Application which may be hosted on the Website (collectively, “Content and
@@ -425,7 +425,7 @@
                         </div>
 
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Your access to and use of such Content and Services are governed by the Website’s Terms and
                             Conditions and Privacy Policy located at https://Cash Matrix.ng/terms-conditions-for-debit-cards
                             and https://cashmatrix.ng/mobile-app-privacy-policy which are incorporated herein by this
@@ -436,7 +436,7 @@
 
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Any violation of these terms of use will also be deemed a violation of this Agreement.
 
 
@@ -456,7 +456,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             The Content and Services are based in Nigeria and provided for access and use only by persons
                             located in Nigeria. You acknowledge that you may not be able to access all or some of the
                             Content and Services outside of Nigeria and that access thereto may not be legal by certain
@@ -479,7 +479,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Cash Matrix may from time to time in its sole discretion develop and provide Mobile Application
                             updates, which may include upgrades, bug fixes, patches, other error corrections, and/or new
                             features (collectively, including related documentation, “Updates“). Updates may also modify or
@@ -488,7 +488,7 @@
                             functionality.
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Based on the settings of your technology device, when your device is connected to the internet
                             either:
                         </p>
@@ -514,7 +514,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     you may receive notice of or be prompted to download and install available Updates.
 
 
@@ -528,7 +528,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     You shall promptly download and install all Updates and acknowledge and agree that the
                                     Mobile Application or portions thereof may not properly operate should you fail to do
                                     so. You further agree that all Updates will be deemed part of the Mobile Application and
@@ -551,7 +551,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             The Mobile Application may display, include, or make available third-party content (including
                             data, information, applications, and other products, services, and/or materials) or provide
                             links to third-party websites or services, including through third-party advertising
@@ -559,7 +559,7 @@
 
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             You acknowledged and agree that Cash Matrix is not responsible for Third-Party Materials,
                             including their accuracy, completeness, timeliness, validity, copyright compliance, legality,
                             decency, quality, or any other aspect thereof. Cash Matrix does not assume and will not have any
@@ -582,7 +582,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             This Mobile Application is provided “as is” with no representation, guarantee or agreement of
                             any kind as to its functionality. We cannot guarantee that access to the Mobile Application will
                             be uninterrupted or that there will be no delays or failures. We cannot also guarantee that no
@@ -592,7 +592,7 @@
 
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             You are responsible for adequate protection and back up of data and/or equipment and for
                             undertaking reasonable and appropriate precautions to scan for viruses or other destructive
                             properties. We are not responsible if you incur any loss as a result of any of the matters set
@@ -600,7 +600,7 @@
 
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             We are not responsible for any third-party software that may be used in connection with the
                             Mobile Application.
                         </p>
@@ -620,7 +620,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             The mobile application is provided to end users “as is” and with all faults and defects without
                             warranty of any kind. to the maximum extent permitted under applicable law, cash matrix, on its
                             own behalf and on behalf of its affiliates and its third party service providers, expressly
@@ -630,7 +630,7 @@
                             dealing, course of performance, usage, or trade practice. without limitation to the foregoing.
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Cash Matrix provides no warranty or undertaking, and makes no representation of any kind that
                             the mobile application will meet your requirements, achieve any intended results, be compatible,
                             or work with any other software, applications, systems, or services, operate without
@@ -654,14 +654,14 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             To the fullest extent permitted by applicable law, in no event will Cash Matrixor its
                             affiliates, or any of its or their respective third party service providers, have any liability
                             arising from or related to your use of or inability to use the application or the Content and
                             Services for:
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             personal injury, property damage or loss, lost profits, cost of substitute goods or services,
                             loss of data, loss of goodwill, business interruption, computer failure or malfunction, or any
                             other consequential, incidental, indirect, exemplary, special, or punitive damages. direct
@@ -670,7 +670,7 @@
 
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             The foregoing limitations will apply whether such damages arise out of breach of contract, tort
                             (including negligence), or otherwise and regardless of whether such damages were foreseeable, or
                             the Licensor was advised of the possibility of such damages. Some jurisdictions do not allow
@@ -691,7 +691,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Personal data is all information that directly or indirectly may refer to the Mobile Application
                             user which he/she has provided in the course of this Agreement or use of the Mobile Application.
                             Such includes:
@@ -731,7 +731,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     financial information [information about the Client’s income and any charges, where
                                     available].
 
@@ -740,7 +740,7 @@
 
                         </div>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Where necessary, we will process the personal data in order to provide a simplified service and
                             in order to improve user experience. We will process the personal data for confirming your
                             identity, administering the customer relationship, preventing misuse or improper use of our
@@ -750,7 +750,7 @@
                         </p>
 
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             By accepting the terms of the Mobile Application, you agree that we may use and/or reuse data
                             provided or previously provided and we may carry out enquiries to help on your use of the Mobile
                             Application. Where available, we will use such information to confirm your identity and simplify
@@ -758,7 +758,7 @@
 
                         </p>
 
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             We adhere to the principles relating to Processing of Personal Data set out in the Nigerian Data
                             Protection Regulation 2019 (NDPR) which requires personal data to be:
                             processed lawfully, fairly and in a transparent manner;
@@ -787,7 +787,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     not kept in a form which permits your identification for longer than is necessary for
                                     the purposes for which the data is processed;
 
@@ -802,7 +802,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     processed in a manner that ensures its security using appropriate technical and
                                     organisational measures to protect against unauthorised or unlawful Processing and
                                     against accidental loss, destruction or damage;
@@ -819,7 +819,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     not transferred to another country without your consent of the and appropriate
                                     safeguards being in place; or
 
@@ -835,7 +835,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     Made available to you and allow you to exercise certain rights in relation to your
                                     personal data.
 
@@ -851,7 +851,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     We are responsible for and must be able to demonstrate compliance with the data
                                     protection principles listed above.
 
@@ -873,19 +873,19 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             If any provision of this Agreement is illegal or unenforceable under applicable law, the
                             remainder of the provision will be amended to achieve as closely as possible the effect of the
                             original term and all other provisions of this Agreement will continue in full force and effect.
 
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             This Agreement is governed by and construed in accordance with the laws of the Federal Republic
                             of Nigeria without giving effect to any choice or conflict of law provision or rule.
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             Any legal suit, action, or proceeding arising out of or related to this Agreement or the Mobile
                             Application shall be instituted exclusively in the Nigerian Courts within the applicable
                             jurisdiction.
@@ -904,7 +904,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             This Agreement, the Terms and Conditions and our Privacy Policy constitute the entire agreement
                             between you and Cash Matrix with respect to the Mobile Application and supersede all prior or
                             contemporaneous understandings and agreements, whether written or oral, with respect to the
@@ -912,7 +912,7 @@
 
 
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             No failure to exercise, and no delay in exercising, on the part of either party, any right or
                             any power hereunder shall operate as a waiver thereof, nor shall any single or partial exercise
                             of any right or power hereunder preclude further exercise of that or any other right hereunder.
@@ -937,7 +937,7 @@
                     </h4>
 
                     <div class="space-y-4">
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             You agree to indemnify, defend, and hold harmless Asset Matrix MFB Limited and its officers,
                             representatives, directors, employees, agents, affiliates, successors, and assigns from and
                             against any and all losses, damages, liabilities, deficiencies, claims, actions, judgments,
@@ -946,7 +946,7 @@
                             your breach of this Agreement, including but not limited to the content you submit or make
                             available through this Mobile Application.
                         </p>
-                        <p class="text-lg tracking-wider text-black">
+                        <p class="text-lg tracking-wider text-black" align="justify">
                             No failure to exercise, and no delay in exercising, on the part of either party, any right or
                             any power hereunder shall operate as a waiver thereof, nor shall any single or partial exercise
                             of any right or power hereunder preclude further exercise of that or any other right hereunder.
@@ -976,7 +976,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     If you are a user, and you wish to contact us in writing, or if any condition in this
                                     Agreement requires you to give us notice in writing, you can send this to us by email
                                     hello@cashmatrix.ng or support@cashmatrix.ng We will confirm receipt of this by
@@ -990,7 +990,7 @@
 
                                 </span>
 
-                                <p>
+                                <p align="justify">
                                     If we have to contact you or give you notice in writing, we will do so by email or
                                     receive a call from the bank.
                                 </p>

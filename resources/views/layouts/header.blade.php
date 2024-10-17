@@ -119,15 +119,14 @@
                 </a>
 
                 <!-- Our Bank Dropdown -->
-                <div class="relative inline-block" onmouseenter="showDropdown('bankDropDown')"
-                    onmouseleave="hideDropdown('bankDropDown')">
-                    <button
+                <div class="relative inline-block">
+                    <button id="ourBank"
                         class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                        onclick="toggleDropdown('bankDropDown')">Our Bank
+                        >Our Bank
                         <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
                     </button>
-                    <div id="bankDropDown"
-                        class="absolute -left-2 z-10 mt-5 w-24 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+                    <div id="ourBankDropDown"
+                        class="hidden absolute -left-2 z-10 mt-5 w-24 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                         <div class="py-6">
                             <a href="{{ route('about') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150"
@@ -139,15 +138,14 @@
                 </div>
 
                 <!-- Business Banking Dropdown -->
-                <div class="relative inline-block" onmouseenter="showDropdown('businessDropDown')"
-                    onmouseleave="hideDropdown('businessDropDown')">
-                    <button
+                <div class="relative inline-block" >
+                    <button id="businessBanking"
                         class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                        onclick="toggleDropdown('businessDropDown')">Business Banking
+                        >Business Banking
                         <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
                     </button>
-                    <div id="businessDropDown"
-                        class="absolute -left-2 z-10 mt-5 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+                    <div id="businessBankingDropDown"
+                        class="hidden absolute -left-2 z-10 mt-5 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                         <div class="py-6">
 
                             <a href="{{ route('internet') }}"
@@ -158,8 +156,7 @@
                             <a href="{{ route('savings') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Investment
                                 | Deposit</a>
-                            {{-- <a href="{{ route('deposit') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Deposit</a> --}}
+
                         </div>
                     </div>
                 </div>
@@ -171,16 +168,17 @@
                         Banking</a>
                 </div>
 
+             
+
                 <!-- Policy Dropdown -->
-                <div class="relative inline-block" onmouseenter="showDropdown('policyDropDown')"
-                    onmouseleave="hideDropdown('policyDropDown')">
-                    <button
+                <div class="relative inline-block" >
+                    <button type="button" id="policy"
                         class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
-                        onclick="toggleDropdown('policyDropDown')">Policy
+                        >Policy
                         <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
                     </button>
                     <div id="policyDropDown"
-                        class="absolute -right-16 z-10 mt-5 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 hidden">
+                        class="hidden absolute -right-16 z-10 mt-5 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                         <div class="py-6">
                             <a href="{{ route('policy.data') }}"
                                 class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150"
@@ -203,8 +201,11 @@
                     Loan</a>
             </div>
 
+
+            {{-- Mobile Menu Button --}}
+
             {{-- Open Mobile Menu Button --}}
-            <div id="mobileMenuButton" class="cursor-pointer block lg:hidden" onclick="toggleMobileMenu()">
+            <div id="mobileMenuButton" class="cursor-pointer text-primary block lg:hidden" onclick="toggleMobileMenu()">
                 <i class="fa-solid fa-bars text-3xl"></i>
             </div>
 
@@ -222,14 +223,14 @@
     </section>
 
 
-    <script>
+    {{-- <script>
         function toggleDropdown(dropdownId) {
             const dropdown = document.getElementById(dropdownId);
             dropdown.classList.toggle('hidden');
         }
-    </script>
+    </script> --}}
 
-    <script>
+    {{-- <script>
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             const mobileMenuButton = document.getElementById('mobileMenuButton');
@@ -242,7 +243,7 @@
             mobileMenuButton.classList.toggle('hidden', isActive);
             closeMobileMenuButton.classList.toggle('hidden', !isActive);
         }
-    </script>
+    </script>  --}}
 </body>
 
 </html>

@@ -11,7 +11,7 @@
                     </h2>
 
                     <div>
-                        <p class="text-xs md:text-sm tracking-wider text-blackTextt">
+                        <p class="text-xs md:text-sm tracking-wider text-blackTextt" align='justify'>
                             Our POS system is designed to meet the specific needs of retail stores. From boutiques to
                             supermarkets, we offer features like barcode scanning, stock management, and customer
                             tracking that enhance efficiency and boost sales.

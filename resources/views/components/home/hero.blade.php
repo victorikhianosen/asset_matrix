@@ -15,22 +15,25 @@
                                     Financial
                                     Future
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we
-                                    provide
-                                    accessible,
+                                <p class="text-[#333333] font-light text-sm md:text-md" align='justify'>At Asset Micro-finance Bank
+                                    Limited, We
+                                    provide accessible,
                                     secure, and
                                     tailored financial
-                                    solutions to help you build a brighter future. Whether you're saving, loan,
+                                    solutions to help you build a brighter future. Whether you're saving, requesting for
+                                    loan,
                                     investing,
                                     or growing
                                     your
-                                    business, we're here to support your journey every step of the way.
+                                    businesses, we're here to support your journey at every step you take.
                                 </p>
-                                <button
-                                    class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
+                                <div class="pt-6">
+                                    <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
+                                        class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
                                  hover:bg-white hover:text-black hover:border-black transition-all duration-200">Get
-                                    Start
-                                </button>
+                                        Start
+                                    </a>
+                                </div>
                             </div>
 
                             <div>
@@ -49,17 +52,19 @@
 
 
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">
+                                <p class="text-[#333333] font-light text-sm md:text-md", align='justify'>
                                     We deliver a seamless and intuitive banking experience designed with your needs in
                                     mind. From everyday transactions to complex financial planning, we’re committed to
                                     making banking simpler, faster, and more convenient, so you can focus on what
                                     matters most.
                                 </p>
-                                <button
-                                    class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
+                                <div class="pt-6">
+                                    <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
+                                        class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
                                  hover:bg-white hover:text-black hover:border-black transition-all duration-200">Get
-                                    Start
-                                </button>
+                                        Start
+                                    </a>
+                                </div>
                             </div>
 
                             <div>
@@ -74,29 +79,26 @@
                             <div class="space-y-6">
                                 <h1
                                     class="text-black text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tigh">
-                                    <span class="text-primary">Banking </span> Built on Trust
+                                    <span class="text-primary">Streamline Your </span>Sales Process with Confidence
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">
-
-
-                                    Our commitment to integrity, transparency, and reliability ensures that you can bank
-                                    with confidence. We offer innovative financial products and services that are
-                                    designed to protect your assets and help you reach your financial goals, no matter
-                                    where life takes you.
-
-
+                                <p class="text-[#333333] font-light text-sm md:text-md" align='justify'>
+                                    Our POS solutions empower you to manage your sales process with confidence. Enjoy
+                                    swift, secure transactions with intuitive interfaces that process payments in
+                                    real-time. Adaptable to your needs, our technology helps
+                                    maximize profits and enhance business relationship with your customers.
 
                                 </p>
-                                <button
-                                    class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
+                                <div class="pt-6">
+                                    <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
+                                        class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
                                  hover:bg-white hover:text-black hover:border-black transition-all duration-200">Get
-                                    Start
-                                </button>
+                                        Start
+                                    </a>
+                                </div>
                             </div>
 
                             <div>
-                                <img class="w-11/12	h-11/12" src="{{ asset('asset/images/pos33.png') }}"
-                                    alt="">
+                                <img class="w-11/12	h-11/12" src="{{ asset('asset/images/pos33.png') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -108,17 +110,20 @@
                                     class="text-black text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tigh">
                                     <span class="text-primary">Achieve </span> More With Us
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md">At Asset Micro-finance, we
+                                <p class="text-[#333333] font-light text-sm md:text-md", align='justify'>At Asset
+                                    Micro-finance, we
                                     Unlock your financial potential with our wide range of solutions tailored to meet
                                     your unique needs. From personalized savings plans to strategic investment
                                     opportunities, we're here to provide the tools and expertise you need to achieve
                                     your financial aspirations.
                                 </p>
-                                <button
-                                    class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
+                                <div class="pt-6">
+                                    <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
+                                        class="bg-primary font-semibold py-3 px-12 rounded-full text-white border-2 border-primary
                                  hover:bg-white hover:text-black hover:border-black transition-all duration-200">Get
-                                    Start
-                                </button>
+                                        Start
+                                    </a>
+                                </div>
                             </div>
 
                             <div>

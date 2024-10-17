@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <div>
-                            <a href="{{ url('https://cashmatrix.app/') }}"
+                            <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
                                 class="bg-white text-primary px-6 py-2 rounded-full mt-6 border-white border-2 hover:bg-primary hover:text-white transition-all duration-200 text-sm">
                                 Click here
                             </a>
@@ -58,7 +58,7 @@
                                 <span><i class="fa-solid fa-check mr-2"></i></span> Car Loan
                             </div>
                             <div class="text-font-light text-sm">
-                                <span><i class="fa-solid fa-check mr-2"></i></span> School Loan
+                                <span><i class="fa-solid fa-check mr-2"></i></span> Educational Loan
                             </div>
                         </div>
 
@@ -152,7 +152,7 @@
                                 <span>
                                     <i class="fa-solid fa-check mr-2"></i>
                                 </span>
-                                Fixed Deposit
+                                Instant Deposit
                             </div>
                         </div>
 
