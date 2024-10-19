@@ -45,13 +45,18 @@
 <body>
     <div class="email-container">
         <h2>Loan Request Update</h2>
-        <p>Dear {{ $data['first_name'] }},</p>
+        <p>Dear {{ $loanData['name'] }},</p>
 
-        <p>Thank you for submitting your loan request to Asset Matrix. We are pleased to inform you that your request is currently being processed.</p>
+        <p>Thank you for submitting your loan request to Asset Matrix MFB. We are pleased to inform you that your
+            request is currently being processed.</p>
 
-        <p>An Asset Matrix representative will contact you shortly with further details and to assist you through the next steps.</p>
+        <p>An Asset Matrix MFB representative will contact you shortly with further details and to assist you through
+            the next steps.</p>
 
-        <p>We appreciate your patience during this process. If you have any questions or need further assistance, feel free to contact us at <a href="mailto:hello@assetmatrix.com">hello@assetmatrix.com</a>.</p>
+        <p>We appreciate your patience during this process. If you have any questions or need further assistance, feel
+            free to contact us at <br><a href="mailto:info@assetmatrixmfb.com">info@assetmatrixmfb.com</a><br><a
+                href="tel:+2348033529203">+2348033529203</a>
+            .</p>
 
         <p>Thank you for choosing Asset Matrix!</p>
 

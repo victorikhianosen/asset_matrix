@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('main')
-    <section class="bg-whiteBg">
+    <section class="bg-primary">
         <div class="mx-6 md:mx-8 lg:mx-24 pb-1 pt-28 md:pb-10 md:pt-44">
             <div class="">
-                <h1
-                    class="text-black text-star text-5xl md:text-6xl lg:text-4xl font-semibold gap-6 tracking-tighter leading-tight">
-                    Data Policy
-                </h1>
+              
+                   <h1
+                    class="text-white text-star text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tight">
+                    Data Policy</h1>
             </div>
         </div>
     </section>

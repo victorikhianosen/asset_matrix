@@ -15,7 +15,7 @@
                                     Financial
                                     Future
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md" align='justify'>At Asset Micro-finance Bank
+                                <p class="text-[#333333] font-light text-sm md:text-md" align='justify'>At Asset Matrix Micro-finance Bank
                                     Limited, We
                                     provide accessible,
                                     secure, and
@@ -110,7 +110,7 @@
                                     class="text-black text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tigh">
                                     <span class="text-primary">Achieve </span> More With Us
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md", align='justify'>At Asset
+                                <p class="text-[#333333] font-light text-sm md:text-md", align='justify'>At Asset Matrix 
                                     Micro-finance, we
                                     Unlock your financial potential with our wide range of solutions tailored to meet
                                     your unique needs. From personalized savings plans to strategic investment

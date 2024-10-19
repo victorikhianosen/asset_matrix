@@ -2,8 +2,7 @@
 
 
 @section('main')
-    <section class="bg-gradient-to-r from-[#ee8520] to-[#ff6f00]
-">
+    <section class="bg-gradient-to-r from-[#ee8520] to-[#ff6f00]">
 
         <div class="mx-6 md:mx-8 lg:mx-24 pb-2 pt-28 md:pb-24 md:pt-44">
 

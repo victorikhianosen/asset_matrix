@@ -8,7 +8,7 @@
                 <div id="firstDiv"
                     class="flex justify-center items-center gap-x-2 bg-purple text-white p-4 md:p-6 rounded-full w-full md:w-9/12 ml-0 md:ml-12 opacity-0 transition-opacity duration-500">
                     <div class="w-8 h-8 md:w-24 md:h-24">
-                        <img class="rounded-full" src="{{ asset('asset/images/customer1.jpg') }}" alt="Customer">
+                        <img class="rounded-full" src="{{ asset('asset/images/customer2.png') }}" alt="Customer">
                     </div>
                     <div>
                         <h2 class="text-sm md:text-md font-semibold tracking-wider">Joseph Alabi</h2>
@@ -24,7 +24,7 @@
                 <div id="secondDiv"
                     class="flex text-white justify-center items-center gap-x-2 bg-[#426172] p-4 md:p-6 rounded-full w-full md:w-9/12 opacity-0 transition-opacity duration-500">
                     <div class="w-8 h-8 md:w-24 md:h-24">
-                        <img class="rounded-full" src="{{ asset('asset/images/customer1.jpg') }}" alt="Customer">
+                        <img class="rounded-full" src="{{ asset('asset/images/customer.png') }}" alt="Customer">
                     </div>
                     <div>
                         <h2 class="text-sm md:text-md font-semibold tracking-wider">Seun Ogunfayo</h2>
@@ -40,7 +40,7 @@
                 <div id="thirdDiv"
                     class="flex justify-center items-center gap-x-2 bg-purple text-white p-4 md:p-6 rounded-full w-full md:w-9/12 ml-0 md:ml-12 opacity-0 transition-opacity duration-500">
                     <div class="w-8 h-8 md:w-24 md:h-24">
-                        <img class="rounded-full" src="{{ asset('asset/images/customer1.jpg') }}" alt="Customer">
+                        <img class="rounded-full" src="{{ asset('asset/images/customer3.png') }}" alt="Customer">
                     </div>
                     <div>
                         <h2 class="text-sm md:text-md font-semibold tracking-wider">Olakunle Bankule</h2>
@@ -54,11 +54,11 @@
             </div>
 
             <!-- Other Section Content -->
-            <div class="space-y-4 md:space-y-8 order-1 md:order-2">
+            {{-- <div class="space-y-4 md:space-y-8 order-1 md:order-2">
                 <h2 class="text-3xl md:text-5xl text-black font-semibold">
                     <span class="text-primary">What Our Valued</span> Customers Are Saying
                 </h2>
-                <p class="text-xs md:text-sm tracking-wider text-blackText" align="justify">
+                <p class="text-xs md:text-sm tracking-wider text-blackText text-end">
                     We make customer support simple and easy. No long waits, complicated processes, or endless forms.
                     Get assistance 24/7 through multiple channels and receive prompt responses from our dedicated team
                     instantly </p>
@@ -76,7 +76,35 @@
                         <h2 class="text-xs text-black font-normal md:text-sm">App Downloads</h2>
                     </div>
                 </div>
+            </div> --}}
+
+
+            <div class="space-y-4 md:space-y-8 order-1 md:order-2">
+                <h2 class="text-3xl md:text-5xl text-black font-semibold">
+                    <span class="text-primary">What Our Valued</span> Customers Are Saying
+                </h2>
+                <p class="text-xs md:text-sm tracking-wider text-blackText" align="justify">
+                    We make customer support simple and easy. No long waits, complicated processes, or endless forms.
+                    Get assistance 24/7 through multiple channels and receive prompt responses from our dedicated team
+                    instantly
+                </p>
+                <div class="flex justify-between items-center">
+                    <div id="satisfiedCustomer">
+                        <span class="text-lg md:text-4xl font-bold" id="satisfiedCustomerCount">0</span>
+                        <h2 class="text-xs text-black font-normal md:text-sm">Satisfied Customers</h2>
+                    </div>
+                    <div id="clientRating">
+                        <span class="text-lg md:text-4xl font-bold" id="clientRatingCount">0</span>
+                        <h2 class="text-xs text-black font-normal md:text-sm">Clients Rating</h2>
+                    </div>
+                    <div class="appDownloads">
+                        <span class="text-lg md:text-4xl font-bold" id="appDownloadCount">0</span>
+                        <h2 class="text-xs text-black font-normal md:text-sm">App Downloads</h2>
+                    </div>
+                </div>
             </div>
+
+
         </div>
     </div>
 </section>
@@ -118,32 +146,29 @@
 
 
 <script>
-    // Function to animate counters with "K" suffix for thousands
+    // Function to animate counters with "K" suffix for thousands, maintaining precise increments
     function animateCounter(id, start, end, duration) {
         let element = document.getElementById(id);
         let range = end - start;
         let current = start;
-        let increment = 1; // Increase by 5,000 each step
-        let stepTime = Math.abs(Math.floor(duration / (range / increment)));
+        let increment = 1; // Increment by 1
+        let stepTime = Math.abs(Math.floor(duration / range));
 
         let timer = setInterval(() => {
             current += increment;
 
-            if (current >= 1) {
-                element.innerText = Math.floor(current / 1);
-            } else {
-                element.innerText = current.toLocaleString();
-            }
-
-
-            if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
-                element.innerText = (end >= 1000) ? Math.floor(end / 1000) + "K" : end.toLocaleString();
-                clearInterval(timer);
-            }
-
+            // Ensure we stop at the final value
             if (current >= end) {
-                element.innerText = (end >= 1000) ? Math.floor(end / 1000) + "K" : end.toLocaleString();
+                current = end;
                 clearInterval(timer);
+            }
+
+            // Display the value with or without "K" suffix based on the count
+            if (current >= 1000) {
+                element.innerText = (current / 1000).toFixed(1).replace('.0', '') +
+                'K'; // Show 1 decimal point if needed
+            } else {
+                element.innerText = current.toLocaleString(); // Regular format for values below 1000
             }
         }, stepTime);
     }
@@ -153,10 +178,10 @@
     let clientRatings = 75000;
     let appDownloads = 5000;
 
-    // Start the animation for each counter with faster duration
+    // Start the animation for each counter
     window.onload = function() {
-        animateCounter("satisfiedCustomerCount", 0, satisfiedCustomers, 1);
-        animateCounter("clientRatingCount", 0, clientRatings, 1);
-        animateCounter("appDownloadCount", 0, appDownloads, 1);
+        animateCounter("satisfiedCustomerCount", 0, satisfiedCustomers, 2000);
+        animateCounter("clientRatingCount", 0, clientRatings, 2000);
+        animateCounter("appDownloadCount", 0, appDownloads, 2000);
     };
 </script>

@@ -14,10 +14,10 @@ class CustomerReplyLoan extends Mailable
     use Queueable, SerializesModels;
 
 
-    public $data;
-    public function __construct($data)
+    public $loanData;
+    public function __construct($loanData)
     {
-        $this->data = $data;
+        $this->loanData = $loanData;
     }
 
     /**
@@ -26,7 +26,7 @@ class CustomerReplyLoan extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'AssetMatrix Notification',
+            subject: 'Asset Matrix MFB',
         );
     }
 

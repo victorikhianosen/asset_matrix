@@ -13,10 +13,10 @@ class LoanMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $data;
-    public function __construct($data)
+    public $loanData;
+    public function __construct($loanData)
     {
-        $this->data = $data;
+        $this->loanData = $loanData;
     }
 
     /**
@@ -25,7 +25,7 @@ class LoanMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Loan Mail',
+            subject: 'Asset Matrix MFB',
         );
     }
 

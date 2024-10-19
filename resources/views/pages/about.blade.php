@@ -5,10 +5,12 @@
     <section class="bg-primary text-white">
         <div class="mx-6 md:mx-8 lg:mx-24 pb- pt-28 md:pb-16 md:pt-44">
             <div class="">
-                <h1
-                    class="text-white text-star text-2xl md:text-6xl lg:text-4xl font-semibold gap-6 tracking-tighter leading-tight">
-                    About Us</h1>
 
+
+
+                <h1
+                    class="text-white text-star text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tight">
+                    About Us</h1>
 
             </div>
         </div>
@@ -80,30 +82,37 @@
                         </div>
                     </div>
 
-                    <div 
+                    <div
                         class="row-span-0 lg:row-span-2 group cursor-pointer
-                        shadow-xl p-6 border-2 bg-purple text-white text-center rounded-2xl
+                        shadow-xl p-6 border-2 bg-purple text-white rounded-2xl
                           hover:scale-y-105 transition-all duration-200">
-                        <span>
+                        <div class="text-center">
+                            <span class="">
                             <i class="fa-solid fa-circle-right text-5xl pb-4"></i>
                         </span>
-                        <h4 class="font-semibold text-2xl my-4 row-span-2">Core Values</h4>
-                        <div class="space-y-1 mb-8 "> 
+                        </div>
+                        <h4 class="text-center font-semibold text-2xl my-4 row-span-2">Core Values</h4>
+                        <div class="space-y-1 mb-8 text-start">
                             <p class="text-base tracking-wide" align="justify">
-                                We prioritize high-quality services to ensure every client receives the best outcomes. Our
-                                maturity helps us navigate challenges with effective resolutions, while our positive
-                                attitude and diligence fuel our commitment to excellence. </p>
+                                Our operations and conduct shall be guided by our core value "SMART"</p>
 
-                            <p class=" hidden lg:block text-base tracking-wide" align="justify">
-                                We embrace resilience when facing obstacles, understanding that challenges are opportunities
-                                for growth and innovation. Above all, we uphold trust and integrity in all our interactions,
-                                fostering strong relationships with clients and partners. By embodying these values, we aim
-                                to create a culture of excellence that inspires confidence and drives success.
+                            <div class="pt-4 md:pt-6">
+                                <p><i class="fa-solid fa-check mr-2"></i>Services at high Quality</p>
+                                <p><i class="fa-solid fa-check mr-2"></i> Maturity & Resolutions</p>
+                                <p><i class="fa-solid fa-check mr-2"></i>Attitude & Dilligency</p>
+                                <p><i class="fa-solid fa-check mr-2"></i>Resilience on Challenges</p>
+                                <p><i class="fa-solid fa-check mr-2"></i>Trust and Integrity</p>
 
-
-                            </p>
+                            </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
 
                     <div
                         class="group cursor-pointer shadow-xl p-6 border-2
