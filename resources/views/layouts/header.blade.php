@@ -8,7 +8,9 @@
     <link rel="icon" href="{{ url('asset/images/logo.jpg') }}" type="image/x-icon">
 
     {{-- Tailwind --}}
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
+      <script src="https://cdn.tailwindcss.com"></script>
+
 
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,141 +42,17 @@
     </style>
 
 
-    <style>
-        .flash-message {
-            position: fixed;
-            top: 20px;
-            right: -400px;
-            /* Start off-screen */
-            color: white;
-            padding: 15px 20px;
-            border-radius: 5px;
-            border: 3px;
-            border-color: #fff;
-            font-size: 16px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            z-index: 9999;
-            transition: right 0.5s ease-in-out;
-        }
+   <x-flash-message />
 
-        .flash-message.success {
-            background-color: #F77A10;
-            /* Green for success */
-        }
-
-        .flash-message.error {
-            background-color: #dc3545;
-            /* Red for error */
-        }
-
-        .flash-message.slide-in {
-            right: 20px;
-            /* Slide into view */
-        }
-
-        .flash-message.slide-out {
-            right: -400px;
-            /* Slide out of view */
-        }
-    </style>
-
-    @if (session('success'))
-        <div id="flash-message" class="flash-message success">
-            {{ session('success') }}
-        </div>
-    @elseif(session('error'))
-        <div id="flash-message" class="flash-message error">
-            {{ session('error') }}
-        </div>
-    @endif
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const flashMessage = document.getElementById('flash-message');
-
-            if (flashMessage) {
-                // Slide the message in
-                flashMessage.classList.add('slide-in');
-
-                // Slide the message out after 5 seconds
-                setTimeout(function() {
-                    flashMessage.classList.remove('slide-in');
-                    flashMessage.classList.add('slide-out');
-                }, 5000);
-            }
-        });
-    </script>
+    <x-tailwind_config />
 
 
-    {{-- <style>
-        .flash-message {
-            position: fixed;
-            top: 20px;
-            right: -400px;
-            /* Start off-screen */
-            color: white;
-            padding: 15px 20px;
-            border-radius: 5px;
-            border: 3px;
-            border-color: #fff;
-            font-size: 16px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            z-index: 9999;
-            transition: right 0.5s ease-in-out;
-            z-index: 289;
-        }
-
-        .flash-message.success {
-            background-color: #F77A10;
-            /* Green for success */
-        }
-
-        .flash-message.error {
-            background-color: #dc3545;
-            /* Red for error */
-        }
-
-        .flash-message.slide-in {
-            right: 20px;
-            /* Slide into view */
-        }
-
-        .flash-message.slide-out {
-            right: -400px;
-            /* Slide out of view */
-        }
-    </style>
-
-
-    @if (session('success'))
-        <div id="flash-message" class="flash-message success">
-            {{ session('success') }}
-        </div>
-    @elseif(session('error'))
-        <div id="flash-message" class="flash-message error">
-            {{ session('error') }}
-        </div>
-    @endif
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const flashMessage = document.getElementById('flash-message');
-
-            if (flashMessage) {
-                // Slide the message in
-                flashMessage.classList.add('slide-in');
-
-                // Slide the message out after 5 seconds
-                setTimeout(function() {
-                    flashMessage.classList.remove('slide-in');
-                    flashMessage.classList.add('slide-out');
-                }, 5000);
-            }
-        });
-    </script> --}}
 </head>
 
 <body class="">
+
+
+    
     <section>
         <div
             class="z-10 shadow-lg mx-auto md:mx-6 lg:mx-24 mt-6 py-3 px-4 md:py-5 md:px-6 rounded-full flex justify-between items-center fixed top-0 right-0 left-0 bg-white">
@@ -265,8 +143,9 @@
                 </div>
 
                 <a href="{{ route('request.loan') }}"
-                    class="bg-white border-2 border-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-150 py-2 px-4 font-medium rounded-full text-primary">Request
-                    Loan</a>
+                    class="bg-primary text-white border-2 border-primary hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 py-2 px-4 font-medium rounded-full">Request
+                    Loan
+                </a>
             </div>
 
 

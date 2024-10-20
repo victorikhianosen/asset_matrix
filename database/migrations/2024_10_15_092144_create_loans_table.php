@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
+            $table->string('phone');
+            $table->string('bvn');
             $table->string('duration');
             $table->string('interestRate');
             $table->string('monthlyPay');

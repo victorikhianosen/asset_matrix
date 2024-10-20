@@ -53,14 +53,16 @@
         <p>An Asset Matrix MFB representative will contact you shortly with further details and to assist you through
             the next steps.</p>
 
-        <p>We appreciate your patience during this process. If you have any questions or need further assistance, feel
-            free to contact us at <br><a href="mailto:info@assetmatrixmfb.com">info@assetmatrixmfb.com</a><br><a
-                href="tel:+2348033529203">+2348033529203</a>
-            .</p>
+        <p>We appreciate your patience during this process. If you have any questions or need further assistance, please
+            feel free to contact us via email or phone at:<br><br>
+            <strong><a href="mailto:info@assetmatrixmfb.com">info@assetmatrixmfb.com</a></strong><br>
+            <strong><a href="tel:+2348033529203">+234 803 352 9203</a></strong>.
+        </p>
+
 
         <p>Thank you for choosing Asset Matrix!</p>
 
-        <p class="footer"><strong>Best regards,</strong><br>Asset Matrix Team</p>
+        <p class="footer"><strong>Best regards,</strong><br>Asset Matrix MFB</p>
     </div>
 
 </body>

@@ -75,15 +75,6 @@ class PagesController extends Controller
     }
 
 
-    // public function processLoan(Request $request)
-    // {
-    //     $loanData = $request->all();
-    //     Loan::create($loanData);
-    //     // $matricEmail = ['victorikhianosen@assetmatrix.com', ];
-    //     Mail::to($loanData['email'])->send(new CustomerReplyLoan($loanData));
-    //     Mail::to($loanData['email'])->send(new LoanMail($loanData));
-    //     return response()->json(['message' => "Loan data processed successfully!"]);
-    // }
 
 
     public function processLoan(Request $request)

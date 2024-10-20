@@ -43,23 +43,27 @@
 </head>
 
 <body>
-<div class="email-container">
-    <h2>Loan Request Notification</h2>
-    <p>Dear All,</p>
+    <div class="email-container">
+        <h2>Loan Request Notification</h2>
+        <p>Dear All,</p>
 
-    <p>We have received a loan request from the customer listed below. Kindly reach out to them to assist with their request.</p>
+        <p>We have received a loan request from the customer listed below. Kindly reach out to them to assist with their
+            request.</p>
 
-    <p><strong>Customer Name:</strong> {{ $loanData['name'] }}</p>
-    <p><strong>Email:</strong> {{ $loanData['email'] }}</p>
-    <p><strong>Duration:</strong> {{ $loanData['duration'] }} {{ $loanData['duration'] <= 1 ? 'month' : 'months' }}</p>
-    <p><strong>Interest Rate:</strong> {{ $loanData['interestRate'] }}%</p>
-    <p><strong>Monthly Pay:</strong> &#8358;{{ $loanData['monthlyPay'] }}</p>
-<p><strong>Principal:</strong> &#8358;{{ number_format($loanData['principal'], 0, '.', ',') }}</p>
-    <p><strong>Total Interest:</strong> &#8358;{{ $loanData['totalInterest'] }}</p>
-    <p><strong>Total Repayment:</strong> &#8358;{{ $loanData['totalRepayment'] }}</p>
-    <br>
-    <p class="footer"><strong>Best regards,</strong><br>Asset Matrix Team</p>
-</div>
+        <p><strong>Customer Name:</strong> {{ $loanData['name'] }}</p>
+        <p><strong>Email:</strong> {{ $loanData['email'] }}</p>
+        <p><strong>Phone:</strong> {{ $loanData['phone'] }}</p>
+        <p><strong>BVN:</strong> {{ $loanData['bvn'] }}</p>
+        <p><strong>Duration:</strong> {{ $loanData['duration'] }} {{ $loanData['duration'] <= 1 ? 'month' : 'months' }}
+        </p>
+        <p><strong>Interest Rate:</strong> {{ $loanData['interestRate'] }}%</p>
+        <p><strong>Monthly Pay:</strong> &#8358;{{ $loanData['monthlyPay'] }}</p>
+        <p><strong>Principal:</strong> &#8358;{{ number_format($loanData['principal'], 0, '.', ',') }}</p>
+        <p><strong>Total Interest:</strong> &#8358;{{ $loanData['totalInterest'] }}</p>
+        <p><strong>Total Repayment:</strong> &#8358;{{ $loanData['totalRepayment'] }}</p>
+        <br>
+        <p class="footer"><strong>Best regards,</strong><br>Asset Matrix MFB</p>
+    </div>
 
 
 </body>

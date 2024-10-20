@@ -49,26 +49,6 @@
 
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3">
-                        <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2">Phone Number <small
-                                class="text-red-600">*</small></label>
-                        <input
-                            class="appearance-none block w-full bg-gray-200 text-gray-700 border hover:border-primary rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
-                            required id="phone" type="tel" placeholder="Enter Phone Number" pattern="[0-9]{10}">
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2">BVN <small
-                                class="text-red-600">*</small></label>
-                        <input
-                            class="appearance-none block w-full bg-gray-200 text-gray-700 border hover:border-primary rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
-                            required id="bvn" type="tel" placeholder="Enter BVN" pattern="[0-9]{10}">
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
                         <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2">Loan Amount (₦) <small
                                 class="text-red-600">*</small></label>
                         <input
@@ -104,7 +84,7 @@
 
                 <div class="px-3">
                     <button
-                        class="bg-primary text-white px-10 text-base py-3 rounded-full border-2 border-primary hover:bg-white hover:text-primary hover:border-primary transition-all duration-200"
+                        class="bg-primary text-white px-10 text-base py-3 rounded-full border-primary hover:bg-[#be6a1a]"
                         type="button" id="calc_loan">
                         <span class="fa fa-envelope"></span> Calculate
                     </button>
@@ -158,15 +138,22 @@
 
 
                 <div class="flex justify-start items-center gap-6">
-                    <button id="send_loan_info" type="button"
-                        class="bg-primary text-white px-10 text-base py-3 rounded-full border-2 border-primary hover:bg-white hover:text-primary hover:border-primary transition-all duration-200">
-                        Submit</button>
-                    <button id="_clnpy" type="button"
-                        class="bg-primary text-white px-10 text-base py-3 rounded-full border-2 border-primary hover:bg-white hover:text-primary hover:border-primary transition-all duration-200">
-                        Close</button>
+                    <button id="send_loan_info" type="button" class="bg-primary text-base py-2 px-8 rounded-full text-white border border-primary hover:bg-[#c65f0a]">Submit</button>
+                    <button id="_clnpy" type="button" class="bg-primary text-base py-2 px-8 rounded-full text-white border border-primary hover:bg-[#c65f0a]">Close</button>
                 </div>
 
-             
+                {{-- <div class="flex items-center px-3 space-x-4 space-y-4 w-full">
+                    <button
+                        class="bg-primary text-white px-10 text-sm md:text-base py-3 rounded-full border-primary hover:bg-[#be6a1a]"
+                        type="button" id="send_loan_info">
+                        Submit
+                    </button>
+                    <button
+                        class="bg-primary text-white px-10 text-sm md:text-base py-3 rounded-full border-primary hover:bg-[#be6a1a]"
+                        type="button" id="_clnpy">
+                        Close
+                    </button>
+                </div> --}}
             </section>
 
 
@@ -202,8 +189,6 @@
             document.getElementById("calc_loan").addEventListener("click", function() {
                 // Get input values
                 const name = document.getElementById("name").value;
-                const phone = document.getElementById("phone").value;
-                const bvn = document.getElementById("bvn").value;
                 const principal = parseFloat(document.getElementById("lamnt").value);
                 const user_interest = parseFloat(document.getElementById("intr").value);
                 const duration = parseInt(document.getElementById("duration").value);
@@ -255,8 +240,6 @@
             document.getElementById("send_loan_info").addEventListener("click", function() {
                 const email = document.getElementById("send_to").value;
                 const name = document.getElementById("name").value;
-                const bvn = document.getElementById("bvn").value;
-                const phone = document.getElementById("phone").value;
                 const principal = document.getElementById("lamnt").value;
                 const interestRate = document.getElementById("intr").value;
                 const duration = document.getElementById("duration").value;
@@ -271,8 +254,6 @@
                 }
                 const loanData = {
                     name: name,
-                    phone: phone,
-                    bvn: bvn,
                     email: email,
                     principal: principal,
                     interestRate: interestRate,
