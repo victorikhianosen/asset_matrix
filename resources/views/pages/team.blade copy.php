@@ -30,7 +30,7 @@
 
 
                     <div
-                        class="gap-8 text-center mt-16 max-w-5xl max-lg:max-w-3xl max-md:max-w-xl mx-auto">
+                        class="grid md:grid-cols-3 sm:grid-cols-2 gap-8 text-center mt-16 max-w-5xl max-lg:max-w-3xl max-md:max-w-xl mx-auto">
                         <div>
                             <img src="{{ asset('asset/images/ceo.png') }}" class="w-52 h-52 rounded-full inline-block" />
 
@@ -41,10 +41,6 @@
                             </div>
                         </div>
 
-                    </div>
-
-                    <div class="gap-8 grid grid-co md:grid-cols-3 text-center mt-16 max-w-5xl max-lg:max-w-3xl max-md:max-w-xl mx-auto">
-                        
                         <div>
                             <img src="{{ asset('asset/images/md.png') }}" class="w-52 h-52 rounded-full inline-block" />
 
@@ -99,22 +95,14 @@
                                 </h4>
                                 <p class="text-gray-800 text-xs mt-1">Head of Marketing</p>
 
-                            </div>
-                        </div> 
+                                
 
-                        
-                        {{-- <div>
-                            <img src="{{ asset('asset/images/aduni.png') }}" class="w-52 h-52 rounded-full inline-block" />
-
-                            <div class="py-4">
-                                <h4 class="text-primary text-base font-bold">Bello Adunni Omowunmi 
-                                </h4>
-                                <p class="text-gray-800 text-xs mt-1">Head of Marketing</p>
 
                             </div>
-                        </div>  --}}
+                        </div>
 
-                        
+
+
                     </div>
                 </div>
             </div>

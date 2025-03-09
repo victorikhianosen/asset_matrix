@@ -44,7 +44,7 @@
 
    <x-flash-message />
 
-    <x-tailwind_config />
+   <x-tailwind_config />
 
 
 </head>
@@ -55,20 +55,20 @@
     
     <section>
         <div
-            class="z-10 shadow-lg mx-auto md:mx-6 lg:mx-24 mt-6 py-3 px-4 md:py-5 md:px-6 rounded-full flex justify-between items-center fixed top-0 right-0 left-0 bg-white">
+            class="z-10 shadow-lg mx-auto md:mx-6 lg:mx-12 mt-6 py-3 px-4 md:py-5 md:px-6 rounded-full flex justify-between items-center fixed top-0 right-0 left-0 bg-white">
             <a href="{{ route('home') }}">
                 <img class="w-32 md:w-40" src="{{ asset('asset/images/logo.png') }}" alt="">
             </a>
 
-            <div class="space-x-6 hidden lg:block">
-                <a class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150"
+            <div class="space-x-12 hidden lg:block">
+                <a class="text-lightBlack font-medium text-md hover:text-primary transition-all duration-150"
                     href="{{ route('home') }}">Home
                 </a>
 
                 <!-- Our Bank Dropdown -->
                 <div class="relative inline-block">
                     <button id="ourBank"
-                        class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150">Our
+                        class="relative text-lightBlack font-medium text-md hover:text-primary transition-all duration-150">Our
                         Bank
                         <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
                     </button>
@@ -76,10 +76,10 @@
                         class="hidden absolute -left-2 z-10 mt-5 w-24 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                         <div class="py-6">
                             <a href="{{ route('about') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150"
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150"
                                 tabindex="-1">About Us</a>
                             <a href="{{ route('team') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Team</a>
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150">Team</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                 <!-- Business Banking Dropdown -->
                 <div class="relative inline-block">
                     <button id="businessBanking"
-                        class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150">Business
+                        class="relative text-lightBlack font-medium text-md hover:text-primary transition-all duration-150">Business
                         Banking
                         <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
                     </button>
@@ -96,12 +96,12 @@
                         <div class="py-6">
 
                             <a href="{{ route('internet') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Digital
+                                class="block px-4 py-2 font-semibold text-sm text-black hover:text-primary transition-all duration-150">Digital
                                 Banking</a>
                             <a href="{{ route('loan') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Loan</a>
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150">Loan</a>
                             <a href="{{ route('savings') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Investment
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150">Investment
                                 | Deposit</a>
 
                         </div>
@@ -111,7 +111,7 @@
                 <!-- Online Banking -->
                 <div class="relative inline-block">
                     <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
-                        class="text-lightBlack font-medium text-md hover:text-black transition-all duration-150">Online
+                        class="text-lightBlack font-medium text-md hover:text-primary transition-all duration-150">Online
                         Banking</a>
                 </div>
 
@@ -120,23 +120,23 @@
                 <!-- Policy Dropdown -->
                 <div class="relative inline-block">
                     <button type="button" id="policy"
-                        class="relative text-lightBlack font-medium text-md hover:text-black transition-all duration-150">Policy
+                        class="relative text-lightBlack font-medium text-md hover:text-primary transition-all duration-150">Policies
                         <span><i class="fa-solid fa-sort-down absolute bottom-1.5 ml-1"></i></span>
                     </button>
                     <div id="policyDropDown"
-                        class="hidden absolute -right-16 z-10 mt-5 w-44 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                        class="hidden absolute -right-28 z-10 mt-5 w-64 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                         <div class="py-6">
                             <a href="{{ route('policy.data') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150"
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150"
                                 tabindex="-1">Data Consent Policy</a>
                             <a href="{{ route('policy.mobile') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Mobile
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150">Mobile
                                 App Policy</a>
                             <a href="{{ route('policy.amt') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">Anti-Money
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150">Anti-Money
                                 Laundering</a>
                             <a href="{{ route('policy.enduser') }}"
-                                class="block px-4 py-2 text-sm text-black hover:text-primary transition-all duration-150">End
+                                class="block px-4 py-2 text-sm font-semibold text-black hover:text-primary transition-all duration-150">End
                                 User Agreement</a>
                         </div>
                     </div>
@@ -170,27 +170,6 @@
     </section>
 
 
-    {{-- <script>
-        function toggleDropdown(dropdownId) {
-            const dropdown = document.getElementById(dropdownId);
-            dropdown.classList.toggle('hidden');
-        }
-    </script> --}}
-
-    {{-- <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileMenuButton = document.getElementById('mobileMenuButton');
-            const closeMobileMenuButton = document.getElementById('closeMobileMenuButton');
-            const closeMobileMenuButtonInMenu = document.getElementById('closeMobileMenuButtonInMenu');
-
-            mobileMenu.classList.toggle('active');
-            const isActive = mobileMenu.classList.contains('active');
-
-            mobileMenuButton.classList.toggle('hidden', isActive);
-            closeMobileMenuButton.classList.toggle('hidden', !isActive);
-        }
-    </script>  --}}
 </body>
 
 </html>

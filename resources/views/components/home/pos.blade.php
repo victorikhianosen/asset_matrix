@@ -12,7 +12,12 @@
 
                     <div>
                         <p class="text-xs md:text-sm tracking-wider text-blackTextt" align='justify'>
-Our versatile POS system is tailored to meet the diverse needs of wholesale and retail stores, as well as businesses like hotels, resorts, and any establishment requiring efficient sales solutions. Whether you operate a boutique, supermarket, local market, or hospitality business, our system offers powerful features like barcode scanning, inventory management, and customer tracking. Designed to streamline operations, our POS solution enhances productivity and ensures customer satisfaction across all industries
+                            Our versatile POS system is tailored to meet the diverse needs of wholesale and retail
+                            stores, as well as businesses like hotels, resorts, and any establishment requiring
+                            efficient sales solutions. Whether you operate a boutique, supermarket, local market, or
+                            hospitality business, our system offers powerful features like barcode scanning, inventory
+                            management, and customer tracking. Designed to streamline operations, our POS solution
+                            enhances productivity and ensures customer satisfaction across all industries
                         </p>
 
                     </div>

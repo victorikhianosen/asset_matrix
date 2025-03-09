@@ -122,7 +122,7 @@
                         </span>
                         <h4 class="font-semibold text-2xl my-4">Mission</h4>
                         <div class="space-y-1 text-black mb-8">
-                            <p class="text-base tracking-wide">
+                            <p align="justify">
                                 Empowering micro-entrepreneurs with tailored financial services for growth, inclusion, and a
                                 secure financial future.
 

@@ -15,15 +15,21 @@
                         </p>
                         <div>
                             <span>
-                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-envelope mr-2"></i>
                             </span>
                             <a href="mailto:info@assetmatrixmfb.com"
                                 class="text-blackText hover:text-white">info@assetmatrixmfb.com</a>
                         </div>
-                        <div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-phone mr-2"></i>
                             <a href="tel:+2348023049873" class="text-blackText hover:text-white">+234 (0)
-                                80-2304-9873</a>
+                                8033197469</a>
 
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-phone mr-2"></i>
+                            <a href="tel:+2348023049873" class="text-blackText hover:text-white">+234 (0)
+                                8033529203</a>
                         </div>
                     </div>
                 </div>
@@ -98,6 +104,14 @@
                         </span>
 
                     </div>
+                    <div class="pt-4 flex items-center ">
+                        <i class="fa-solid fa-location-dot mr-2 text-2xl"></i>
+                        <a href="https://www.google.com/maps?q=68+Herbert+Macaulay+Way,+by+Kano+Street+Busstop,+Oyingbo,+Lagos,+Nigeria"
+                            target="_blank" class="text-xs md:text-sm tracking-wider text-blackText hover:text-white transition-all duration-200" align="justify">
+                            68 Herbert Macaulay Way, by Kano Street Bus Stop Oyingbo, Lagos, Nigeria.
+                        </a>
+                    </div>
+
                 </div>
             </div>
 

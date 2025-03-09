@@ -141,7 +141,7 @@
                             <div class="icon-box p-10 shadow-lg rounded-lg transition-all duration-300">
 
                                 <i
-                                    class="fa-solid fa-sd-card w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
+                                    class="fa-solid fa-sd-card w-20 h-20  text-primary rounded-full flex items-center justify-center text-4xl mb-6">
                                 </i>
 
                                 <h3 class="font-bold text-lg mb-2">Airtime Purchase</h3>
@@ -154,9 +154,9 @@
 
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                             <div
-                                class="icon-box bg-[var(--surface-color)] p-10 shadow-lg rounded-lg transition-all duration-300">
+                                class="icon-box  p-10 shadow-lg rounded-lg transition-all duration-300">
                                 <i
-                                    class="fa-solid fa-database w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
+                                    class="fa-solid fa-database text-primary w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
                                 </i>
                                 <h3 class="font-bold text-lg mb-2">Data Purchase</h3>
                                 <p class="mb-0">
@@ -171,13 +171,21 @@
 
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                             <div class="icon-box p-10 shadow-lg rounded-lg transition-all duration-300">
-                                <i
-                                    class="fa-solid fa-plug w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
-                                </i>
+
+
+                                <!-- Default image (visible initially, hidden on hover) -->
+                                <img class="bg-[#FCE7D2] mb-6 p-4 rounded-full w-20 hover:bg-white transition-all duration-200"
+                                    src="{{ asset('asset/images/electricity.png') }}" alt="">
+
+                                <!-- Hover image (hidden initially, shown on hover) -->
+                                {{-- <img class="mb-6 p-4 w-20 hidden hover:block transition-all duration-200"
+                                    src="{{ asset('asset/images/electricityb.png') }}" alt=""> --}}
+
+
                                 <h3 class="font-bold text-lg mb-2">Electricity Purchase</h3>
                                 <p class="mb-0">
 
-                                    Easily buy electricity credits anytime, ensuring your power stays on without hassle.
+                                    Easily buy electricity token anytime, ensuring your power stays on without hassle.
                                 </p>
                             </div>
                         </div>
@@ -223,9 +231,10 @@
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                             <div class="icon-box p-10 shadow-lg rounded-lg transition-all duration-300">
 
+
+
                                 <i
-                                    class="fa-solid fa-wifi w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
-                                </i>
+                                    class="fa-solid fa-mobile-screen-button w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6"></i>
 
                                 <h3 class="font-bold text-lg mb-2">Internet banking</h3>
                                 <p class="mb-0">
@@ -253,9 +262,10 @@
 
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                             <div class="icon-box p-10 shadow-lg rounded-lg transition-all duration-300">
+
+
                                 <i
-                                    class="fa-brands fa-whatsapp w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
-                                </i>
+                                    class="fa-solid fa-briefcase  w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6"></i>
                                 <h3 class="font-bold text-lg mb-2">Investment</h3>
                                 <p class="mb-0">
 

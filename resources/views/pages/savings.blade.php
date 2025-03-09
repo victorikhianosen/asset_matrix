@@ -59,9 +59,10 @@
 
                         <div class="col-md-6 bg-white" data-aos="fade-up" data-aos-delay="200">
                             <div class="icon-box bg-white shadow-lg rounded-lg transition-all duration-300">
-                                <i
-                                    class="fa-brands fa-whatsapp text-red-500 w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
-                                </i>
+
+
+                               <i
+                                    class="fa-solid fa-briefcase w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6"></i>
 
                                 <h3 class="font-bold text-lg mb-2">Daily <br>Savings</h3>
                                 <p class="mb-0">
@@ -73,9 +74,9 @@
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                             <div class="icon-box p-10 shadow-lg rounded-lg transition-all duration-300">
 
-                                <i
-                                    class="fa-solid fa-wifi w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
-                                </i>
+                                   <i
+                                    class="fa-solid fa-briefcase w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6"></i>
+
 
                                 <h3 class="font-bold text-lg mb-2">Weekly Savings</h3>
                                 <p class="mb-0">
@@ -88,9 +89,9 @@
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                             <div
                                 class="icon-box bg-[var(--surface-color)] p-10 shadow-lg rounded-lg transition-all duration-300">
-                                <i
-                                    class="fa-solid fa-mobile w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
-                                </i>
+     <i
+                                    class="fa-solid fa-briefcase w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6"></i>
+
                                 <h3 class="font-bold text-lg mb-2">Monthly Savings
 
                                 </h3>
@@ -106,8 +107,8 @@
                         <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                             <div class="icon-box p-10 shadow-lg rounded-lg transition-all duration-300">
                                 <i
-                                    class="fa-brands fa-whatsapp w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6">
-                                </i>
+                                    class="fa-solid fa-briefcase w-20 h-20 rounded-full flex items-center justify-center text-4xl mb-6"></i>
+
                                 <h3 class="font-bold text-lg mb-2">Annual Savings</h3>
                                 <p class="mb-0">
 
