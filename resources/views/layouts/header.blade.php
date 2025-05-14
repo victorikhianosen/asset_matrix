@@ -9,7 +9,7 @@
 
     {{-- Tailwind --}}
     {{-- @vite('resources/css/app.css') --}}
-      <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 
     {{-- Google Fonts --}}
@@ -42,9 +42,9 @@
     </style>
 
 
-   <x-flash-message />
+    <x-flash-message />
 
-   <x-tailwind_config />
+    <x-tailwind_config />
 
 
 </head>
@@ -52,13 +52,14 @@
 <body class="">
 
 
-    
-    <section>
-        <div
-            class="z-10 shadow-lg mx-auto md:mx-6 lg:mx-12 mt-6 py-3 px-4 md:py-5 md:px-6 rounded-full flex justify-between items-center fixed top-0 right-0 left-0 bg-white">
+
+    <section class="mx-6">
+
+        <div class="container mx-auto shadow-lg fixed mt-6 top-0 right-0 left-0 z-40 bg-white rounded-full flex justify-between items-center p-4 md:p-8">
             <a href="{{ route('home') }}">
                 <img class="w-32 md:w-40" src="{{ asset('asset/images/logo.png') }}" alt="">
             </a>
+
 
             <div class="space-x-12 hidden lg:block">
                 <a class="text-lightBlack font-medium text-md hover:text-primary transition-all duration-150"
@@ -143,7 +144,7 @@
                 </div>
 
                 <a href="{{ route('request.loan') }}"
-                    class="bg-primary text-white border-2 border-primary hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 py-2 px-4 font-medium rounded-full">Request
+                    class="bg-primary text-white border-2 border-primary hover:bg-white hover:text-primary hover:border-primary transition-all duration-200 py-3 px-4 font-medium rounded-full">Request
                     Loan
                 </a>
             </div>
@@ -160,6 +161,8 @@
             <div id="closeMobileMenuButton" class="cursor-pointer block lg:hidden hidden" onclick="toggleMobileMenu()">
                 <i class="fa-regular fa-circle-xmark text-3xl"></i>
             </div>
+
+
         </div>
 
         {{-- Mobile Menu --}}

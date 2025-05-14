@@ -1,11 +1,11 @@
-    <section class="bg-white">
-        <div class="">
-            <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
+    <section class="">
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center w-screen h-full">
 
+            <div class="bg-purple p-6 h-full w-[100%] flex flex-col justify-center items-center py-16 md:py-24 xl:py-0 px-24">
 
+                    {{-- <div class="grid grid-cols-1  md:grid-cols-2 gap-x-10 gap-y-4 md:gap-y-2"> --}}
 
-
-                <div class="bg-purple p-6 md:px-8 lg:px-24 py-10 md:py-24 space-y-6 text-white">
+                <div class="flex flex-col justify-center items-start space-y-10">
                     <h2 class="text-3xl md:text-5xl text-white font-semibold">
                         <span class="text-primary">Simplify</span> Transactions with Our POS
                     </h2>
@@ -22,7 +22,8 @@
 
                     </div>
 
-                    <div class="grid grid-cols-1  md:grid-cols-2 gap-y-4 md:gap-y-2">
+                    {{-- <div class="grid grid-cols-1  md:grid-cols-2 gap-x-10 gap-y-4 md:gap-y-2"> --}}
+                    <div class="grid grid-cols-1  md:grid-cols-2 gap-x-10 gap-y-4 md:gap-y-2 w-full">
 
                         <div class="space-y-4 md:space-y-2 lg:space-y-3">
 
@@ -113,15 +114,13 @@
                             class="bg-white  text-black py-2 px-6 text-sm rounded-full border-2 border-white hover:bg-purple hover:text-white transition-all duration-150">Get
                             Started</a>
                     </div>
-
-
-                </div>
-
-                <div class="bg-white">
-                    <img class="w-full h-fit" src="{{ asset('asset/images/pos44.png') }}" alt="">
                 </div>
 
 
+            </div>
+
+            <div class="bg-white">
+                <img class="w-full h-fit" src="{{ asset('asset/images/pos44.png') }}" alt="">
             </div>
         </div>
     </section>

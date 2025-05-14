@@ -1,5 +1,7 @@
 <section class="bg-whiteBg">
-    <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
+    {{-- <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24"> --}}
+        <div class="container mx-auto p-6">
+
         <div class="">
             <h1 class="text-center font-semibold text-2xl mb-8">Our Services</h1>
 
@@ -158,8 +160,8 @@
 
                         <div>
                             <a href="{{ route('savings') }}"
-                                class="bg-white text-purple px-6 py-2 
-                            rounded-full mt-6 border-white border-2 hover:bg-purple hover:text-white 
+                                class="bg-white text-purple px-6 py-2
+                            rounded-full mt-6 border-white border-2 hover:bg-purple hover:text-white
                             transition-all duration-200 text-sm">
                                 Click me
                             </a>
@@ -212,7 +214,7 @@
 
                         <div>
                             <a href="{{ url('https://cashmatrix.app/') }}" target="_blink"
-                                class="bg-purple text-white px-6 py-2 
+                                class="bg-purple text-white px-6 py-2
                             rounded-full mt-6 border-purple border-2 hover:bg-[#C0CAD0] hover:text-purple hover:border-purple
                             transition-all duration-200 text-sm">
                                 Click here
@@ -233,7 +235,7 @@
             </div>
         </div>
 
-        {{-- 
+        {{--
 
 
         <script>

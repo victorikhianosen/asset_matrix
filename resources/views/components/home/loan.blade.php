@@ -1,5 +1,7 @@
     <section class="bg-primary">
-        <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
+        {{-- <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24"> --}}
+            <div class="p-6 h-full w-[100%] flex flex-col justify-center items-center py-16 md:py-24 xl:py-0 px-24">
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center">
 
                 <div class="space-y-4 md:space-y-8">

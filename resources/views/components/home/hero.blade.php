@@ -1,5 +1,5 @@
-    <section class="bg-whiteBg">
-        <div class="mx-6 md:mx-8 lg:mx-24 pb-6 pt-28 md:pb-24 md:pt-38">
+    <section class="bg-whiteBg relative pt-40 lg:pt-36">
+        <div class="container mx-auto p-6">
 
             <div class="swiper mySwiperHero">
 
@@ -110,7 +110,7 @@
                                     class="text-black text-5xl md:text-6xl lg:text-7xl font-semibold gap-6 tracking-tighter leading-tigh">
                                     <span class="text-primary">Achieve </span> More With Us
                                 </h1>
-                                <p class="text-[#333333] font-light text-sm md:text-md", align='justify'>At Asset Matrix 
+                                <p class="text-[#333333] font-light text-sm md:text-md", align='justify'>At Asset Matrix
                                     Micro-finance, we
                                     Unlock your financial potential with our wide range of solutions tailored to meet
                                     your unique needs. From personalized savings plans to strategic investment

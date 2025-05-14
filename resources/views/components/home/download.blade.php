@@ -1,5 +1,6 @@
     <section class="bg-[#fdf3e9]">
-        <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24">
+        {{-- <div class="mx-6 md:mx-8 lg:mx-24 py-10 md:py-24"> --}}
+        <div class="container mx-auto p-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center items-center">
                 <div>
                     <img src="{{ asset('asset/images/payment.png') }}" alt="">

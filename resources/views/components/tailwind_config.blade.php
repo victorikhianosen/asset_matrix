@@ -2,12 +2,11 @@
     tailwind.config = {
         theme: {
             screens: {
-                sm: "480px",
-                md: "768px",
-                lg: "1020px",
-                xl: "1920px",
-                // xl: "1440px",
-
+                sm: "468px",
+                md: "767px",
+                lg: "980px",
+                xl: "1024px",
+                '2xl': "1280px",
             },
             extend: {
                 colors: {
